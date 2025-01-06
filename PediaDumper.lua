@@ -147,7 +147,6 @@ local structure = {
 		}, {
 			sections = {
 				{ label = 'TXT_KEY_PEDIA_PROMOTIONS_PAGE_LABEL' }
-				-- expands from UnitPromotions.PediaType
 			}
 		}, {
 			sections = {
@@ -803,17 +802,23 @@ local promotionAddons = {
 	PEDIA_SCOUTING = '_s',
 	PEDIA_SHARED = '_sh'
 }
-local promotionSections = {}
-local k = 1
+local promotionSections = {
+	PEDIA_MELEE = 1,
+	PEDIA_RANGED = 2,
+	PEDIA_NAVAL = 3,
+	PEDIA_HEAL = 4,
+	PEDIA_SCOUTING = 5,
+	PEDIA_AIR = 6,
+	PEDIA_SHARED = 7,
+	PEDIA_ATTRIBUTES = 8
+}
 local offset = #structure.categories[cat.promotions].sections
 -- populate sections
-for row in GameInfo.UnitPromotions('PediaType NOT NULL GROUP BY PediaType ORDER BY rowid') do
-	promotionSections[row.PediaType] = k
-	structure.categories[cat.promotions].sections[#structure.categories[cat.promotions].sections + 1] = {
-		label = 'TXT_KEY_PROMOTIONS_SECTION_' .. tostring(k),
+for k, v in next, promotionSections do
+	structure.categories[cat.promotions].sections[offset + v] = {
+		label = 'TXT_KEY_PROMOTIONS_SECTION_' .. tostring(v),
 		items = {}
 	}
-	k = k + 1
 end
 -- for each promotion
 for thisPromotion in GameInfo.UnitPromotions() do
