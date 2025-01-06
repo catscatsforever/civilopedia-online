@@ -106,11 +106,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     current_section = current_category["sections"][0]
     current_item = current_section["items"][0]
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    for (var i = 0; i < tooltipTriggerList.length; i++) {
-        tooltip = tooltipTriggerList[i].getAttribute("data-bs-title")
-        tooltipTriggerList[i].setAttribute("data-bs-title", get_translation(current_language, tooltip));
-    }
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
+
     generate_view()
     create_listeners()
     set_heading()
@@ -174,7 +171,8 @@ function generate_view() {
     var template = Handlebars.compile($("#" + item_data["view_id"]).html())
     $("#content-area").append(template(item_data))
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
+
 }
 
 $(document).on("click", ".category-tab", function () {
