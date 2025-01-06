@@ -185,6 +185,7 @@ $(document).on("click", ".category-tab", function () {
     current_item = current_section["items"][0]
     set_heading()
     generate_accordion_list()
+    generate_view()
 
 });
 
