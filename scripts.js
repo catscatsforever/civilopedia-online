@@ -266,6 +266,9 @@ function generate_accordion_list() {
     $("#accordionExample").empty()
     var accordion_section = ""
     current_category["sections"].forEach((section, index) => {
+        if (!['cat_1', 'cat_2'].includes(current_category.id))
+            section["items"].sort((a, b) => (index === 0 && section["items"].indexOf(a) === 0) ? -1 : get_translation(current_language,a.label).localeCompare(get_translation(current_language,b.label), undefined, {numeric: true}))
+
         if (index == 0) {
             accordion_section = `<div class="accordion-item"><div id="collapseNone" class="accordion-collapse collapse show"><ul value=${section.id} class="list-group list-group-flush">`
             section["items"].forEach((item) => {
