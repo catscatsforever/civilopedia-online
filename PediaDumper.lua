@@ -1108,7 +1108,9 @@ function processBuildingOrWonder( building, bProject )
 	entry.strings.quote = not bProject and building.Quote or nil
 	entry.strings.prerequisite_techs = next(tech_prereq) and tech_prereq or nil
 	entry.strings.strategy = building.Strategy or nil
-	entry.strings.happiness = not bProject and (building.Happiness + building.UnmoddedHappiness) or nil
+	if not bProject and building.Happiness + building.UnmoddedHappiness > 0 then
+		entry.strings.happiness = string.format('%d [ICON_HAPPINESS_1]', building.Happiness + building.UnmoddedHappiness)
+	end
 	entry.strings.great_works = next(great_works) and great_works or nil
 	entry.strings.maintenance = not bProject and building.GoldMaintenance or nil
 	entry.strings.defense = not bProject and building.Defense or nil
