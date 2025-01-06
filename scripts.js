@@ -7,59 +7,59 @@ var current_item = "item_37"
 var content_mapping = []
 
 var tag_mappings = {
-    "[NEWLINE]": "<br>",
-    "[TAB]": "&nbsp;",
-    "[ICON_HAPPINESS_1]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_HAPPINESS_1.png'>",
-    "[ICON_HAPPINESS_4]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_HAPPINESS_4.png'>",
-    "[ICON_CULTURE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CULTURE.png'>",
-    "[ICON_INTERNATIONAL_TRADE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_INTERNATIONAL_TRADE.png'>",
-    "[ICON_GOLD]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GOLD.png'>",
-    "[COLOR_POSITIVE_TEXT]": "<span style='color:#7FFF19'>",
-    "[COLOR_CYAN]": "<span style='color:#00E2E2'>",
-    "[ENDCOLOR]": "</span>",
-    "[ICON_TOURISM]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TOURISM.png'>",
-    "[ICON_PEACE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_PEACE.png'>",
-    "[ICON_FOOD]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_FOOD.png'>",
-    "[ICON_PRODUCTION]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_PRODUCTION.png'>",
-    "[ICON_RESEARCH]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RESEARCH.png'>",
-    "[ICON_RANGE_STRENGTH]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RANGE_STRENGTH.png'>",
-    "[ICON_CONNECTED]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CONNECTED.png'>",
-    "[ICON_INFLUENCE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_INFLUENCE.png'>",
-    "[ICON_RES_WINE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_WINE.png'>",
-    "[ICON_RES_INCENSE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_INCENSE.png'>",
-    "[ICON_STRENGTH]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_STRENGTH.png'>",
-    "[ICON_GREAT_PEOPLE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GREAT_PEOPLE.png'>",
-    "[ICON_SPY]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_SPY.png'>",
-    "[ICON_RELIGION]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RELIGION.png'>",
-    "[ICON_TROPHY_GOLD]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_GOLD.png'>",
-    "[ICON_TROPHY_SILVER]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_SILVER.png'>",
-    "[ICON_TROPHY_BRONZE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_BRONZE.png'>",
-    "[ICON_CAPITAL]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CAPITAL.png'>",
-    "[ICON_GOLDEN_AGE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GOLDEN_AGE.png'>",
-    "[ICON_CITIZEN]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CITIZEN.png'>",
-    "[ICON_MOVES]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_MOVES.png'>",
-    "[ICON_DIPLOMAT]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_DIPLOMAT.png'>",
-    "[ICON_RES_URANIUM]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_URANIUM.png'>",
-    "[ICON_RES_ALUMINUM]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_ALUMINUM.png'>",
-    "[ICON_RES_COW]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_COW.png'>",
-    "[ICON_RES_SHEEP]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_SHEEP.png'>",
-    "[ICON_RES_HORSE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_HORSE.png'>",
-    "[ICON_RES_IRON]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_IRON.png'>",
-    "[ICON_RES_MARBLE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_MARBLE.png'>",
-    "[ICON_RES_FISH]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_FISH.png'>",
-    "[ICON_RES_PEARLS]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_PEARLS.png'>",
-    "[ICON_RES_DEER]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_DEER.png'>",
-    "[ICON_RES_IVORY]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_IVORY.png'>",
-    "[ICON_RES_FUR]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_FUR.png'>",
-    "[ICON_RES_TRUFFLES]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_TRUFFLES.png'>",
-    "[ICON_OCCUPIED]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_OCCUPIED.png'>",
-    "[ICON_RES_STONE]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_STONE.png'>",
-    "[ICON_RES_OIL]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_OIL.png'>",
-    "[ICON_RES_GOLD]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_GOLD.png'>",
-    "[ICON_RES_SILVER]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_SILVER.png'>",
-    "[ICON_RES_COAL]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_COAL.png'>",
-    "[ICON_RES_WHEAT]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_WHEAT.png'>",
-    "[ICON_RES_BANANA]": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_BANANA.png'>"
+    "NEWLINE": "<br>",
+    "TAB": "&nbsp;",
+    "ICON_HAPPINESS_1": "<img class='icon align-top' src='./assets/images/icon_images/ICON_HAPPINESS_1.png'>",
+    "ICON_HAPPINESS_4": "<img class='icon align-top' src='./assets/images/icon_images/ICON_HAPPINESS_4.png'>",
+    "ICON_CULTURE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CULTURE.png'>",
+    "ICON_INTERNATIONAL_TRADE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_INTERNATIONAL_TRADE.png'>",
+    "ICON_GOLD": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GOLD.png'>",
+    "COLOR_POSITIVE_TEXT": "<span style='color:#7FFF19'>",
+    "COLOR_CYAN": "<span style='color:#00E2E2'>",
+    "ENDCOLOR": "</span>",
+    "ICON_TOURISM": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TOURISM.png'>",
+    "ICON_PEACE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_PEACE.png'>",
+    "ICON_FOOD": "<img class='icon align-top' src='./assets/images/icon_images/ICON_FOOD.png'>",
+    "ICON_PRODUCTION": "<img class='icon align-top' src='./assets/images/icon_images/ICON_PRODUCTION.png'>",
+    "ICON_RESEARCH": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RESEARCH.png'>",
+    "ICON_RANGE_STRENGTH": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RANGE_STRENGTH.png'>",
+    "ICON_CONNECTED": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CONNECTED.png'>",
+    "ICON_INFLUENCE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_INFLUENCE.png'>",
+    "ICON_RES_WINE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_WINE.png'>",
+    "ICON_RES_INCENSE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_INCENSE.png'>",
+    "ICON_STRENGTH": "<img class='icon align-top' src='./assets/images/icon_images/ICON_STRENGTH.png'>",
+    "ICON_GREAT_PEOPLE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GREAT_PEOPLE.png'>",
+    "ICON_SPY": "<img class='icon align-top' src='./assets/images/icon_images/ICON_SPY.png'>",
+    "ICON_RELIGION": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RELIGION.png'>",
+    "ICON_TROPHY_GOLD": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_GOLD.png'>",
+    "ICON_TROPHY_SILVER": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_SILVER.png'>",
+    "ICON_TROPHY_BRONZE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_TROPHY_BRONZE.png'>",
+    "ICON_CAPITAL": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CAPITAL.png'>",
+    "ICON_GOLDEN_AGE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_GOLDEN_AGE.png'>",
+    "ICON_CITIZEN": "<img class='icon align-top' src='./assets/images/icon_images/ICON_CITIZEN.png'>",
+    "ICON_MOVES": "<img class='icon align-top' src='./assets/images/icon_images/ICON_MOVES.png'>",
+    "ICON_DIPLOMAT": "<img class='icon align-top' src='./assets/images/icon_images/ICON_DIPLOMAT.png'>",
+    "ICON_RES_URANIUM": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_URANIUM.png'>",
+    "ICON_RES_ALUMINUM": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_ALUMINUM.png'>",
+    "ICON_RES_COW": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_COW.png'>",
+    "ICON_RES_SHEEP": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_SHEEP.png'>",
+    "ICON_RES_HORSE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_HORSE.png'>",
+    "ICON_RES_IRON": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_IRON.png'>",
+    "ICON_RES_MARBLE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_MARBLE.png'>",
+    "ICON_RES_FISH": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_FISH.png'>",
+    "ICON_RES_PEARLS": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_PEARLS.png'>",
+    "ICON_RES_DEER": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_DEER.png'>",
+    "ICON_RES_IVORY": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_IVORY.png'>",
+    "ICON_RES_FUR": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_FUR.png'>",
+    "ICON_RES_TRUFFLES": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_TRUFFLES.png'>",
+    "ICON_OCCUPIED": "<img class='icon align-top' src='./assets/images/icon_images/ICON_OCCUPIED.png'>",
+    "ICON_RES_STONE": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_STONE.png'>",
+    "ICON_RES_OIL": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_OIL.png'>",
+    "ICON_RES_GOLD": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_GOLD.png'>",
+    "ICON_RES_SILVER": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_SILVER.png'>",
+    "ICON_RES_COAL": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_COAL.png'>",
+    "ICON_RES_WHEAT": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_WHEAT.png'>",
+    "ICON_RES_BANANA": "<img class='icon align-top' src='./assets/images/icon_images/ICON_RES_BANANA.png'>"
 }
 
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 function get_translation(language, key) {
     if (key in translations[language]) {
-        return parse_tags(translations[language][key])
+        return parse_tags(translations[language][key].split('|')[0])
     }
     else {
         return parse_tags(key)
@@ -111,12 +111,12 @@ function get_translation(language, key) {
 }
 
 function parse_tags(text) {
-    for (var key in tag_mappings) {
-        text = text.replaceAll(key, tag_mappings[key])
-    }
+    if (!text) return;
+    text = text.toString().replace(/\[([^\]]+)\]/g, (_, a) => tag_mappings[a] ? `${tag_mappings[a]}` : ``)
     var matches = text.match(/{([^}]*)}/g);
     for (match in matches) {
-        text = text.replace(matches[match], get_translation(current_language, matches[match].replace("{", "").replace("}", "")))
+
+        text = text.replace(matches[match], matches[match].startsWith('{TXT_KEY_') ? get_translation(current_language, matches[match].replace("{", "").replace("}", "")) : '')
     }
     return text
 }
