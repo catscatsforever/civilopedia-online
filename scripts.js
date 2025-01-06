@@ -5,6 +5,24 @@ var current_category = "cat_1"
 var current_section = "sec_1"
 var current_item = "item_37"
 var content_mapping = []
+let CATEGORIES = [
+    "PEDIA_HOME_PAGE",
+    "PEDIA_CONCEPTS_PAGE",
+    "PEDIA_TECHS_PAGE",
+    "PEDIA_UNITS_PAGE",
+    "PEDIA_PROMOTIONS_PAGE",
+    "PEDIA_BUILDINGS_PAGE",
+    "PEDIA_WONDERS_PAGE",
+    "PEDIA_POLICIES_PAGE",
+    "PEDIA_PEOPLE_PAGE",
+    "PEDIA_CIVS_PAGE",
+    "PEDIA_CITYSTATES_PAGE",
+    "PEDIA_TERRAINS_PAGE",
+    "PEDIA_RESOURCES_PAGE",
+    "PEDIA_IMPROVEMENTS_PAGE",
+    "PEDIA_RELIGION_PAGE",
+    "PEDIA_CONGRESS_PAGE"
+]
 
 var tag_mappings = {
     "NEWLINE": "<br>",
@@ -171,7 +189,7 @@ $(document).on("click", ".category-tab", function () {
 $(document).on("click", ".list-group-item", function () {
     current_section = current_category["sections"].find(item => item.id === $(this).parent().attr("value"));
     current_item = current_section["items"].find(item => item.id === $(this).attr("value"));
-    if (["item_1", "item_2", "item_3", "item_4", "item_5", "item_6", "item_7", "item_8", "item_9", "item_10", "item_11", "item_12", "item_13", "item_14", "item_15", "item_16"].includes(current_item["id"])) {
+    if (CATEGORIES.includes(current_item["id"])) {
         check_home_pages()
     }
     generate_view()
@@ -231,7 +249,7 @@ function switch_category() {
 }
 
 function check_home_pages() {
-    category_index = parseInt(current_item["id"].split("_")[1]) - 1
+    let category_index = CATEGORIES.indexOf(current_item["id"])
     current_category = data_mappings["categories"][category_index]
     current_section = current_category["sections"][0]
     current_item = current_section["items"][0]
