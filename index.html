@@ -224,7 +224,7 @@
                   {{#if strings.image}}
                   <div class="row">
                     <div class="item-image test-image text-center pe-0 col-12">
-                      <img class="img-fluid" src="{{strings.image}}" />
+                      <img class="img-fluid" src="{{strings.image}}" style="background-image:url(./assets/images/256x256frame.png); background-size: contain;"/>
                     </div>
                   </div>
                   {{/if}}
@@ -239,7 +239,7 @@
                         {{#each strings.leaders}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -259,7 +259,7 @@
                         {{#each strings.unique_units}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -279,7 +279,7 @@
                         {{#each strings.unique_buildings}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -299,7 +299,7 @@
                         {{#each strings.unique_improvements}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -596,7 +596,7 @@
                         {{#each strings.abilities}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -616,7 +616,7 @@
                         {{#each strings.required_resources}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -660,7 +660,7 @@
                         {{#each strings.revealed_by}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -680,7 +680,7 @@
                         {{#each strings.terrains_found_on}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -700,7 +700,7 @@
                         {{#each strings.improved_by}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -720,7 +720,7 @@
                         {{#each strings.features_on}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -740,7 +740,7 @@
                         {{#each strings.improves_resources}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -784,7 +784,7 @@
                         {{#each strings.civilization}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -804,7 +804,7 @@
                         {{#each strings.local_resources_required}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -824,7 +824,7 @@
                         {{#each strings.prerequisite_techs}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -844,7 +844,7 @@
                         {{#each strings.required_buildings}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -864,7 +864,7 @@
                         {{#each strings.specialists}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -884,7 +884,7 @@
                         {{#each strings.leads_to_techs}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -904,7 +904,7 @@
                         {{#each strings.units_unlocked}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -924,7 +924,7 @@
                         {{#each strings.buildings_unlocked}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -965,7 +965,7 @@
                         {{#each strings.projects_unlocked}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -985,7 +985,7 @@
                         {{#each strings.resources_revealed}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1005,7 +1005,7 @@
                         {{#each strings.worker_actions_allowed}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1025,7 +1025,7 @@
                         {{#each strings.becomes_obsolete_with}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1045,7 +1045,7 @@
                         {{#each strings.upgrade_unit}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1065,7 +1065,7 @@
                         {{#each strings.replaces}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1085,7 +1085,7 @@
                         {{#each strings.can_be_built_on}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1105,7 +1105,7 @@
                         {{#each strings.resources_found_on}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1149,7 +1149,7 @@
                         {{#each strings.required_policies}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1169,7 +1169,7 @@
                         {{#each strings.required_promotions}}
                         <div class="col-4 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
                         data-bs-title="{{translate (get_item_name this)}}">
-                          <img class="img-fluid" src="{{get_item_image this}}"/>
+                          <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                         </div>
                          {{/each}}
                       </div>
@@ -1305,7 +1305,7 @@
                 <div class="col-3 mb-5 px-0">
                   <div class="row">
                     <div class="item-image text-center col-12 pe-0">
-                      <img class="img-fluid" src="{{strings.image}}" />
+                      <img class="img-fluid" src="{{strings.image}}" style="background-image:url(./assets/images/256x256frame.png); background-size: contain;"/>
                     </div>
                   </div>
                 </div>
