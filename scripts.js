@@ -195,6 +195,15 @@ $(document).on("click", ".list-group-item", function () {
     generate_view()
 })
 
+$(document).on("click", ".info-box-content .small-image", function () {
+    let value = $(this).attr("value")
+    console.log(value)
+    if (value) {
+        search_article(value)
+        $(this).tooltip('dispose')
+    }
+})
+
 function switch_category() {
     switch (current_category["id"]) {
         case "cat_1":
@@ -296,4 +305,24 @@ function generate_accordion_list() {
 function get_info_from_item_id(item_id) {
     item_info = content_mapping.find(element => element.item_id === item_id);
     return item_info
+}
+
+function search_article(item_id) {
+    for (let cat of data_mappings.categories) {
+        for (let sec of cat.sections) {
+            for (let item of sec.items) {
+                if (item.id === item_id) {
+                    current_category = cat
+                    switch_category()
+                    current_section = sec
+                    current_item = item
+                    set_heading()
+                    generate_accordion_list()
+                    generate_view()
+                    return
+                }
+            }
+        }
+    }
+    console.log('search failure', item_id)
 }
