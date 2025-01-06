@@ -2024,7 +2024,7 @@ for row in GameInfo.GreatWorkSlots() do
 	local entry = { strings = {} };
 	entry.item_id = row.Type
 	entry.view_id = 'view_1'
-	entry.strings.image = 'assets/images/' .. row.EmptyIcon:sub(0, -5):gsub(' ','_') .. '.png'
+	entry.strings.image = 'assets/images/' .. Locale.ToLower(row.EmptyIcon:sub(0, -5)):gsub(' ','_') .. '.png'
 	entry.strings.title = row.EmptyToolTipText or nil
 	content[#content + 1] = entry;
 end
