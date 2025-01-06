@@ -168,6 +168,10 @@ Handlebars.registerHelper('parse_tags', function (aString) {
 function generate_view() {
     $("#content-area").empty()
     var item_data = content_mapping.find(item => item.item_id === current_item.id);
+    if (item_data.rand_image) {
+        let items = [].concat(...current_category.sections.map(s => s.items.map(i => get_info_from_item_id(i.id).strings.image))).filter(it => it)
+        item_data.strings.image = items[Math.floor(Math.random() * items.length)]
+    }
     var template = Handlebars.compile($("#" + item_data["view_id"]).html())
     $("#content-area").append(template(item_data))
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
