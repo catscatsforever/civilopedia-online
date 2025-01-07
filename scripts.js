@@ -104,16 +104,19 @@ document.addEventListener("DOMContentLoaded", async function () {
             content_mapping = data;
         })
         .catch(error => console.error(`Error loading ${language} content file:`, error));
-    current_category = data_mappings["categories"][0]
-    current_section = current_category["sections"][0]
-    current_item = current_section["items"][0]
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
-    generate_view()
+    if (!search_article(location.hash.substring(1))) {
+        console.log('DEF')
+        current_category = data_mappings["categories"][0]
+        current_section = current_category["sections"][0]
+        current_item = current_section["items"][0]
+        generate_view()
+        set_heading()
+        generate_accordion_list()
+    }
     create_listeners()
-    set_heading()
-    generate_accordion_list()
     $("body").show()
 });
 
@@ -178,6 +181,7 @@ function generate_view() {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
+    history.pushState({}, "", `#${current_item.id}`)
 }
 
 $(document).on("click", ".category-tab", function () {
@@ -323,10 +327,11 @@ function search_article(item_id) {
                     set_heading()
                     generate_accordion_list()
                     generate_view()
-                    return
+                    return true
                 }
             }
         }
     }
     console.log('search failure', item_id)
+    return false
 }
