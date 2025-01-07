@@ -2,7 +2,12 @@
     font-family: "Tw Cen MT";
     src: url("./assets/fonts/Tw\ Cen\ MT.ttf");
 }
-
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Futura'), url('https://fonts.cdnfonts.com/s/37773/FUTURA55REGULAR.woff') format('woff');
+}
 #category-dropdown,
 #section-dropdown,
 #item-dropdown {
@@ -18,7 +23,7 @@
 body {
     color: rgba(255, 255, 200, 255);
     background-color: #05080B;
-    font-family: "Tw Cen MT";
+    font-family: "Futura", "Tw Cen MT", sans-serif;
     line-height: 19px;
     /* line-height: 1.8vh; */
 }
