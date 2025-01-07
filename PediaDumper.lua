@@ -1699,7 +1699,7 @@ for thisFeature in GameInfo.FakeFeatures() do
 	if thisFeature.Impassable then
 		entry.strings.movement_cost = "TXT_KEY_PEDIA_IMPASSABLE"
 	else
-		entry.strings.movement_cost = tostring( moveCost ).."[ICON_MOVES]"
+		entry.strings.movement_cost = '{'..tostring( moveCost ).."}[ICON_MOVES]"
 	end
 	local combatModifier = thisFeature.Defense;
 	local combatModString = "";
