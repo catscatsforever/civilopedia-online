@@ -120,9 +120,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     $("body").show()
 });
 
-function get_translation(language, key) {
+function get_translation(language, key, gcase = 0) {
     if (key in translations[language]) {
-        return parse_tags(translations[language][key].split('|')[0])
+        return parse_tags(translations[language][key].split('|')[gcase])
     }
     else {
         return parse_tags(key)
@@ -132,13 +132,15 @@ function get_translation(language, key) {
 
 function parse_tags(text) {
     if (!text) return;
-    text = text.toString().replace(/\[([^\]]+)\]/g, (_, a) => tag_mappings[a] ? `${tag_mappings[a]}` : ``)
+    text = text.toString()
     var matches = text.match(/{([^}]*)}/g);
-    for (match in matches) {
-
-        text = text.replace(matches[match], matches[match].startsWith('{TXT_KEY_') ? get_translation(current_language, matches[match].replace("{", "").replace("}", "")) : '')
+    for (let match in matches) {
+        let gcase = 0
+        let s  = matches[match].replaceAll(/\[([0-9])\]}$/g, (m) => {gcase = parseInt(m[1]) - 1; return '}'})
+        //console.log(matches[match], s, gcase)
+        text = text.replace(matches[match], s.startsWith('{TXT_KEY_') ? get_translation(current_language, s.replace("{", "").replace("}", ""), gcase) : '')
     }
-    return text
+    return text.replace(/\[([^\]]+)\]/g, (_, a) => tag_mappings[a] ? `${tag_mappings[a]}` : ``)
 }
 
 function create_listeners() {
