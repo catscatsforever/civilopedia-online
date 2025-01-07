@@ -84,12 +84,14 @@ var tag_mappings = {
 document.addEventListener("DOMContentLoaded", async function () {
     $("body").hide()
     current_language = (sessionStorage.getItem("locale") || "en");
-    await fetch("./assets/data/translations_" + current_language + ".json")
-        .then(response => response.json())
-        .then(data => {
-            translations[current_language] = data;
-        })
-        .catch(error => console.error(`Error loading ${language} translation file:`, error));
+    for (const lang of ['en', 'ru']) {
+        await fetch("./assets/data/translations_" + lang + ".json")
+            .then(response => response.json())
+            .then(data => {
+                translations[lang] = data;
+            })
+            .catch(error => console.error(`Error loading ${language} translation file:`, error));
+    }
     await fetch("./assets/data/structure.json")
         .then(response => response.json())
         .then(data => {
@@ -142,8 +144,7 @@ function create_listeners() {
         button.addEventListener('click', function () {
             current_language = this.value
             sessionStorage.setItem("locale", current_language);
-            $("body").hide()
-            location.reload();
+            search_article(current_item.id)
         });
     });
 }
