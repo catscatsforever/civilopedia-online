@@ -196,10 +196,8 @@ function generate_view(ignoreTopicList) {
     history.pushState({}, "", `#${current_item.id}`)
     if (!ignoreTopicList && current_item.id !== listOfTopicsViewed[listOfTopicsViewed.length - 1]?.id) {
         currentTopic++
-        console.log('PRE', listOfTopicsViewed, currentTopic)
         listOfTopicsViewed = listOfTopicsViewed.slice(0, currentTopic)
         listOfTopicsViewed.push(current_item)
-        console.log('POST', listOfTopicsViewed)
     }
 }
 
@@ -235,70 +233,21 @@ $(document).on("click", ".info-box-content .small-image", function () {
 $(document).on("click", '#backbutton', () => {
     if (currentTopic > 0) {
         currentTopic--
-        current_item = listOfTopicsViewed[currentTopic]
-        generate_view(true)
+        search_article(listOfTopicsViewed[currentTopic].id, true)
     }
 })
 
 $(document).on("click", '#forwardbutton', () => {
     if (currentTopic < listOfTopicsViewed.length - 1) {
         currentTopic++
-        current_item = listOfTopicsViewed[currentTopic]
-        generate_view(true)
+        search_article(listOfTopicsViewed[currentTopic].id, true)
     }
 })
 
 function switch_category() {
-    switch (current_category["id"]) {
-        case "cat_1":
-            document.querySelector('#home-tab').click();
-            break;
-        case "cat_2":
-            document.querySelector('#concepts-tab').click();
-            break;
-        case "cat_3":
-            document.querySelector('#tech-tab').click();
-            break;
-        case "cat_4":
-            document.querySelector('#units-tab').click();
-            break;
-        case "cat_5":
-            document.querySelector('#promos-tab').click();
-            break;
-        case "cat_6":
-            document.querySelector('#buildings-tab').click();
-            break;
-        case "cat_7":
-            document.querySelector('#wonders-tab').click();
-            break;
-        case "cat_8":
-            document.querySelector('#social-tab').click();
-            break;
-        case "cat_9":
-            document.querySelector('#great-tab').click();
-            break;
-        case "cat_10":
-            document.querySelector('#civs-tab').click();
-            break;
-        case "cat_11":
-            document.querySelector('#cities-tab').click();
-            break;
-        case "cat_12":
-            document.querySelector('#terrain-tab').click();
-            break;
-        case "cat_13":
-            document.querySelector('#resources-tab').click();
-            break;
-        case "cat_14":
-            document.querySelector('#improvements-tab').click();
-            break;
-        case "cat_15":
-            document.querySelector('#religion-tab').click();
-            break;
-        case "cat_16":
-            document.querySelector('#congress-tab').click();
-            break;
-    }
+    $('button.active.category-tab').toggleClass('active');
+    $(`button.category-tab[value="${current_category.id}"]`).toggleClass('active');
+    set_heading()
 }
 
 function check_home_pages() {
@@ -352,7 +301,7 @@ function get_info_from_item_id(item_id) {
     return item_info
 }
 
-function search_article(item_id) {
+function search_article(item_id, ignoreTopicList) {
     for (let cat of data_mappings.categories) {
         for (let sec of cat.sections) {
             for (let item of sec.items) {
@@ -361,9 +310,8 @@ function search_article(item_id) {
                     switch_category()
                     current_section = sec
                     current_item = item
-                    set_heading()
                     generate_accordion_list()
-                    generate_view()
+                    generate_view(ignoreTopicList)
                     return true
                 }
             }
