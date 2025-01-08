@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
     if (!search_article(location.hash.substring(1))) {
-        console.log('DEF')
         current_category = data_mappings["categories"][0]
         current_section = current_category["sections"][0]
         current_item = current_section["items"][0]
@@ -209,6 +208,7 @@ $(document).on("click", ".info-box-content .small-image", function () {
     let value = $(this).attr("value")
     console.log(value)
     if (value) {
+        value = get_info_from_item_id(value)?.strings.shortcut ?? value
         search_article(value)
         $(this).tooltip('dispose')
     }

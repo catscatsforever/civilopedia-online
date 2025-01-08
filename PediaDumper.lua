@@ -2070,6 +2070,13 @@ for row in GameInfo.Builds() do
 	entry.strings.image = string.format('assets/images/%s/i_%d.png', row.IconAtlas, row.IconIndex)
 	atlasList[row.IconAtlas] = true
 	entry.strings.title = row.Description or nil
+	if row.RouteType then
+		entry.strings.shortcut = GameInfo.Routes[row.RouteType].Type
+	elseif row.ImprovementType then
+		entry.strings.shortcut = GameInfo.Improvements[row.ImprovementType].Type
+	else -- we are a choppy thing
+		entry.strings.shortcut = 'CONCEPT_WORKERS_CLEARINGLAND'
+	end
 	content[#content + 1] = entry;
 end
 for row in GameInfo.GreatWorkSlots() do
@@ -2078,6 +2085,7 @@ for row in GameInfo.GreatWorkSlots() do
 	entry.view_id = 'view_1'
 	entry.strings.image = 'assets/images/' .. Locale.ToLower(row.EmptyIcon:sub(0, -5)):gsub(' ','_') .. '.png'
 	entry.strings.title = row.EmptyToolTipText or nil
+	entry.strings.shortcut = 'CONCEPT_CULTURE_GREAT_WORKS'
 	content[#content + 1] = entry;
 end
 
