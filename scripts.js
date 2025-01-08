@@ -5,6 +5,8 @@ var current_category = "cat_1"
 var current_section = "sec_1"
 var current_item = "item_37"
 var content_mapping = []
+let listOfTopicsViewed = []
+let currentTopic = -1
 let CATEGORIES = [
     "PEDIA_HOME_PAGE",
     "PEDIA_CONCEPTS_PAGE",
@@ -179,7 +181,7 @@ Handlebars.registerHelper('parse_tags', function (aString) {
 })
 
 
-function generate_view() {
+function generate_view(ignoreTopicList) {
     $("#content-area").empty()
     var item_data = content_mapping.find(item => item.item_id === current_item.id);
     if (item_data.rand_image) {
@@ -192,6 +194,13 @@ function generate_view() {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
     history.pushState({}, "", `#${current_item.id}`)
+    if (!ignoreTopicList && current_item.id !== listOfTopicsViewed[listOfTopicsViewed.length - 1]?.id) {
+        currentTopic++
+        console.log('PRE', listOfTopicsViewed, currentTopic)
+        listOfTopicsViewed = listOfTopicsViewed.slice(0, currentTopic)
+        listOfTopicsViewed.push(current_item)
+        console.log('POST', listOfTopicsViewed)
+    }
 }
 
 $(document).on("click", ".category-tab", function () {
@@ -220,6 +229,22 @@ $(document).on("click", ".info-box-content .small-image", function () {
         value = get_info_from_item_id(value)?.strings.shortcut ?? value
         search_article(value)
         $(this).tooltip('dispose')
+    }
+})
+
+$(document).on("click", '#backbutton', () => {
+    if (currentTopic > 0) {
+        currentTopic--
+        current_item = listOfTopicsViewed[currentTopic]
+        generate_view(true)
+    }
+})
+
+$(document).on("click", '#forwardbutton', () => {
+    if (currentTopic < listOfTopicsViewed.length - 1) {
+        currentTopic++
+        current_item = listOfTopicsViewed[currentTopic]
+        generate_view(true)
     }
 })
 

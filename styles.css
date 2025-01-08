@@ -413,3 +413,33 @@ body {
     /* prevent horizontal scrollbar */
     overflow-x: hidden;
 }
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#backbutton, #forwardbutton {
+    background-color: inherit;
+    border: none;
+    margin-bottom: -3px;
+    margin-top: -3px;
+}
+#backbutton:hover, #forwardbutton:hover {
+    filter: drop-shadow(0 0 4px #ffffffff);
+}
+#backbutton:active, #forwardbutton:active {
+    transform: scale(0.9);
+}
+
+.tt-no-bg .tooltip-inner {
+    background: #0000;
+    color: rgba(255, 255, 200, 255);
+    filter: drop-shadow(0 0 5px #ffffffff);
+    font-family: "Futura", "Tw Cen MT", sans-serif;
+    font-size: 1rem;
+}
+
+.img-fluid {
+    transform: scale(1.2);
+}
