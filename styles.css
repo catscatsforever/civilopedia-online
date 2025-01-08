@@ -376,3 +376,40 @@ body {
 .nav-link:hover img[src*="category_congress_icon"] {
     content: url(./assets/images/category_congress_icon_active.png);
 }
+
+#pedia-search {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    width: 150px;
+}
+
+.search-area {
+    display: inline-grid;
+}
+
+.ui-menu-item-wrapper {
+    background-color: #041514;
+    color: rgba(255, 255, 200, 255);
+    font-family: "Futura", "Tw Cen MT", sans-serif;
+}
+
+.ui-menu-item-wrapper.ui-state-active {
+    background: #0C3631;
+    border: none;
+    color: rgba(255, 255, 200, 255);
+    font-weight: inherit;
+    margin: 0;
+}
+
+.ui-widget.ui-widget-content {
+    background-color: #041514;
+    border: 1px solid #E3C37D;
+}
+
+.ui-autocomplete {
+    max-height: calc(max(30vh, 200px));
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}

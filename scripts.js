@@ -116,6 +116,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         generate_accordion_list()
     }
     create_listeners()
+    $( "#pedia-search" ).autocomplete({
+        source: content_mapping.map((item) => {return {label: get_translation(current_language, item.strings.title), id: item.item_id}}),
+        select: (e, ui) => {search_article(get_info_from_item_id(ui.item.id)?.strings.shortcut ?? ui.item.id)}
+    });
     $("body").show()
 });
 
@@ -148,7 +152,12 @@ function create_listeners() {
         button.addEventListener('click', function () {
             current_language = this.value
             sessionStorage.setItem("locale", current_language);
+            $('[data-bs-toggle="tooltip"]').tooltip('dispose')
             search_article(current_item.id)
+            $( "#pedia-search" ).autocomplete('option', {
+                source: content_mapping.map((item) => {return {label: get_translation(current_language, item.strings.title), id: item.item_id}}),
+                select: (e, ui) => {search_article(get_info_from_item_id(ui.item.id)?.strings.shortcut ?? ui.item.id)}
+            });
         });
     });
 }
@@ -279,6 +288,7 @@ function set_heading() {
     $("#current_heading").text(get_translation(current_language, current_category["label"]));
     $("#civilopedia-title").text(get_translation(current_language, "TXT_KEY_CIVILOPEDIA"));
     $("#language-dropdown-desktop").text(get_translation(current_language, "TXT_KEY_OPSCREEN_SELECT_LANG"));
+    $("#pedia-search").attr('placeholder', get_translation(current_language, "TXT_KEY_SEARCH"));
 }
 
 function generate_accordion_list() {
