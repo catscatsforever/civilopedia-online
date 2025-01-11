@@ -394,8 +394,17 @@ structure.categories[cat.home].sections[1].items = {}
 for k in next, content do
 	content[k].view_id = 'view_3'
 	structure.categories[cat.home].sections[1].items[#structure.categories[cat.home].sections[1].items + 1] = {
-		id = content[k].item_id,
+		id = k == 1 and content[k].item_id or content[k].item_id .. '_SH',
 		label = 'TXT_KEY_PEDIA_CATEGORY_' .. tostring(k) .. '_LABEL'
+	}
+end
+for k, i in next, cat do
+	content[#content + 1] = {
+		item_id = content[i].item_id .. '_SH',
+		view_id = 'view_3',
+		strings = {
+			shortcut = content[i].item_id
+		}
 	}
 end
 ------------------------------

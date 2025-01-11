@@ -212,12 +212,7 @@ $(document).on("click", ".category-tab", function () {
 });
 
 $(document).on("click", ".list-group-item", function () {
-    current_section = current_category["sections"].find(item => item.id === $(this).parent().attr("value"));
-    current_item = current_section["items"].find(item => item.id === $(this).attr("value"));
-    if (CATEGORIES.includes(current_item["id"])) {
-        check_home_pages()
-    }
-    generate_view()
+    search_article(get_info_from_item_id($(this).attr("value")).item_id);
 })
 
 $(document).on("click", ".info-box-content .small-image", function () {
@@ -248,14 +243,6 @@ function switch_category() {
     $('button.active.category-tab').toggleClass('active');
     $(`button.category-tab[value="${current_category.id}"]`).toggleClass('active');
     set_heading()
-}
-
-function check_home_pages() {
-    let category_index = CATEGORIES.indexOf(current_item["id"])
-    current_category = data_mappings["categories"][category_index]
-    current_section = current_category["sections"][0]
-    current_item = current_section["items"][0]
-    switch_category()
 }
 
 function set_heading() {
@@ -297,7 +284,8 @@ function generate_accordion_list() {
 
 
 function get_info_from_item_id(item_id) {
-    item_info = content_mapping.find(element => element.item_id === item_id);
+    let item_info = content_mapping.find(element => element.item_id === item_id);
+    if (item_info?.strings.shortcut) item_info = content_mapping.find(element => element.item_id === item_info.strings.shortcut);
     return item_info
 }
 
