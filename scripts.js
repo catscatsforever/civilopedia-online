@@ -212,7 +212,8 @@ $(document).on("click", ".category-tab", function () {
 });
 
 $(document).on("click", ".list-group-item", function () {
-    search_article(get_info_from_item_id($(this).attr("value")).item_id);
+    let item = get_info_from_item_id($(this).attr("value"));
+    search_article(item?.strings.shortcut ?? item.item_id);
 })
 
 $(document).on("click", ".info-box-content .small-image", function () {
@@ -285,7 +286,6 @@ function generate_accordion_list() {
 
 function get_info_from_item_id(item_id) {
     let item_info = content_mapping.find(element => element.item_id === item_id);
-    if (item_info?.strings.shortcut) item_info = content_mapping.find(element => element.item_id === item_info.strings.shortcut);
     return item_info
 }
 
