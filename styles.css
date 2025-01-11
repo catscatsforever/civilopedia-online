@@ -186,7 +186,7 @@ body {
     color: rgba(255, 255, 200, 255) !important;
 }
 
-.list-group-item:hover {
+.list-group-item:hover, .dropdown-item:hover {
     border-image: url("./assets/images/civilopediasidebuttons272x22hl.png");
     border-image-width: 8px 0px;
     border-image-slice: 30% 40% fill;
@@ -442,4 +442,12 @@ body {
 
 .img-fluid {
     transform: scale(1.2);
+}
+
+.dropdown-menu {
+    background: #041514;
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 200, 255);
 }
