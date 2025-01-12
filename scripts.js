@@ -85,7 +85,7 @@ var tag_mappings = {
 
 document.addEventListener("DOMContentLoaded", async function () {
     $("body").hide()
-    current_language = (sessionStorage.getItem("locale") || "en");
+    current_language = (localStorage.getItem("locale") || "en");
     for (const lang of ['en', 'ru']) {
         await fetch("./assets/data/translations_" + lang + ".json")
             .then(response => response.json())
@@ -164,7 +164,7 @@ function create_listeners() {
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
             current_language = this.value
-            sessionStorage.setItem("locale", current_language);
+            localStorage.setItem("locale", current_language);
             $('[data-bs-toggle="tooltip"]').tooltip('dispose')
             search_article(current_item.id)
             $( "#pedia-search" ).autocomplete('option', {
