@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script type="text/javascript" src="assets/data/patch_notes.js"></script>
     <script src="scripts.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -1387,6 +1388,28 @@
               {{/if}}
             </div>
         </script>
+    <script id="view_4" type="text/html">
+      <div class="container-fluid py-4">
+        <div class="row mt-3 gx-5">
+          <div class="col-12">
+            <div class="text-center item-title py-2">
+              {{translate strings.title}}
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 gx-5">
+          <div class="col-12">
+            <div class="row align-items-start">
+              <div class="col-12">
+                <div class="bordered-text info-box-content patch-changelog">
+                  {{{translate strings.text}}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
 
     <script id="view_2" type="text/html">
           <div class="container-fluid py-4">

@@ -92,23 +92,27 @@ document.addEventListener("DOMContentLoaded", async function () {
             .then(data => {
                 translations[lang] = data;
             })
-            .catch(error => console.error(`Error loading ${language} translation file:`, error));
+            .catch(error => console.error(`Error loading ${lang} translation file:`, error));
     }
     await fetch("./assets/data/structure.json")
         .then(response => response.json())
         .then(data => {
             data_mappings = data;
         })
-        .catch(error => console.error(`Error loading ${language} structure file:`, error));
+        .catch(error => console.error(`Error loading structure.json`, error));
     await fetch("./assets/data/content.json")
         .then(response => response.json())
         .then(data => {
             content_mapping = data;
         })
-        .catch(error => console.error(`Error loading ${language} content file:`, error));
+        .catch(error => console.error(`Error loading content.json`, error));
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
+    content_mapping.push(...Object.entries(patchNotes.ru).map(([k, v]) => {return {item_id: `PATCH${k}`, view_id: 'view_4', strings: {title: `TXT_KEY_PATCH_${k}_TITLE`, text: `TXT_KEY_PATCH_${k}_SUMMARY`}}}))
+    data_mappings.categories[0].sections.push({label: 'TXT_KEY_PATCH_NOTES', items: [...Object.entries(patchNotes.ru).map(([k, v]) => {return {id: `PATCH${k}`, label: `TXT_KEY_PATCH_${k}_TITLE`}})].sort((a, b) => -a.label.localeCompare(b.label, undefined, {numeric: true}))})
+    translations['en'] = {...translations['en'], ...patchTxtTags.en, ...Object.entries(patchNotes.en).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Version ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
+    translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     if (!search_article(location.hash.substring(1))) {
         current_category = data_mappings["categories"][0]
         current_section = current_category["sections"][0]
@@ -133,6 +137,13 @@ function get_translation(language, key, gcase = 0) {
         return parse_tags(key)
     }
 
+}
+
+function addMarkup(text) {
+    return text
+        .replaceAll(/^( *)[-|*] (.+)$/gm, (m, c1, c2) => `${'<ul>'.repeat(c1.length / 2)}<li>\n${c2}</li>${'</ul>'.repeat(c1.length / 2)}`)  // bullet list item -/* with indent
+        .replaceAll(/^( *)(#{1,3}) (.+)$/gm, (m, c1, c2, c3) => `<h${c2.length}>\n${c3}</h${c2.length}>`)  // headers # ## ###
+        .replaceAll(/^( *)-# (.+)$/gm, (m, c1, c2) => `<sub>\n${c2}</sub>`)  // subtext -#
 }
 
 function parse_tags(text) {

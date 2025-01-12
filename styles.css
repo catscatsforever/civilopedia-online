@@ -451,3 +451,13 @@ body {
 .dropdown-item {
     color: rgba(255, 255, 200, 255);
 }
+
+.patch-changelog ul {
+    margin-bottom: 0;
+}
+
+.patch-changelog sub {
+    color: #ff6363;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
