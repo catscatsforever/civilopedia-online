@@ -210,6 +210,7 @@ function generate_view(ignoreTopicList) {
         listOfTopicsViewed = listOfTopicsViewed.slice(0, currentTopic)
         listOfTopicsViewed.push(current_item)
     }
+    document.title = get_translation(current_language, 'TXT_KEY_CIVILOPEDIA') + ' · ' + get_translation(current_language, item_data.strings.title)
 }
 
 $(document).on("click", ".category-tab", function () {
