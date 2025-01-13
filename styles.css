@@ -461,3 +461,9 @@ body {
     font-size: 0.8rem;
     line-height: 2rem;
 }
+
+.strike {
+    text-decoration: underline;
+    text-underline-offset: -0.6ex;
+    text-decoration-skip-ink: none;
+}
