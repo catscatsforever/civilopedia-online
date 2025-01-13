@@ -7,24 +7,6 @@ var current_item = "item_37"
 var content_mapping = []
 let listOfTopicsViewed = []
 let currentTopic = -1
-let CATEGORIES = [
-    "PEDIA_HOME_PAGE",
-    "PEDIA_CONCEPTS_PAGE",
-    "PEDIA_TECHS_PAGE",
-    "PEDIA_UNITS_PAGE",
-    "PEDIA_PROMOTIONS_PAGE",
-    "PEDIA_BUILDINGS_PAGE",
-    "PEDIA_WONDERS_PAGE",
-    "PEDIA_POLICIES_PAGE",
-    "PEDIA_PEOPLE_PAGE",
-    "PEDIA_CIVS_PAGE",
-    "PEDIA_CITYSTATES_PAGE",
-    "PEDIA_TERRAINS_PAGE",
-    "PEDIA_RESOURCES_PAGE",
-    "PEDIA_IMPROVEMENTS_PAGE",
-    "PEDIA_RELIGION_PAGE",
-    "PEDIA_CONGRESS_PAGE"
-]
 
 var tag_mappings = {
     "NEWLINE": "<br>",
@@ -114,12 +96,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     translations['en'] = {...translations['en'], ...patchTxtTags.en, ...Object.entries(patchNotes.en).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Version ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     if (!search_article(location.hash.substring(1))) {
-        current_category = data_mappings["categories"][0]
-        current_section = current_category["sections"][0]
-        current_item = current_section["items"][0]
-        generate_view()
-        set_heading()
-        generate_accordion_list()
+        currentTopic++
+        listOfTopicsViewed.push(get_info_from_item_id('PEDIA_HOME_PAGE'))
+        history.replaceState({list: listOfTopicsViewed, index: currentTopic}, '', '#PEDIA_HOME_PAGE');
+        search_article('PEDIA_HOME_PAGE', true)
     }
     create_listeners()
     $( "#pedia-search" ).autocomplete({
@@ -208,11 +188,11 @@ function generate_view(ignoreTopicList) {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getOrCreateInstance(tooltipTriggerEl, {title: get_translation(current_language, tooltipTriggerEl.getAttribute("data-bs-title")), trigger: 'hover'}))
 
-    history.pushState({}, "", `#${current_item.id}`)
-    if (!ignoreTopicList && current_item.id !== listOfTopicsViewed[listOfTopicsViewed.length - 1]?.id) {
+    if (!ignoreTopicList) {
         currentTopic++
         listOfTopicsViewed = listOfTopicsViewed.slice(0, currentTopic)
         listOfTopicsViewed.push(current_item)
+        history.pushState({list: listOfTopicsViewed, index: currentTopic}, "", `#${current_item.id}`)
     }
     document.title = get_translation(current_language, 'TXT_KEY_CIVILOPEDIA') + ' · ' + get_translation(current_language, item_data.strings.title)
 }
@@ -224,7 +204,6 @@ $(document).on("click", ".category-tab", function () {
     set_heading()
     generate_accordion_list()
     generate_view()
-
 });
 
 $(document).on("click", ".list-group-item", function () {
@@ -245,16 +224,23 @@ $(document).on("click", ".info-box-content .small-image", function () {
 $(document).on("click", '#backbutton', () => {
     if (currentTopic > 0) {
         currentTopic--
-        search_article(listOfTopicsViewed[currentTopic].id, true)
+        history.back()
     }
 })
 
 $(document).on("click", '#forwardbutton', () => {
     if (currentTopic < listOfTopicsViewed.length - 1) {
         currentTopic++
-        search_article(listOfTopicsViewed[currentTopic].id, true)
+        history.forward()
     }
 })
+
+window.addEventListener("popstate", (e) => {
+    currentTopic = e.state.index
+    if (!search_article(location.hash.substring(1), true)) {
+        search_article('PEDIA_HOME_PAGE', true)
+    }
+});
 
 function switch_category() {
     $('button.active.category-tab').toggleClass('active');
@@ -310,12 +296,13 @@ function search_article(item_id, ignoreTopicList) {
         for (let sec of cat.sections) {
             for (let item of sec.items) {
                 if (item.id === item_id) {
+                    let bSamePage = current_item.id === item.id
                     current_category = cat
                     switch_category()
                     current_section = sec
                     current_item = item
                     generate_accordion_list()
-                    generate_view(ignoreTopicList)
+                    generate_view(ignoreTopicList || bSamePage)
                     return true
                 }
             }
