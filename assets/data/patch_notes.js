@@ -284,16 +284,16 @@ const patchNotes = {
 `,
     },
     en: {
-    "10.0": `
-- Wall: Provides 25 HP to the city.  
-- Ishtar Gate: Provides 50 HP to the city.  
-- Charcoal Kiln: Provides +1 Production. Can be built without restrictions.  
+        "10.0": `
+- Walls: Provides 25 HP to the city.  
+- Walls of Babylon: Provides 50 HP to the city.  
+- Charcoal Plant: Provides +1 Production. Can be built without restrictions.  
 - Great Mosque of Djenné: Provides +6 Faith, +3 Culture, and +1 Happiness. Does not grant a free Mosque in the city where the wonder is built.  
 - Borobudur: Provides +3 Faith in the city where the wonder is built.  
 - Venetian Arsenal: A new World Wonder. Unlocked at Compass. Requires Sailing to build. Cost: 201 Production. Provides +2 Culture in the city, +2 Production, and +1 Production on water tiles worked by the city. All military naval units gain the "Supply" promotion, allowing them to heal in enemy territory.  
 - Porcelain Tower: No longer provides a Science bonus from scientific buildings. Provides +30% Science in the city and two specialist slots for Great Scientists.  
 - Louvre: No longer requires Navigation to build.  
-- Golden Shield: Halves the Internet bonus for other civilizations.  
+- Great Firewall: Halves the Internet bonus for other civilizations.  
 - City-States: Cannot queue workers for production until Turn 10.  
 - Austria: Gains 40 Gold upon meeting a City-State.  
 - Denmark: Ski Infantry is now unlocked at "Metallurgy" instead of "Rifling."  
@@ -332,7 +332,7 @@ const patchNotes = {
   - “Holy Order”: -50% Faith cost for purchasing Missionaries and Inquisitors; Inquisitors can annex neutral tiles adjacent to your land.  
   - “Reliquary”: Grants 70 Faith and 70 Culture each time a Great Person is used and disappears.  
 - New and updated Reformation Beliefs:  
-  - ~~“ Heathen Conversion”: Missionaries convert adjacent Barbarian units to your civilization.~~  
+  - ~~“Heathen Conversion”: Missionaries convert adjacent Barbarian units to your civilization.~~  
   - ~~“Evangelism”: Missionary religion spread reduces existing pressure from other religions.~~  
   - ~~“Charitable Missions”: Influence gained from gold gifts to City-States increases by 30%.~~  
   - “Jesuit Education”: Universities (100 Faith), Schools (250 Faith), and Laboratories (350 Faith) can be purchased with Faith and provide +2 Science. Available only to the religion’s founder. The cost of Universities increases to 150 Faith after entering the Industrial Era.  
@@ -343,7 +343,7 @@ const patchNotes = {
   - “Symbolism”: Initiates or extends a Golden Age by 1 turn each time a Great Person is used; units gain +10% combat strength during this time.  
   - Note: The amount of Golden Age points required for the next Golden Age does not increase.  
 - World Congress Resolution “World Trade Organization”: External trade routes yield 50% more Gold.  
-- World Congress Resolution “Invest in Product Manufacturing”: The selected luxury resource yields 50% more Happiness. Cannot ban and invest in the same luxury resource simultaneously.  
+- World Congress Resolution “Invest in Luxury”: The selected luxury resource yields 50% more Happiness. Cannot ban and invest in the same luxury resource simultaneously.  
 - Mines can be constructed after researching “Agriculture” (from the beginning of the game).  
 - Mines on luxury resources can be constructed after researching “Bronze Working.”  
 - Hovering over a technology reveals how many players you’ve met who have already researched it.  
@@ -361,7 +361,7 @@ const patchNotes = {
   - Opener: Increases the number of Research Agreements available by 1 and boosts the Science gained from them by 25%. Unlocks the construction of the Porcelain Tower.  
   - “Free Thought”: Grants +1 Science from every Trading Post, Jungle, Kasbah, and Château; +10% Science from Universities.  
 - Order Ideology:  
-  - “Worker Faculties” (Tier 1): Factories and Charcoal Kilns increase Science in the city by 5.  
+  - “Workers' Faculties” (Tier 1): Factories and Charcoal Kilns increase Science in the city by 5.  
   - “Resettlement” (Tier 3): Increases population by 2 in all cities. +1 Happiness for every city in your empire.  
 - Autocracy Ideology:  
   - ~~“Capitalism” (Tier 1): +1 Happiness for each Market, Bank, and Stock Exchange.~~  
@@ -369,7 +369,7 @@ const patchNotes = {
   - “Fascism” (Tier 1): +10 Happiness.  
 - Freedom Ideology:  
   - ~~“Economic Union” (Tier 1): +6 Gold from all trade routes with civilizations that adopted the same ideology.~~  
-  - ~~“Strengthened Borders” (Tier 1): +1 Happiness per Wall, Castle, Arsenal, and Military Base.~~  
+  - ~~“Fortified Borders” (Tier 1): +1 Happiness per Wall, Castle, Arsenal, and Military Base.~~  
   - “Capitalism” (Tier 1): +1 Happiness for each Market, Bank, and Stock Exchange.  
   - “Volunteer Army” (Tier 1): Allows the maintenance of 10 units for free. Immediately receive 4 Foreign Legion units.  
   - “Universal Suffrage” (Tier 2): Specialist Unhappiness is halved. Golden Ages last 50% longer.  
@@ -417,10 +417,10 @@ const patchNotes = {
 - “Cultural Ruin”: Grants 13 Culture (available after turn 10).  
 - Artillery becomes obsolete upon researching Rocketry.  
 - Rocket Artillery melee combat strength reduced to 40.  
-- Coal Plant: Provides +1 Production on tiles with Coal.  
+- Charcoal Plant: Provides +1 Production on tiles with Coal.  
 - Recycling Center: Provides +1 Production on tiles with Aluminum.  
 - Unique ability of the “Oracle” reworked: Reduces the amount of Culture required for adopting social policies by 10%.  
-- Unique ability of “Christ the Redeemer” reworked: Allows free adoption of one social policy.  
+- Unique ability of “Cristo Redentor” reworked: Allows free adoption of one social policy.  
 - “Aristocracy”: Grants +1 Production in the capital, +15% Production when constructing National Wonders, and +1 Happiness for every 10th citizen in a city.  
 - Completing the Honor policy tree removes the limit of 30 Culture from killing enemy units.  
 - “Flourishing of the Arts”: Old bonus restored.  
@@ -436,12 +436,12 @@ const patchNotes = {
 `,
         "10.1a-c": `
 - Added a new ruin that expands the territory of one of your cities by 3 tiles.  
-- City-states do not queue workers for production until turn 20.  
+- City-States do not queue workers for production until turn 20.  
 - Science from cultural pressure on AI players has been halved.  
 - EUI fixes:  
   - When adopting social policies that grant Culture from buildings, the additional Culture from the policy is displayed on the buildings.  
   - Added tooltip for the "Their Finest Hour" ideological tenet bonus on defensive structures.  
-- Fixed a bug where constructing the CIA and leveling up a diplomat did not increase their vision radius.  
+- Fixed a bug where constructing the National Intelligence Agency and leveling up a diplomat did not increase their vision radius.  
 - Fixed incorrect display of strength and fortification combat bonuses for ranged units.  
 - Fixed a bug where the Shoshone combat strength bonus on their own territory did not apply to ships.  
 - Fixed a bug where defensive bonuses (e.g., Shoshone bonus, Himeji Castle, Defender of the Faith, Homeland Defense) did not work for ranged units.  
@@ -451,17 +451,17 @@ const patchNotes = {
 - The "Military Strength" graph now correlates with combat strength values in demographics.  
 - Added a new "Effective Science per Turn" graph, which shows science per turn normalized to a single city (i.e., the values on the graph are calculated as if you had only one city). This allows for better comparison of technology research speeds between players.  
 - Helicopters can now fly over water and engage in combat with naval units (both ways).  
-- Updated the "Rare Resource Mine" icon in the technology tree.  
+- Updated the "Luxury Resource Mine" icon in the technology tree.  
 - The ruin granting "Additional Territory for the Nearest City" cannot be obtained without owning a city.  
 - Fixed a bug where England did not receive an additional spy when someone entered the Industrial Era if the "Underground Sect" reformation belief was adopted before anyone reached the Industrial Era.  
 - Upon game completion (victory/defeat/scrap screen), the map is revealed along with hidden strategic resources.  
 `,
         "10.2": `
-- Christo Redeemer: +5 Culture. Provides +3 Culture and +3 Faith from Great Person improvements and monuments in the city.  
+- Cristo Redentor: +5 Culture. Provides +3 Culture and +3 Faith from Great Person improvements and monuments in the city.  
 - Fixed a bug where buildings were destroyed when retaking your own city.  
 - When capturing a city, buildings are destroyed only once per turn for each city.  
-- Satellite cities no longer increase the science penalty for the number of cities in the empire.  
-- Satellite cities can be set to burn without annexation.  
+- Puppet cities no longer increase the science penalty for the number of cities in the empire.  
+- Puppet cities can be set to burn without annexation.  
 - Fixed a bug where winning the World's Fair caused anarchy in the player's empire.  
 - Fixed a bug where players incurred a science penalty when immediately burning a captured city.  
 - Surplus production when selecting gold or science projects is no longer lost and is converted into the respective resource.  
@@ -504,13 +504,13 @@ const patchNotes = {
 - Fixed a bug where players could declare war on a former ally immediately after flipping a city-state.  
 - Fixed a bug where the reformation belief "Prophecy" stopped working after strengthening a religion.  
 - Fixed various text description errors.  
-- City-state quests for clearing barbarian camps now grant +30 influence instead of +50.  
+- City-State quests for clearing barbarian camps now grant +30 influence instead of +50.  
 - Free buildings in cities are treated as regular buildings during capture and may remain in the captured city.  
 - Science penalty per city adjusted: 4% for the second city, 5% for the third, and 6% for subsequent cities.  
 - Science and culture penalties in satellite cities increased from 25% to 50%.  
 - Academy: +10 Science, with an additional +2 Science after Scientific Theory and +2 Science after Nuclear Fission.  
 - Great Musicians can no longer be used within your own territory.  
-- Cost of nuclear missiles increased to 804 production.  
+- Cost of Nuclear Missiles increased to 804 production.  
 - Pressure from the World Ideology increased to 4 levels (previously 2).  
 - Freedom Ideology: "Their Finest Hour" no longer provides a bonus to constructing defensive buildings.  
 - Freedom Ideology: "Learned Society" changed to provide +20% Science in cities with 20+ population.  
@@ -518,7 +518,7 @@ const patchNotes = {
 - Autocracy Ideology: "Clausewitz's Legacy" changed to grant +33% combat strength for attacking units until the end of the game.  
 - Liturgical Drama: +2 Faith from Guild of Arts specialists and +3 Faith from Great Works and Artifacts.  
 - Sovereignty: +1 Gold from science buildings.  
-- Brazil: Pracinhas moved to the Electronics technology.  
+- Brazil: Pracinha moved to the Electronics technology.  
 - Korea: Great Person tile improvements and Monuments provide +4 Science instead of +5.  
 - Maya: Pyramid cost increased to 30 production.  
 - Stonehenge: +6 Faith.  
@@ -529,7 +529,7 @@ const patchNotes = {
 - Louvre provides three archaeologists instead of a Great Artist.  `,
         "10.4a-c": `
 - Added separate war limitation timers for re-allying with each city-state.  
-- Fixed a bug where defensive bonuses in battles with ranged units (Shoshone bonus, Himeji bonus, Defender of the Faith, Homeland Defense) stopped working since patch 10.1b.  
+- Fixed a bug where defensive bonuses in battles with ranged units (Shoshone bonus, Himeji bonus, Defender of the Faith, Patriotic War) stopped working since patch 10.1b.  
 - New emotes added for the in-game chat.  
 - Added a new option in game interface settings: "Enhanced Unit Icons." When enabled, unit icons will display special markers:  
   - Green cross: the unit will heal at the end of the turn.  
@@ -542,7 +542,7 @@ const patchNotes = {
 - Fixed a bug where naval units, upon liberating cities, could remain in the city or move to a foreign city with open borders.  
 - Fixed a bug in the Russian version where the notification panel sometimes failed to display which pantheon the player had chosen.  
 - Fixed a bug in the Russian version where descriptions disappeared when the "quest leader" changed in global city-state quests.  
-- Fixed a bug in the Russian version where defense bonuses on specific terrain types were displayed incorrectly (e.g., Berber Cavalry, Ski Infantry).  
+- Fixed a bug in the Russian version where defense bonuses on specific terrain types were displayed incorrectly (e.g., Berber Cavalry, Norwegian Ski Infantry).  
 - Fixed a bug where certain reformation bonuses (Religious Fervor, Prophecy) applied to other players.  
 - Fixed a bug where, in Duel mode, the Great Library gave -1 Science in the city.  
 - Fixed a bug where the graph of player-built wonders displayed incorrectly.  
@@ -560,10 +560,10 @@ const patchNotes = {
 - Fixed a bug where Anarchy in the empire began immediately after delaying an institute.  
 - Fixed a bug where the player incurred a science penalty when capturing a city with the Oracle.  
 - Fixed a bug where players who founded a pantheon did not see the pantheon description in the notifications panel.  
-- Fixed a bug where the Library of Alexandria provided the incorrect amount of science in Duel mode.  
+- Fixed a bug where the Great Library provided the incorrect amount of science in Duel mode.  
 `,
         "10.4e": `
 - Fixed a bug where the player who won the World’s Fair received 1,024 free policies.
 `,
-},
+    },
 }
