@@ -296,9 +296,9 @@ const patchNotes = {
 - Great Firewall: Halves the Internet bonus for other civilizations.  
 - City-States: Cannot queue workers for production until Turn 10.  
 - Austria: Gains 40 Gold upon meeting a City-State.  
-- Denmark: Ski Infantry is now unlocked at "Metallurgy" instead of "Rifling."  
+- Denmark: Norwegian Ski Infantry is now unlocked at "Metallurgy" instead of "Rifling"  
 - Indonesia: The Candi provides +1 Faith for each religion present in the city.  
-- China: Can move along foreign roads as if they were their own after researching "Economics."  
+- China: Can move along foreign roads as if they were their own after researching "Economics"  
 - The Maya: The Pyramid provides +2 Science.  
 - Mongolia:  
   - Keshik: 15 Melee Strength, 17 Ranged Strength.  
@@ -507,7 +507,7 @@ const patchNotes = {
 - City-State quests for clearing barbarian camps now grant +30 influence instead of +50.  
 - Free buildings in cities are treated as regular buildings during capture and may remain in the captured city.  
 - Science penalty per city adjusted: 4% for the second city, 5% for the third, and 6% for subsequent cities.  
-- Science and culture penalties in satellite cities increased from 25% to 50%.  
+- Science and culture penalties in puppet cities increased from 25% to 50%.  
 - Academy: +10 Science, with an additional +2 Science after Scientific Theory and +2 Science after Nuclear Fission.  
 - Great Musicians can no longer be used within your own territory.  
 - Cost of Nuclear Missiles increased to 804 production.  
