@@ -341,7 +341,7 @@ const patchNotes = {
   - “Atheism”: +1 Food and +1 Production on tiles with strategic and luxury resources.  
   - “Prophecy”: World Wonders can be constructed regardless of policy requirements.  
   - “Symbolism”: Initiates or extends a Golden Age by 1 turn each time a Great Person is used; units gain +10% combat strength during this time.  
-  - Note: The amount of Golden Age points required for the next Golden Age does not increase.  
+  -# Note: The amount of Golden Age points required for the next Golden Age does not increase.  
 - World Congress Resolution “World Trade Organization”: External trade routes yield 50% more Gold.  
 - World Congress Resolution “Invest in Luxury”: The selected luxury resource yields 50% more Happiness. Cannot ban and invest in the same luxury resource simultaneously.  
 - Mines can be constructed after researching “Agriculture” (from the beginning of the game).  
@@ -444,7 +444,7 @@ const patchNotes = {
 - Fixed a bug where constructing the National Intelligence Agency and leveling up a diplomat did not increase their vision radius.  
 - Fixed incorrect display of strength and fortification combat bonuses for ranged units.  
 - Fixed a bug where the Shoshone combat strength bonus on their own territory did not apply to ships.  
-- Fixed a bug where defensive bonuses (e.g., Shoshone bonus, Himeji Castle, Defender of the Faith, Homeland Defense) did not work for ranged units.  
+- Fixed a bug where defensive bonuses (e.g., Shoshone bonus, Himeji Castle, Defender of the Faith, Patriotic War) did not work for ranged units.  
 - Fixed a bug where ranged units with the "Volley" promotion incorrectly added combat strength to defending units when the attacker was fortified.  
 - Fixed a bug where the "Venetian Arsenal" did not provide Culture and Happiness when built by France.  
 - The "Total Culture" graph now displays accumulated Culture throughout the game.  
