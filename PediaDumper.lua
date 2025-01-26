@@ -2054,7 +2054,7 @@ for leagueProject in GameInfo.LeagueProjects() do
 			local tReward = GameInfo.LeagueProjectRewards[reward];
 			if (tReward ~= nil) then
 				if (tReward.Description ~= nil and tReward.Help ~= nil) then
-					s = s .. Locale.Lookup("TXT_KEY_PEDIA_LEAGUE_PROJECT_REWARD", TrophyIcons[i], tReward.Description, tReward.Help);
+					s = s .. string.format('%s {%s}: {%s}', TrophyIcons[i], tReward.Description, tReward.Help);
 				end
 			end
 		end
