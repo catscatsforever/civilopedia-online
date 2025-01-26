@@ -248,8 +248,10 @@ content = { {
 			image = "assets/images/civilopedia.png",
 			title = "TXT_KEY_PEDIA_HOME_PAGE_LABEL",
 			quote = "TXT_KEY_PEDIA_HOME_PAGE_BLURB_TEXT",
-			section_title = "TXT_KEY_PEDIA_HOME_PAGE_HELP_LABEL",
-			section_text = "TXT_KEY_PEDIA_HOME_PAGE_HELP_TEXT"
+			section_title = "TXT_KEY_PATCH_HOME_PAGE_LABEL",
+			section_text = "TXT_KEY_PATCH_HOME_PAGE_TEXT",
+			section_title_2 = "TXT_KEY_PEDIA_HOME_PAGE_HELP_LABEL",
+			section_text_2 = "TXT_KEY_PEDIA_HOME_PAGE_HELP_TEXT"
 	   }
 	}, {
 		item_id = "PEDIA_CONCEPTS_PAGE",

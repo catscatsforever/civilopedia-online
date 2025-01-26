@@ -1,6 +1,24 @@
 const patchTxtTags = {
-    ru: {'TXT_KEY_PATCH_NOTES': 'Изменения версий патча'},
-    en: {'TXT_KEY_PATCH_NOTES': 'Patch Changelog'},
+    ru: {
+        'TXT_KEY_PATCH_NOTES': 'Изменения версий патча',
+        'TXT_KEY_PATCH_FULL_CHANGELOG_TITLE': 'Полный список изменений',
+        'TXT_KEY_PATCH_ADDED': 'Добавлено:',
+        'TXT_KEY_PATCH_REMOVED': 'Удалено:',
+        'TXT_KEY_PATCH_HOME_PAGE_LABEL': 'Турнирный патч',
+        'TXT_KEY_PATCH_HOME_PAGE_TEXT': `
+Текущая версия: {TXT_KEY_MULTIPLAYER_STAGING_ROOM}
+        `,
+    },
+    en: {
+        'TXT_KEY_PATCH_NOTES': 'Patch Changelog',
+        'TXT_KEY_PATCH_FULL_CHANGELOG_TITLE': 'Full Changelog',
+        'TXT_KEY_PATCH_ADDED': 'Added:',
+        'TXT_KEY_PATCH_REMOVED': 'Removed:',
+        'TXT_KEY_PATCH_HOME_PAGE_LABEL': 'Tournament Patch',
+        'TXT_KEY_PATCH_HOME_PAGE_TEXT': `
+Current version: {TXT_KEY_MULTIPLAYER_STAGING_ROOM}
+        `,
+    },
 }
 const patchNotes = {
     ru: {
