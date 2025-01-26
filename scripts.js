@@ -67,9 +67,9 @@ var tag_mappings = {
 
 document.addEventListener("DOMContentLoaded", async function () {
     $("body").hide()
-    for (const lang of ['en', 'ru']) {
     let userLang = (new Intl.Locale(navigator.language)).language
     current_language = localStorage.getItem("locale") ?? (['en', 'ru'].includes(userLang) ? userLang : 'en');
+    for (const lang of ['en', 'ru']) {
         await fetch("./assets/data/translations_" + lang + ".json")
             .then(response => response.json())
             .then(data => {
