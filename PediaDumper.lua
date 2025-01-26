@@ -1173,8 +1173,17 @@ function processBuildingOrWonder( building, bProject )
 		entry.strings.happiness = string.format('%d [ICON_HAPPINESS_1]', building.Happiness + building.UnmoddedHappiness)
 	end
 	entry.strings.great_works = next(great_works) and great_works or nil
-	entry.strings.maintenance = not bProject and building.GoldMaintenance or nil
-	entry.strings.defense = not bProject and building.Defense or nil
+	entry.strings.maintenance = not bProject and building.GoldMaintenance > 0 and tostring(building.GoldMaintenance) .. ' [ICON_GOLD]' or nil
+	if not bProject then
+		tblDef = {}
+		if building.Defense ~= 0 then
+			tblDef[#tblDef + 1] = string.format('%s [ICON_STRENGTH]', tostring(building.Defense / 100))
+		end
+		if building.ExtraCityHitPoints ~= 0 then
+			tblDef[#tblDef + 1] = string.format('%+d {TXT_KEY_HP}', building.ExtraCityHitPoints)
+		end
+		entry.strings.defense = next(tblDef) and table.concat(tblDef, ', ') or nil
+	end
 	entry.strings.civilization = next(thisCiv) and thisCiv or nil
 	entry.strings.replaces = next(defaultBuilding) and defaultBuilding or nil
 	entry.strings.specialists = next(specialists) and specialists or nil
