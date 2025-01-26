@@ -625,6 +625,91 @@ end
 ------------------------------
 -- Units
 ------------------------------
+function processUnit( unit )
+	local entry = { strings = {} };
+	entry.item_id = unit.Type
+	entry.view_id = 'view_1'
+	local condition = "UnitType = '" .. unit.Type .. "'";
+	local costString = "";
+	local cost = unit.Cost;
+	local faithCost = unit.FaithCost;
+	if (cost == 1 and faithCost > 0) then
+		costString = tostring(faithCost) .. " [ICON_PEACE]";
+	elseif (cost > 0 and faithCost > 0) then
+		costString = tostring(cost) .. " [ICON_PRODUCTION] {TXT_KEY_PEDIA_A_OR_B} " .. tostring(faithCost) .. " [ICON_PEACE]"
+	else
+		if (cost > 0) then
+			costString = tostring(cost) .. " [ICON_PRODUCTION]";
+		elseif (faithCost > 0) then
+			costString = tostring(faithCost) .. " [ICON_PEACE]";
+		else
+			costString = "TXT_KEY_FREE"
+		end
+	end
+	entry.strings.cost = costString
+	local abilities = {}
+	for row in GameInfo.Unit_FreePromotions( condition ) do
+		local promotion = GameInfo.UnitPromotions[row.PromotionType];
+		if promotion then
+			abilities[#abilities + 1] = promotion.Type
+		end	
+	end
+	local required_resources = {}
+	for row in GameInfo.Unit_ResourceQuantityRequirements( condition ) do
+		local requiredResource = GameInfo.Resources[row.ResourceType];
+		if requiredResource then
+			required_resources[#required_resources + 1] = requiredResource.Type
+		end		
+	end
+	local tech_prereq = {}
+	if unit.PrereqTech then
+		local prereq = GameInfo.Technologies[unit.PrereqTech];
+		if prereq then
+			tech_prereq[#tech_prereq + 1] = prereq.Type
+		end
+	end
+	local tech_obsolete = {}
+	if unit.ObsoleteTech then
+		local obs = GameInfo.Technologies[unit.ObsoleteTech];
+		if obs then
+			tech_obsolete[#tech_obsolete + 1] = obs.Type
+		end
+	end
+	local upgrades = {}
+	for row in GameInfo.Unit_ClassUpgrades{UnitType = unit.Type} do	
+		local unitClass = GameInfo.UnitClasses[row.UnitClassType];
+		local upgradeUnit = GameInfo.Units[unitClass.DefaultUnit];
+		if (upgradeUnit) then
+			upgrades[#upgrades + 1] = upgradeUnit.Type
+		end		
+	end
+	local replacesUnitClass = {};
+	local specificCivs = {};
+	local classOverrideCondition = string.format("UnitType='%s' and CivilizationType <> 'CIVILIZATION_BARBARIAN' and CivilizationType <> 'CIVILIZATION_MINOR'", unit.Type);
+	for row in GameInfo.Civilization_UnitClassOverrides(classOverrideCondition) do
+		specificCivs[#specificCivs + 1] = row.CivilizationType;
+		replacesUnitClass[#replacesUnitClass + 1] = GameInfo.UnitClasses[row.UnitClassType].DefaultUnit;
+	end
+	entry.strings.image = string.format('assets/images/%s/i_%d.png', unit.IconAtlas, unit.PortraitIndex)
+	atlasList[unit.IconAtlas] = true
+	entry.strings.title = unit.Description or nil
+	entry.strings.strategy = unit.Strategy or nil
+	entry.strings.historical_info = unit.Civilopedia or nil
+	entry.strings.game_info = unit.Help or nil
+	entry.strings.movement = unit.Moves > 0 and tostring(unit.Moves) .. ' [ICON_MOVES]' or nil
+	entry.strings.abilities = next(abilities) and abilities or nil
+	entry.strings.combat_type = unit.CombatClass and GameInfo.UnitCombatInfos[unit.CombatClass].Description or nil
+	entry.strings.combat = unit.Combat > 0 and tostring(unit.Combat) .. ' [ICON_STRENGTH]' or nil
+	entry.strings.ranged_combat = unit.RangedCombat > 0 and tostring(unit.RangedCombat) .. ' [ICON_RANGE_STRENGTH]' or nil
+	entry.strings.range = unit.Range or nil
+	entry.strings.prerequisite_techs = next(tech_prereq) and tech_prereq or nil
+	entry.strings.becomes_obsolete_with = next(tech_obsolete) and tech_obsolete or nil
+	entry.strings.upgrade_unit = next(upgrades) and upgrades or nil
+	entry.strings.civilization = next(specificCivs) and specificCivs or nil
+	entry.strings.replaces = next(replacesUnitClass) and replacesUnitClass or nil
+	entry.strings.required_resources = next(required_resources) and required_resources or nil
+	content[#content + 1] = entry;
+end
 local k = 1
 local offset = #structure.categories[cat.units].sections
 -- for each era
@@ -652,90 +737,7 @@ for era in GameInfo.Eras() do
 						label = unit.Description
 					}
 				end
-				local entry = { strings = {} };
-				entry.item_id = unit.Type
-				entry.view_id = 'view_1'
-				local condition = "UnitType = '" .. unit.Type .. "'";
-				local costString = "";
-				local cost = unit.Cost;
-				local faithCost = unit.FaithCost;
-				if (cost == 1 and faithCost > 0) then
-					costString = tostring(faithCost) .. " [ICON_PEACE]";
-				elseif (cost > 0 and faithCost > 0) then
-					costString = tostring(cost) .. " [ICON_PRODUCTION] {TXT_KEY_PEDIA_A_OR_B} " .. tostring(faithCost) .. " [ICON_PEACE]"
-				else
-					if (cost > 0) then
-						costString = tostring(cost) .. " [ICON_PRODUCTION]";
-					elseif (faithCost > 0) then
-						costString = tostring(faithCost) .. " [ICON_PEACE]";
-					else
-						costString = "TXT_KEY_FREE"
-					end
-				end
-				entry.strings.cost = costString
-				local abilities = {}
-				for row in GameInfo.Unit_FreePromotions( condition ) do
-					local promotion = GameInfo.UnitPromotions[row.PromotionType];
-					if promotion then
-						abilities[#abilities + 1] = promotion.Type
-					end	
-				end
-				local required_resources = {}
-				for row in GameInfo.Unit_ResourceQuantityRequirements( condition ) do
-					local requiredResource = GameInfo.Resources[row.ResourceType];
-					if requiredResource then
-						required_resources[#required_resources + 1] = requiredResource.Type
-					end		
-				end
-				local tech_prereq = {}
-				if unit.PrereqTech then
-					local prereq = GameInfo.Technologies[unit.PrereqTech];
-					if prereq then
-						tech_prereq[#tech_prereq + 1] = prereq.Type
-					end
-				end
-				local tech_obsolete = {}
-				if unit.ObsoleteTech then
-					local obs = GameInfo.Technologies[unit.ObsoleteTech];
-					if obs then
-						tech_obsolete[#tech_obsolete + 1] = obs.Type
-					end
-				end
-				local upgrades = {}
-				for row in GameInfo.Unit_ClassUpgrades{UnitType = unit.Type} do	
-					local unitClass = GameInfo.UnitClasses[row.UnitClassType];
-					local upgradeUnit = GameInfo.Units[unitClass.DefaultUnit];
-					if (upgradeUnit) then
-						upgrades[#upgrades + 1] = upgradeUnit.Type
-					end		
-				end
-				local replacesUnitClass = {};
-				local specificCivs = {};
-				local classOverrideCondition = string.format("UnitType='%s' and CivilizationType <> 'CIVILIZATION_BARBARIAN' and CivilizationType <> 'CIVILIZATION_MINOR'", unit.Type);
-				for row in GameInfo.Civilization_UnitClassOverrides(classOverrideCondition) do
-					specificCivs[#specificCivs + 1] = row.CivilizationType;
-					replacesUnitClass[#replacesUnitClass + 1] = GameInfo.UnitClasses[row.UnitClassType].DefaultUnit;
-				end
-				entry.strings.image = string.format('assets/images/%s/i_%d.png', unit.IconAtlas, unit.PortraitIndex)
-				atlasList[unit.IconAtlas] = true
-				entry.strings.title = unit.Description
-				entry.strings.strategy = unit.Strategy
-				entry.strings.historical_info = unit.Civilopedia
-				entry.strings.game_info = unit.Help
-				entry.strings.movement = unit.Moves
-				entry.strings.abilities = next(abilities) and abilities or nil
-				entry.strings.combat_type = unit.CombatClass and GameInfo.UnitCombatInfos[unit.CombatClass].Description or nil
-				entry.strings.combat = unit.Combat
-				entry.strings.ranged_combat = unit.RangedCombat
-				entry.strings.range = unit.Range
-				entry.strings.prerequisite_techs = next(tech_prereq) and tech_prereq or nil
-				entry.strings.becomes_obsolete_with = next(tech_obsolete) and tech_obsolete or nil
-				entry.strings.upgrade_unit = next(upgrades) and upgrades or nil
-				entry.strings.civilization = next(specificCivs) and specificCivs or nil
-				entry.strings.replaces = next(replacesUnitClass) and replacesUnitClass or nil
-				entry.strings.required_resources = next(required_resources) and required_resources or nil
-				entry.strings.ranged = unit.RangedCombat
-				content[#content + 1] = entry;
+				processUnit(unit)
 			end
 		end
 	end
@@ -756,90 +758,7 @@ for era in GameInfo.Eras() do
 							label = unit.Description
 						}
 					end
-					local entry = { strings = {} };
-					entry.item_id = unit.Type
-					entry.view_id = 'view_1'
-					local condition = "UnitType = '" .. unit.Type .. "'";
-					local costString = "";
-					local cost = unit.Cost;
-					local faithCost = unit.FaithCost;
-					if (cost == 1 and faithCost > 0) then
-						costString = tostring(faithCost) .. " [ICON_PEACE]";
-					elseif (cost > 0 and faithCost > 0) then
-						costString = tostring(cost) .. " [ICON_PRODUCTION] {TXT_KEY_PEDIA_A_OR_B} " .. tostring(faithCost) .. " [ICON_PEACE]"
-					else
-						if (cost > 0) then
-							costString = tostring(cost) .. " [ICON_PRODUCTION]";
-						elseif (faithCost > 0) then
-							costString = tostring(faithCost) .. " [ICON_PEACE]";
-						else
-							costString = "TXT_KEY_FREE"
-						end
-					end
-					entry.strings.cost = costString
-					local abilities = {}
-					for row in GameInfo.Unit_FreePromotions( condition ) do
-						local promotion = GameInfo.UnitPromotions[row.PromotionType];
-						if promotion then
-							abilities[#abilities + 1] = promotion.Type
-						end	
-					end
-					local required_resources = {}
-					for row in GameInfo.Unit_ResourceQuantityRequirements( condition ) do
-						local requiredResource = GameInfo.Resources[row.ResourceType];
-						if requiredResource then
-							required_resources[#required_resources + 1] = requiredResource.Type
-						end		
-					end
-					local tech_prereq = {}
-					if unit.PrereqTech then
-						local prereq = GameInfo.Technologies[unit.PrereqTech];
-						if prereq then
-							tech_prereq[#tech_prereq + 1] = prereq.Type
-						end
-					end
-					local tech_obsolete = {}
-					if unit.ObsoleteTech then
-						local obs = GameInfo.Technologies[unit.ObsoleteTech];
-						if obs then
-							tech_obsolete[#tech_obsolete + 1] = obs.Type
-						end
-					end
-					local upgrades = {}
-					for row in GameInfo.Unit_ClassUpgrades{UnitType = unit.Type} do	
-						local unitClass = GameInfo.UnitClasses[row.UnitClassType];
-						local upgradeUnit = GameInfo.Units[unitClass.DefaultUnit];
-						if (upgradeUnit) then
-							upgrades[#upgrades + 1] = upgradeUnit.Type
-						end		
-					end
-					local replacesUnitClass = {};
-					local specificCivs = {};
-					local classOverrideCondition = string.format("UnitType='%s' and CivilizationType <> 'CIVILIZATION_BARBARIAN' and CivilizationType <> 'CIVILIZATION_MINOR'", unit.Type);
-					for row in GameInfo.Civilization_UnitClassOverrides(classOverrideCondition) do
-						specificCivs[#specificCivs + 1] = row.CivilizationType;
-						replacesUnitClass[#replacesUnitClass + 1] = GameInfo.UnitClasses[row.UnitClassType].DefaultUnit;
-					end
-					entry.strings.image = string.format('assets/images/%s/i_%d.png', unit.IconAtlas, unit.PortraitIndex)
-					atlasList[unit.IconAtlas] = true
-					entry.strings.title = unit.Description or nil
-					entry.strings.strategy = unit.Strategy or nil
-					entry.strings.historical_info = unit.Civilopedia or nil
-					entry.strings.game_info = unit.Help or nil
-					entry.strings.movement = unit.Moves or nil
-					entry.strings.abilities = next(abilities) and abilities or nil
-					entry.strings.combat_type = unit.CombatClass and GameInfo.UnitCombatInfos[unit.CombatClass].Description or nil
-					entry.strings.combat = unit.Combat or nil
-					entry.strings.ranged_combat = unit.RangedCombat or nil
-					entry.strings.range = unit.Range or nil
-					entry.strings.prerequisite_techs = next(tech_prereq) and tech_prereq or nil
-					entry.strings.becomes_obsolete_with = next(tech_obsolete) and tech_obsolete or nil
-					entry.strings.upgrade_unit = next(upgrades) and upgrades or nil
-					entry.strings.civilization = next(specificCivs) and specificCivs or nil
-					entry.strings.replaces = next(replacesUnitClass) and replacesUnitClass or nil
-					entry.strings.required_resources = next(required_resources) and required_resources or nil
-					entry.strings.ranged = unit.RangedCombat or nil
-					content[#content + 1] = entry;
+					processUnit(unit)
 				end
 			end
 		end
