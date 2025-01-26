@@ -262,6 +262,15 @@ body {
     border-image-repeat: initial;
 }
 
+.accordion .list-group-item.active {
+    border-image: url("./assets/images/civilopediasidebuttons272x22hl.png");
+    border-image-width: 8px 0px;
+    border-image-slice: 30% 40% fill;
+    border-image-repeat: initial;
+    border-top-width: 0;
+    margin-top: 1px;
+}
+
 * {
     cursor: url("./assets/images/Pointer.png"), auto !important;
 }

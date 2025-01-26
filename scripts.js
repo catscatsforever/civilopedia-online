@@ -266,7 +266,7 @@ function generate_accordion_list() {
         if (index == 0) {
             accordion_section = `<div class="accordion-item"><div id="collapseNone" class="accordion-collapse collapse show"><ul value=${section.id} class="list-group list-group-flush">`
             section["items"].forEach((item) => {
-                accordion_section += `<li value=${item.id} class="list-group-item">${get_translation(current_language, item.label)}</li>`
+                accordion_section += `<li value=${item.id} class="list-group-item${current_item.id === item.id ? ' active' : ''}">${get_translation(current_language, item.label)}</li>`
             });
             accordion_section += `</ul></div></div>`
         }
@@ -277,7 +277,7 @@ function generate_accordion_list() {
             <div id="collapse${section.id}" class="accordion-collapse collapse show" aria-labelledby="heading${section.id}">
               <ul value=${section.id} class="list-group list-group-flush">`
             section["items"].forEach((item) => {
-                accordion_section += `<li value=${item.id} class="list-group-item">${get_translation(current_language, item.label)}</li>`
+                accordion_section += `<li value=${item.id} class="list-group-item${current_item.id === item.id ? ' active' : ''}">${get_translation(current_language, item.label)}</li>`
             });
 
             accordion_section += `</ul></div></div>`
