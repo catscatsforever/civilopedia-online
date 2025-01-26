@@ -493,6 +493,7 @@ del img:not(.icon) {
 
 ins {
     text-decoration: none;
+    font-style: italic;
 }
 
 ins img:not(.icon) {
