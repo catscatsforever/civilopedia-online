@@ -493,7 +493,7 @@ const patchNotes = {
 `,
         "10.3": `
 - Porcelain Tower: Removed one Great Scientist slot.  
-- Workers' Faculties: Factories and Charcoal Kilns provide +5 Science and are constructed 30% faster.  
+- Workers' Faculties: Factories and Charcoal Plants provide +5 Science and are constructed 30% faster.  
 - Monuments and Steles no longer always get destroyed when cities are captured.  
 - When re-allying with a city-state, declaring war on its former ally is prohibited for 60 in-game seconds (counting only while the timer is running; the countdown stops if the timer is paused).  
 - If a player disconnects from the game, the timer automatically pauses. The timer resumes once all players reconnect or all disconnected players are kicked.  
@@ -501,10 +501,10 @@ const patchNotes = {
 `,
         "10.3a": `
 - Fixed a bug where non-free buildings were destroyed when transferring cities to another player.  
-- Fixed a bug where Great Person improvements did not provide Culture and Faith after loading a save if Christ the Redeemer was constructed.  
+- Fixed a bug where Great Person improvements did not provide Culture and Faith after loading a save if Cristo Redentor was constructed.  
 - Fixed a bug where Helicopters could move onto water if upgraded from Anti-Tank Guns.  
 - Fixed a bug where the Byzantine bonus belief "Goddess of Protection" did not increase the attack range of cities.  
-- Fixed a bug where Great Person improvements provided Culture and Faith if Christ the Redeemer was constructed, even when pillaged.  
+- Fixed a bug where Great Person improvements provided Culture and Faith if Cristo Redentor was constructed, even when pillaged.  
 - Fixed a bug where the number of nuclear missiles on submarines displayed incorrectly after launching them (EUI version).  
 - Removed the display of enemy air unit icons (EUI version).  
 - The pause/rollback timer button is no longer locked when a player disconnects.  
