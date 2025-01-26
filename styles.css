@@ -481,10 +481,22 @@ body {
     line-height: 2rem;
 }
 
-.strike {
+.strike, del {
     text-decoration: underline;
     text-underline-offset: -0.6ex;
     text-decoration-skip-ink: none;
+}
+
+del img:not(.icon) {
+    filter: drop-shadow(0 0 3px red) drop-shadow(0 0 3px red) drop-shadow(0 0 3px red);
+}
+
+ins {
+    text-decoration: none;
+}
+
+ins img:not(.icon) {
+    filter: drop-shadow(0 0 3px green) drop-shadow(0 0 3px green) drop-shadow(0 0 3px green);
 }
 
 #current_heading, h1, h2, h3, h4, h5, h6 {
