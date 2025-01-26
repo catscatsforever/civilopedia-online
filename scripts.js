@@ -236,6 +236,7 @@ $(document).on("click", '#forwardbutton', () => {
 })
 
 window.addEventListener("popstate", (e) => {
+    $('[data-bs-toggle="tooltip"]').tooltip('dispose')
     currentTopic = e.state.index
     if (!search_article(location.hash.substring(1), true)) {
         search_article('PEDIA_HOME_PAGE', true)
