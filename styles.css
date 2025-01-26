@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
 @font-face {
     font-family: "Tw Cen MT";
     src: url("./assets/fonts/Tw\ Cen\ MT.ttf");
@@ -8,6 +10,7 @@
     font-weight: 400;
     src: local('Futura'), url('https://fonts.cdnfonts.com/s/37773/FUTURA55REGULAR.woff') format('woff');
 }
+
 #category-dropdown,
 #section-dropdown,
 #item-dropdown {
@@ -23,8 +26,10 @@
 body {
     color: rgba(255, 255, 200, 255);
     background-color: #05080B;
-    font-family: "Futura", "Tw Cen MT", sans-serif;
-    line-height: 19px;
+    font-family: "Futura PT", "Tw Cen MT", sans-serif;
+    font-weight: 450;
+    font-size: 0.92rem;
+    line-height: 22px;
     /* line-height: 1.8vh; */
 }
 .nav-tabs {
@@ -400,7 +405,10 @@ body {
 .ui-menu-item-wrapper {
     background-color: #041514;
     color: rgba(255, 255, 200, 255);
-    font-family: "Futura", "Tw Cen MT", sans-serif;
+    font-family: "Futura PT", "Tw Cen MT", sans-serif;
+    font-weight: 450;
+    font-size: 0.92rem;
+    line-height: 22px;
 }
 
 .ui-menu-item-wrapper.ui-state-active {
@@ -445,8 +453,10 @@ body {
     background: #0000;
     color: rgba(255, 255, 200, 255);
     filter: drop-shadow(0 0 5px #ffffffff);
-    font-family: "Futura", "Tw Cen MT", sans-serif;
-    font-size: 1rem;
+    font-family: "Futura PT", "Tw Cen MT", sans-serif;
+    font-weight: 450;
+    font-size: 0.92rem;
+    line-height: 22px;
 }
 
 .img-fluid {
@@ -475,4 +485,8 @@ body {
     text-decoration: underline;
     text-underline-offset: -0.6ex;
     text-decoration-skip-ink: none;
+}
+
+#current_heading, h1, h2, h3, h4, h5, h6 {
+    font-weight: 450;
 }
