@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     create_listeners()
     $( "#pedia-search" ).autocomplete({
-        source: content_mapping.map((item) => {return {label: get_translation(current_language, item.strings.title), id: item.item_id}}),
+        source: content_mapping.filter(x => x?.strings.title).map((item) => {return {label: get_translation(current_language, item.strings.title), id: item.item_id}}),
         select: (e, ui) => {search_article(get_info_from_item_id(ui.item.id)?.strings.shortcut ?? ui.item.id)}
     });
     $("body").show()
