@@ -518,7 +518,9 @@ for era in GameInfo.Eras() do
 		end
 		local build_unlocks = {}
 		for q in GameInfo.Builds( prereqCondition ) do
-			build_unlocks[#build_unlocks + 1] = q.Type
+			if q.ShowInPedia or q.Type == 'BUILD_LUXURY_MINE' then  -- TODO show luxury mine in pedia via xml
+				build_unlocks[#build_unlocks + 1] = q.Type
+			end
 		end
 		local resource_reveals = {}
 		for q in GameInfo.Resources( revealCondition ) do
