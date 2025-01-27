@@ -1411,6 +1411,88 @@
         </div>
       </div>
     </script>
+    <script id="view_5" type="text/html">
+      <div class="container-fluid py-4">
+        {{#each diff}}
+          {{#if this.show}}
+            <div class="row mt-3 gx-5">
+              <div class="col-12">
+                <div class="text-center item-title py-2">
+                  {{translate this.label}}
+                </div>
+              </div>
+            </div>
+            {{#each this.added}}
+              <h5>
+                {{translate "{TXT_KEY_PATCH_ADDED}"}} {{translate this.strings.title}}
+              </h5>
+              <div class="row mb-3 gx-0">
+                <div class="info-box-content">
+                  {{#if this.strings.image}}
+                    <img class="w-25 float-start m-2" src="{{this.strings.image}}" style="background-image:url(./assets/images/256x256frame.png); background-size: contain; transform: scale(1.2);"/>
+                  {{/if}}
+                  {{#each this.strings}}
+                    {{#if (eq @key "title")}}
+                    {{else if (eq @key "image")}}
+                    {{else}}
+                      <u value="{{@key}}">{{translate (get_item_label @key)}}</u>
+                      {{#if (is_object this)}}
+                        <div class="row g-0">
+                          {{#each this}}
+                            <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                 data-bs-title="{{translate (get_item_name this)}}">
+                              <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
+                            </ins>
+                          {{/each}}
+                        </div>
+                      {{else}}
+                        {{{translate this}}}
+                      {{/if}}
+                      <br>
+                    {{/if}}
+                  {{/each}}
+                </div>
+              </div>
+            {{/each}}
+            {{#each this.removed}}
+              <h5>
+                {{translate "{TXT_KEY_PATCH_REMOVED}"}} {{translate this.strings.title}}
+              </h5>
+            {{/each}}
+            {{#each this.updated}}
+              <h5>
+                {{translate this.o2.strings.title}}
+              </h5>
+              <div class="row mb-3 gx-0">
+                {{#each this.strings}}
+                  <div class="info-box-content">
+                    <u value="{{@key}}">{{translate this.label}}</u>
+                    {{#if (is_object this.new)}}
+                      <div class="row g-0">
+                        {{#each this.old}}
+                          <del class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                               data-bs-title="{{translate (get_item_name_v this)}}">
+                            <img class="img-fluid" src="{{get_item_image_v this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
+                          </del>
+                        {{/each}}
+                        {{#each this.new}}
+                          <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                               data-bs-title="{{translate (get_item_name this)}}">
+                            <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
+                          </ins>
+                        {{/each}}
+                      </div>
+                    {{else}}
+                      {{{get_diff this.old this.new}}}
+                    {{/if}}
+                  </div>
+                {{/each}}
+              </div>
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      </div>
+    </script>
 
     <script id="view_2" type="text/html">
           <div class="container-fluid py-4">
