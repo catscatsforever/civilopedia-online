@@ -195,7 +195,7 @@ function generate_view(ignoreTopicList) {
         listOfTopicsViewed.push(current_item)
         history.pushState({list: listOfTopicsViewed, index: currentTopic}, "", `#${current_item.id}`)
     }
-    document.title = get_translation(current_language, 'TXT_KEY_CIVILOPEDIA') + ' • ' + get_translation(current_language, item_data.strings.title)
+    document.title = get_translation(current_language, item_data.strings.title) + ' • ' + get_translation(current_language, 'TXT_KEY_CIVILOPEDIA')
 }
 
 $(document).on("click", ".category-tab", function () {
