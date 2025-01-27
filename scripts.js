@@ -217,8 +217,9 @@ $(document).on("click", ".info-box-content .small-image", function () {
     console.log(value)
     if (value) {
         value = get_info_from_item_id(value)?.strings.shortcut ?? value
-        search_article(value)
-        $(this).tooltip('dispose')
+        if (search_article(value)) {
+            $(this).tooltip('dispose')
+        }
     }
 })
 
