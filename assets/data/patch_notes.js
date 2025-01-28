@@ -652,5 +652,14 @@ const patchNotes = {
         "10.4e": `
 - Fixed a bug where the player who won the World’s Fair received 1,024 free policies.
 `,
+        "10.5": `
+
+        `,
+        "10.5a": `
+
+        `,
+        "10.5b": `
+
+        `,
     },
 }
