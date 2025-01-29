@@ -653,13 +653,73 @@ const patchNotes = {
 - Fixed a bug where the player who won the World’s Fair received 1,024 free policies.
 `,
         "10.5": `
+- Technical changes:
+  - After a Courthouse is built, the city changes the status of the original owner to the new owner (does not work for city-states and original player capitals) if the original owner (human player) is not in the game. If a Courthouse has already been built in the conquered city, it will change its owner status when its original owner (human player) leaves the game. Only works when playing online;
+  - Air units vision on a carrier is now updated during the turn (when the carrier is moving).
 
-        `,
+- Units:
+  - Fighter units (Triplane, Fighter, Jet) can only be ordered to intercept during the first quarter of the timer;
+  - Bombers no longer need other promotions to get the "Air Targeting I" promotion. A new "Air Targeting III" promotion has been added. After taking the "Air Targeting II" promotion, you can take the "Air Repair" and "Air Targeting III" promotions;
+  - Fighter units (Triplane, Fighter, Jet) can no longer take the "Air Ambush" and "Air Targeting" promotions;
+  - Bombers can no longer gain the "Air Ambush" promotion;
+  - "Ambush" promotion on melee land units can be gained immediately after being promoted to "Drill I" or "Shock I" after discovering Dynamite.
+  - Plundering a Trade Route works like pillaging improvements and spends 1 MP. A privateer does not spend MP to pillage Cargo Ships;
+  - GDR: 150 -> 200 Combat Strength.
+
+- Wonders:
+  - Louvre: Fill all Great Works slots with any Artifact to receive a theming bonus.
+
+- Honor:
+  - Military Tradition: Technology can only be gained by conquering cities civilization-owned cities (conquered cities with a Courthouse built or originally founded).
+
+- Aesthetics:
+  - Cultural specialists consume only half the normal amount of Food.
+
+- Commerce:
+  - Mercantilism: Additional +1 Culture from Markets, Banks and Stock Exchanges;
+  - Finisher: No longer provides a great merchant.
+
+- Rationalism:
+  - Finisher: Allows to purchase one Great Scientist with Faith.
+
+- Order:
+  - Party Leadership (Level 2): No longer gives +2 Gold per city.
+
+- Religion: Pantheon Beliefs:
+  - Blessing of the Moon: No longer gives +1 Production from Bananas resource;
+  - Sacred Path: No longer gives +1 Culture from Bananas resource.
+
+- Religion: Follower Beliefs:
+  - Religious Art: National Wonders provide +2 Culture and +2 Tourism (including the Palace).
+
+- Religion: Enhancer Beliefs:
+  - Reliquary: Gain 60 Faith and 60 Culture (Quick Speed) each time a Great Person is expended;
+  - Religious Texts: Religion spreads to cities 20% further away (and 50% faster with Printing Press).
+
+- Religion: Reformation Beliefs:
+  - Atheism: Cities (founder only) produce half the normal amount of Faith;
+  - Symbolism: Starts or extends the Golden Age for 2 turns each time a Great Person is expended, during a Golden Age units receive a +10% Combat Strength bonus.
+
+- Interface:
+  - Added a window that appears after starting the game if ui_check.bat has not been run;
+  - In single-player, the civilization list is now sorted by civilization name instead of leader name;
+  - Added "May Paradrop" status for XCOM Squad and Paratrooper;
+  - Improved clarity of Citizen icons in cities.
+
+- Bug Fixes:
+  - Fixed a bug where enemy cruisers, carriers and nuclear submarines could display an empty aircraft list;
+  - Fixed a bug where the "Military Caste" policy could give different amounts of culture per garrison in a city (including a negative value);
+  - Fixed a bug where the unit list was incorrectly sorted by unit name;
+  - Fixed a bug in EUI where hovering over a culture in a puppet city would display an error message.
+
+- Duel Mode:
+  - You can gift all great people to an ally.
+`,
         "10.5a": `
-
-        `,
+- Fixed a bug where the "Cultural Exchange" policy in Aesthetics did not increase the number of specialist slots in guilds.
+`,
         "10.5b": `
-
-        `,
+- Fixed a bug where some buildings received excess specialist slots.
+`,
     },
 }
