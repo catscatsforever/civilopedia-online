@@ -771,14 +771,53 @@ const patchNotes = {
 - Fixed a bug where some buildings received excess specialist slots.
 `,
         "10.5c": `
+- Bug Fixes:
+  - Fixed a bug where the Combat Strength of ranged units when fighting against other ranged units did not increase during the Golden Age when taking the Symbolism reformation;
+  - Fixed a bug where in some cases players were left with a vision around the city where the National Intelligence Agency was built;
+  - Fixed a bug where you couldn't close the Mayan Great Person selection menu;
+  - Fixed various text description errors.  
+
+- General Changes:
+  - Added new Combat Type "Anti-Air Units" (Anti-Aircraft Gun & Mobile SAM). AA Units can no longer gain the "Ambush" Promotion;
+  - Upon discovery of Combined Arms: Roads are built in 1 turn;
+  - "Ambush" promotion on Land Melee Units can be gained immediately after being promoted to "Drill I" or "Shock I" after discovering Dynamite (previously Replaceable Parts);
+  - Added displaying a penalty to faith in cities when taking the "Atheism" Reformation belief;
+  - Giant Death Robot: cannot pillage territory;
+  - Denmark: All Land Melee Units pay no MP cost to pillage.
+
+- Liberty:
+  - Pyramids: 1 Great Engineer Point, 2 Culture, 1 Worker appears near the City;
+  - Finisher: Provides +1 Gold from each Monument. Does not provide Gold on a City tile.
+
+- Tradition:
+  - Finisher: Food bonus in all cities increased to 20%.
+
+- Honor:
+  - Military tradition: Gain a Technology for conquering Cities with a population of 5+.
+
+- Rationalism:
+  - Opener: No longer increases Science from Research Agreements, does not provide additional Research Agreement. Great Scientist boosts 10% more science when used.
+
+- Freedom:
+  - Learned Society (Tier 1): +1%, +4%, +9%, +16%, +25%, +36%, 49%, 64% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+. 
 `,
         "10.5d": `
+- Fixed a bug that was causing desyncs, breaking some aspects of the game.
 `,
         "10.5e": `
+- Fixed a bug where you could not purchase a second Great Scientist after finishing Rationalism and adopting "To the Glory of God" Reformation belief;
+- Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn;
+- Fixed a bug where Unit production progress was reset when researching an improved Unit;
+- Fixed a bug where upgrading Units could reduce the amount of resources needed to maintain them by fractions of a second;
+- Fixed a bug where the Culture received by Brazil during the Golden Age was calculated incorrectly;
+- Fixed a bug where Venice did not become the original owner of a City-State when bought out by Merchant of Venice;
+- Updated Faith yield terrain icons.
 `,
         "10.5f": `
+- Fixed a bug where some players would get a message about training Units from other Civilizations.
 `,
         "10.5g": `
+- Removed \`Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn\`, that caused an issue with other Agreements (however, the UI will still show that the Peace Treaty is for 5 Turns).
 `,
     },
 }
