@@ -138,9 +138,11 @@ const itemKeys = {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-    $("body").hide()
+    document.querySelector("body").style.visibility = "hidden";
     let userLang = (new Intl.Locale(navigator.language)).language
     current_language = localStorage.getItem("locale") ?? (['en', 'ru'].includes(userLang) ? userLang : 'en');
+    document.querySelector(".container-loader").style.visibility = "visible";
+    document.querySelector("#loaderLBL").textContent = current_language === 'en' ? 'Loading' : 'Загрузка';
     for (const lang of ['en', 'ru', 'en_vanilla', 'ru_vanilla']) {
         await fetch("./assets/data/translations_" + lang + ".json")
             .then(response => response.json())
@@ -193,7 +195,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         source: content_mapping.filter(x => x?.strings.title).map((item) => {return {label: get_translation(current_language, item.strings.title), id: item.item_id}}),
         select: (e, ui) => {search_article(get_info_from_item_id(ui.item.id)?.strings.shortcut ?? ui.item.id)}
     });
-    $("body").show()
+    document.querySelector(".container-loader").style.visibility = "hidden";
+    document.querySelector("body").style.visibility = "visible";
 });
 
 function get_translation(language, key, gcase = 0, encodeTags) {
