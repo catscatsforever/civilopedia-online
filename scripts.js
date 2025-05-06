@@ -218,8 +218,10 @@ function get_translation(language, key, gcase = 0, encodeTags) {
 
 function addMarkup(text) {
     return text
+        .trim()
+        .replaceAll(/^\s*$/gm, '<br>')
         .replaceAll(/^( *)[-|*] (.+)$/gm, (m, c1, c2) => `${'<ul>'.repeat(c1.length / 2)}<li>\n${c2}</li>${'</ul>'.repeat(c1.length / 2)}`)  // bullet list item -/* with indent
-        .replaceAll(/^( *)(#{1,3}) (.+)$/gm, (m, c1, c2, c3) => `<h${c2.length}>\n${c3}</h${c2.length}>`)  // headers # ## ###
+        .replaceAll(/^( *)(#{1,3}) (.+)$/gm, (m, c1, c2, c3) => `<h${c2.length + 2}>\n${c3}</h${c2.length + 2}>`)  // headers # ## ###
         .replaceAll(/^( *)-# (.+)$/gm, (m, c1, c2) => `<sub>\n${c2}</sub>`)  // subtext -#
         .replaceAll(/~~([^~]+)~~/gm, (m, c1) => `<span class="strike">${c1}</span>`)  // strike ~~text~~
         .replaceAll(/__([^_]+)__/gm, (m, c1) => `<u>${c1}</u>`)  // underline __text__
