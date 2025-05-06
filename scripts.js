@@ -180,10 +180,18 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
     content_mapping.push({item_id: 'PATCH_FULL_CHANGELOG', view_id: 'view_5', strings: {title: 'TXT_KEY_PATCH_FULL_CHANGELOG_TITLE'}, diff: getPatchDiff()})
-    content_mapping.push(...Object.entries(patchNotes.ru).map(([k, v]) => {return {item_id: `PATCH${k}`, view_id: 'view_4', strings: {title: `TXT_KEY_PATCH_${k}_TITLE`, text: `TXT_KEY_PATCH_${k}_SUMMARY`}}}))
-    data_mappings.categories[0].sections.push({label: 'TXT_KEY_PATCH_NOTES', items: [{id: 'PATCH_FULL_CHANGELOG', label: 'TXT_KEY_PATCH_FULL_CHANGELOG_TITLE'}, ...Object.entries(patchNotes.ru).map(([k, v]) => {return {id: `PATCH${k}`, label: `TXT_KEY_PATCH_${k}_TITLE`}})].sort((a, b) => -a.label.localeCompare(b.label, undefined, {numeric: true}))})
-    translations['en'] = {...translations['en'], ...patchTxtTags.en, ...Object.entries(patchNotes.en).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Version ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
-    translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
+    content_mapping.push(...Object.entries(patchNotes.ru.versions).map(([k, v]) => {return {item_id: `PATCH${k}`, view_id: 'view_4', strings: {title: `TXT_KEY_PATCH_${k}_TITLE`, text: `TXT_KEY_PATCH_${k}_SUMMARY`}}}))
+    data_mappings.categories[0].sections.push(
+        /*{
+            label: 'TXT_KEY_PATCH_FULL_TITLE',
+            items: Object.entries(patchNotes.ru.full).map(([k, v]) => {return {id: `PATCH_${k}`, label: `TXT_KEY_PATCH_${k}_TITLE`}})
+        },*/
+        {
+            label: 'TXT_KEY_PATCH_VERSIONS_TITLE',
+            items: Object.entries(patchNotes.ru.versions).map(([k, v]) => {return {id: `PATCH${k}`, label: `TXT_KEY_PATCH_${k}_TITLE`}}).sort((a, b) => -a.label.localeCompare(b.label, undefined, {numeric: true}))
+        })
+    translations['en'] = {...translations['en'], ...patchTxtTags.en, ...Object.entries(patchNotes.en.versions).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Version ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
+    translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru.versions).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     if (!search_article(location.hash.substring(1))) {
         currentTopic++
         listOfTopicsViewed.push(get_info_from_item_id('PEDIA_HOME_PAGE'))
