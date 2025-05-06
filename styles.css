@@ -181,6 +181,7 @@ body {
     border-image-slice: 30% 40% fill;
     border-image-repeat: initial;
     font-size: 1rem;
+    font-weight: 450;
     color: rgba(255, 255, 200, 255) !important;
 }
 
@@ -464,8 +465,9 @@ body {
     margin-bottom: -3px;
     margin-top: -3px;
 }
+
 #backbutton:hover, #forwardbutton:hover {
-    filter: drop-shadow(0 0 4px #ffffffff);
+    filter: drop-shadow(0 0 4px rgb(255, 255, 200));
 }
 #backbutton:active, #forwardbutton:active {
     transform: scale(0.9);
@@ -498,7 +500,7 @@ body {
 }
 
 .patch-changelog sub {
-    color: #ff6363;
+    color: rgb(255,76,76);
     font-size: 0.8rem;
     line-height: 2rem;
 }
@@ -524,4 +526,15 @@ ins img:not(.icon) {
 
 #current_heading, h1, h2, h3, h4, h5, h6 {
     font-weight: 450;
+}
+.icon-cont {
+    position: relative;
+}
+del .icon-cont::after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid rgb(255, 255, 200);
+    left: -1px;
+    right: -1px;
+    bottom: 1.2ex;
 }
