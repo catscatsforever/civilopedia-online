@@ -166,12 +166,12 @@ body {
     order: -1;
     margin-left: 0;
     margin-right: 0.5em;
-    background-image: url("./assets/images/icon_images/icon_plus.png");
+    background-image: url("./assets/images/icon_images/Civ5Icon.Plus.png");
     transition: none;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("./assets/images/icon_images/icon_minus.png");
+    background-image: url("./assets/images/icon_images/Civ5Icon.Minus.png");
 }
 
 .accordion-button {
