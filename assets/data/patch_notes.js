@@ -791,7 +791,7 @@ const patchNotes = {
 ГОРОДА-ГОСУДАРСТВА
 
 - При объявлении войны городу-государству юниты игрока, находящиеся на территории города-государства, переместятся на ближайшие свободные клетки (по аналогии с объявлением войны игроку-цивилизации).
-- Задание на добавление редкого ресурса в торговую сеть может  может быть выдано только если этот ресурс в момент выдачи задания находится в границах игроков-цивилизаций или городов-государств.
+- Задание на добавление редкого ресурса в торговую сеть может быть выдано только если этот ресурс в момент выдачи задания находится в границах игроков-цивилизаций или городов-государств.
 - Задание на получение великого флотоводца может быть выдано только если у игрока есть хотя бы один прибрежный город.
 - Задание на получение великого писателя, художника или музыканта  может быть выдано  только после того, как игрок изучит технологии, позволяющие строить соответствующие гильдии.
 - В сетевой игре больше не могут появиться задания на осуждение цивилизации (так как осуждать можно только компьютерных игроков).
@@ -1501,22 +1501,22 @@ const patchNotes = {
   - Opener: Increases the number of Research Agreements available by 1 and boosts the Science gained from them by 25%. Unlocks the construction of the Porcelain Tower.  
   - “Free Thought”: Grants +1 Science from every Trading Post, Jungle, Kasbah, and Château; +10% Science from Universities.  
 - Order Ideology:  
-  - “Workers' Faculties” (Tier 1): Factories and Charcoal Kilns increase Science in the city by 5.  
-  - “Resettlement” (Tier 3): Increases population by 2 in all cities. +1 Happiness for every city in your empire.  
+  - “Workers' Faculties” (Tenet Level 1): Factories and Charcoal Kilns increase Science in the city by 5.  
+  - “Resettlement” (Tenet Level 3): Increases population by 2 in all cities. +1 Happiness for every city in your empire.  
 - Autocracy Ideology:  
-  - ~~“Capitalism” (Tier 1): +1 Happiness for each Market, Bank, and Stock Exchange.~~  
-  - “United Front” (Tier 1): All allied City-States gift units.  
-  - “Fascism” (Tier 1): +10 Happiness.  
+  - ~~“Capitalism” (Tenet Level 1): +1 Happiness for each Market, Bank, and Stock Exchange.~~  
+  - “United Front” (Tenet Level 1): All allied City-States gift units.  
+  - “Fascism” (Tenet Level 1): +10 Happiness.  
 - Freedom Ideology:  
-  - ~~“Economic Union” (Tier 1): +6 Gold from all trade routes with civilizations that adopted the same ideology.~~  
-  - ~~“Fortified Borders” (Tier 1): +1 Happiness per Wall, Castle, Arsenal, and Military Base.~~  
-  - “Capitalism” (Tier 1): +1 Happiness for each Market, Bank, and Stock Exchange.  
-  - “Volunteer Army” (Tier 1): Allows the maintenance of 10 units for free. Immediately receive 4 Foreign Legion units.  
-  - “Universal Suffrage” (Tier 2): Specialist Unhappiness is halved. Golden Ages last 50% longer.  
-  - “Urbanization” (Tier 2): +1 Happiness for each Water Mill, Aqueduct, Hospital, and Medical Lab.  
-  - “Creative Expression” (Tier 2): +2 Culture and +2 Tourism from each Great Work.  
-  - “Their Finest Hour” (Tier 2): Speeds up the construction of Walls, Castles, Arsenals, and Military Bases by 50%; these buildings save 5% Food each when a new citizen is born. City combat strength increases by 33%.  
-  - “Space Procurements” (Tier 3): Spacecraft parts can be purchased with Gold in cities with a population of 5 or more. A Great Merchant appears near the capital.  
+  - ~~“Economic Union” (Tenet Level 1): +6 Gold from all trade routes with civilizations that adopted the same ideology.~~  
+  - ~~“Fortified Borders” (Tenet Level 1): +1 Happiness per Wall, Castle, Arsenal, and Military Base.~~  
+  - “Capitalism” (Tenet Level 1): +1 Happiness for each Market, Bank, and Stock Exchange.  
+  - “Volunteer Army” (Tenet Level 1): Allows the maintenance of 10 units for free. Immediately receive 4 Foreign Legion units.  
+  - “Universal Suffrage” (Tenet Level 2): Specialist Unhappiness is halved. Golden Ages last 50% longer.  
+  - “Urbanization” (Tenet Level 2): +1 Happiness for each Water Mill, Aqueduct, Hospital, and Medical Lab.  
+  - “Creative Expression” (Tenet Level 2): +2 Culture and +2 Tourism from each Great Work.  
+  - “Their Finest Hour” (Tenet Level 2): Speeds up the construction of Walls, Castles, Arsenals, and Military Bases by 50%; these buildings save 5% Food each when a new citizen is born. City combat strength increases by 33%.  
+  - “Space Procurements” (Tenet Level 3): Spacecraft parts can be purchased with Gold in cities with a population of 5 or more. A Great Merchant appears near the capital.  
 - Pearls provide +1 Food and +1 Gold; improved Pearls grant an additional +1 Gold.  
 - Whales grant +1 Production after improvement.  
 - Privateer: Captures defeated enemy naval units with a 100% chance. Captured units have 25 HP. Land units embarked on the defeated ship are moved to a neighboring free tile.  
@@ -1589,7 +1589,7 @@ const patchNotes = {
 - Fixed a bug where the "Venetian Arsenal" did not provide Culture and Happiness when built by France.  
 - The "Total Culture" graph now displays accumulated Culture throughout the game.  
 - The "Military Strength" graph now correlates with combat strength values in demographics.  
-- Added a new "Effective Science per Turn" graph, which shows science per turn normalized to a single city (i.e., the values on the graph are calculated as if you had only one city). This allows for better comparison of technology research speeds between players.  
+- Added a new "Effective Science per Turn" graph, which shows science per turn normalized to a single city (i.e., the values on the graph are calculated as if a player had only one city). This allows for better comparison of technology research speeds between players.  
 - Helicopters can now fly over water and engage in combat with naval units (both ways).  
 - Updated the "Luxury Resource Mine" icon in the technology tree.  
 - The ruin granting "Additional Territory for the Nearest City" cannot be obtained without owning a city.  
@@ -1712,7 +1712,7 @@ const patchNotes = {
 
 - Units:
   - Fighter units (Triplane, Fighter, Jet) can only be ordered to intercept during the first quarter of the timer;
-  - Bombers no longer need other promotions to get the "Air Targeting I" promotion. A new "Air Targeting III" promotion has been added. After taking the "Air Targeting II" promotion, you can take the "Air Repair" and "Air Targeting III" promotions;
+  - Bombers no longer need other promotions to get the "Air Targeting I" promotion. A new "Air Targeting III" promotion has been added. After taking the "Air Targeting II" promotion, a player can take the "Air Repair" and "Air Targeting III" promotions;
   - Fighter units (Triplane, Fighter, Jet) can no longer take the "Air Ambush" and "Air Targeting" promotions;
   - Bombers can no longer gain the "Air Ambush" promotion;
   - "Ambush" promotion on melee land units can be gained immediately after being promoted to "Drill I" or "Shock I" after discovering Dynamite.
@@ -1766,7 +1766,7 @@ const patchNotes = {
   - Fixed a bug in EUI where hovering over a culture in a puppet city would display an error message.
 
 - Duel Mode:
-  - You can gift all great people to an ally.
+  - Players can gift all great people to an ally.
 `,
             "10.5a": `
 - Fixed a bug where the "Cultural Exchange" policy in Aesthetics did not increase the number of specialist slots in guilds.
@@ -1778,7 +1778,7 @@ const patchNotes = {
 - Bug Fixes:
   - Fixed a bug where the Combat Strength of ranged units when fighting against other ranged units did not increase during the Golden Age when taking the Symbolism reformation;
   - Fixed a bug where in some cases players were left with a vision around the city where the National Intelligence Agency was built;
-  - Fixed a bug where you couldn't close the Mayan Great Person selection menu;
+  - Fixed a bug where a player couldn't close the Mayan Great Person selection menu;
   - Fixed various text description errors.  
 
 - General Changes:
@@ -1803,13 +1803,13 @@ const patchNotes = {
   - Opener: No longer increases Science from Research Agreements, does not provide additional Research Agreement. Great Scientist boosts 10% more science when used.
 
 - Freedom:
-  - Learned Society (Tier 1): +1%, +4%, +9%, +16%, +25%, +36%, 49%, 64% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+. 
+  - Learned Society (Tenet Level 1): +1%, +4%, +9%, +16%, +25%, +36%, 49%, 64% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+. 
 `,
             "10.5d": `
 - Fixed a bug that was causing desyncs, breaking some aspects of the game.
 `,
             "10.5e": `
-- Fixed a bug where you could not purchase a second Great Scientist after finishing Rationalism and adopting "To the Glory of God" Reformation belief;
+- Fixed a bug where a player could not purchase a second Great Scientist after finishing Rationalism and adopting "To the Glory of God" Reformation belief;
 - Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn;
 - Fixed a bug where Unit production progress was reset when researching an improved Unit;
 - Fixed a bug where upgrading Units could reduce the amount of resources needed to maintain them by fractions of a second;
@@ -1824,7 +1824,291 @@ const patchNotes = {
 - Removed \`Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn\`, that caused an issue with other Agreements (however, the UI will still show that the Peace Treaty is for 5 Turns).
 `,
             "11.0": `
-Work in Progress
+BUILDINGS
+
+- Great Mosque of Djenne: Becomes available after discovering Philosophy. Costs 167 Production.
+- Caravansary: Land trade routes produce 4 Gold when connecting to another civilization. 
+- Walls: Increase a city's Hit Points by 50. Does not increase the attack range of a city.
+  - Walls of Babylon: Increase a city's Hit Points by 100. Does not increase a city's attack range.
+- The cost of purchasing a Windmill has been reduced to 680 Gold.
+  - The cost of purchasing a Coffee House has been reduced to 590 Gold.
+
+
+CITY-STATES
+
+- When declaring war on a City-State, the Player's Units located on the City-State's territory will move to the nearest free hexes (similar to declaring war on a human Player).
+- Quest to connect a Luxury Resource to the trade network can only appear if the Resource is within borders of human Players or City-States.
+- Quest to obtain a Great Admiral can only appear if the Player has at least one coastal City.
+- Quest to obtain a Great Writer, Artist, or Musician can only appear after discovering the technologies that allow building of the corresponding guilds.
+- Denounce Quests can no longer appear in MP Games (since only computer Players can be denounced).
+- Quest to convert to a Player's Religion can only appear if the City-State is already under pressure from the Player's Religion.
+
+
+THE AZTECS
+
+- Floating Gardens: +15% Food. Each worked Lake tile provides +2 Food. City must be built next to a River, Lake or Oasis. 
+
+
+THE IROQUOIS
+
+- Unique Bonus: Units move through Forest and Jungle in friendly territory as if they were Roads. These tiles can be used to establish City Connections upon researching The Wheel. Units ignore terrain costs when moving into any tile with Forest outside friendly territory. Caravans move along Forest and Jungle as if they were Roads. Lumbermills become available upon researching Agriculture.
+
+
+CARTHAGE
+
+- Unique Bonus: Allows Food and Production to be moved along trade routes inside your civilization from the beginning of the game. +2 Gold per turn for every exported Luxury resource. Units may cross mountains, taking 50 HP damage if they end a turn on a mountain.
+
+THE CELTS
+
+- Unique Bonus: +1 Faith per city with an adjacent Forest. Bonus increases to +2 Faith in Cities with 3 or more adjacent Forest tiles. 
+
+
+THE INCA
+
+- Unique Bonus: Units ignore terrain costs when moving into any tile with Hills. Half maintenance costs for improvements.
+- Slinger: Replaces the Scout. Combat Strength: 4, Ranged Combat Strength: 5. “May Not Melee Attack”, “Withdraw Before Melee”. When leveling up, can choose Scout's promotions. Upgrades to Archer.
+
+
+MONGOLIA
+
+- Khan: Provides a 15% combat bonus to all player-owned land units within 3 tiles.
+
+
+PANTHEON BELIEFS
+
+- Blessing of the Moon: +1 Production and +1 Gold for each Silk, Spices and Dyes resource.
+- God-King: Palace provides +1 to these yields: Culture, Faith, Gold, Production, Food, Science, Happiness.
+- One with Nature: +5 Faith from Natural Wonders.
+- Craftsmen Rites: +1 Food and +1 in cities with population of 3+.
+- Monument to the Gods: +15% Production of Ancient/Classical Wonders. Ancient/Classical Wonders (except national wonders) provide +1 happiness.
+- Tears of the Gods: +2 Faith for each Gems resource and +2 Faith and +1 Culture for each Pearls resource.
+
+
+TRADITION
+
+- Oligarchy: Garrisoned units cost no maintenance and cities with a garrison gain +50% Ranged Combat Strength. Construct Walls, Castles, Arsenals and Military Bases 25% faster. 
+- Monarchy +1 Gold, +1 Culture and -1 Unhappiness for every 2 Citizens in the Capital. 
+
+
+LIBERTY 
+
+Representation: Each city you found will increase the Culture cost of policies by 30% less than normal. Also starts a Golden Age. 
+
+
+PATRONAGE
+
+- Scholasticism: +10% Culture in the Capital for every active Diplomat. Constabularies and Police Stations provide +3 Science each. 
+- Merchant Confederacy: +1 Trade Route. +1 Happiness in the empire for every trade route to a city-state or your Capital. 
+- Consulates: Influence for completing City-States' quests is increased by 50%. +2 Gold for every friendly and +4 Gold for every allied City-State. 
+- Cultural Diplomacy: Provides an additional spy. Quantity of Resources gifted by City-States increased by 100%. Happiness from gifted Luxuries increased by 50%. 
+- Philanthropy: Grants 2 additional Delegates in the World Congress. After each World Congress session gain 20 Culture, Science and Gold for each Delegate you control. 
+- Finisher: Adopting all policies in the Patronage allows the purchase one Great Person of each type (except Great Prophet) with Gold starting in the Industrial Era. 1000 Gold for the first purchase. +500 Gold for each subsequent purchase.
+
+
+COMMERCE
+
+- Mercantilism: Purchasing items in Cities requires 20% less Gold. Construct Markets, Banks and Stock Exchanges 50% faster, +1 Culture for each of these buildings. 
+- Mercantilism and Protectionism are required to adopt Wagon Trains.
+
+
+AUTOCRACY
+
+- Industrial Espionage (Tenet Level 1): Provides an additional spy. Spies steal technologies 50% faster than the normal rate. 
+- Mobilization (Tenet Level 1): Gold cost of purchasing units reduced by 25%. 
+- Futurism (Tenet Level 1): +250 Tourism with all known civs when a Great General, Admiral, Writer, Artist or Musician is born. 
+- Nationalism (Tenet Level 2): Reduces Unit Gold Maintenance costs by 50%. 
+- Cult of Personality (Tenet Level 3): +50% Tourism to civilizations at war with you. 
+
+
+FREEDOM
+
+- Covert Action (Tenet Level 1): Provides an additional spy. Sending a spy into a City-State gain 5 more Influence per turn. 
+- Arsenal of Democracy (Tenet Level 2): +50% Production when building Air units and Guided and Nuclear Missiles. 
+
+
+ORDER
+
+- Skyscrapers (Tenet Level 1): Gold cost of purchasing and maintenance buildings reduced by 33%
+- Double Agents (Tenet Level 1): Provides an additional spy. Provides +1 to counter-intelligence effectiveness in all cities. 
+- Iron Curtain (Tenet Level 2): Free Courthouse upon city capture. Internal trade routes provide 50% more Food or Production. International Trade Routes are no longer available. 
+- Cultural Revolution (Tenet Level 2): +3 Tourism from Culture buildings. 
+- Dictatorship of the Proletariat (Tenet Level 3): +34% Tourism while the empire is Happy. 
+
+
+TERRAIN
+
+- The Barringer Crater: 4 Science, 4 Gold.
+- Krakatoa: 8 Science.
+
+
+UNITS
+
+- Artillery: does not become obsolete.
+- Destroyer: the chance of intercepting enemy aircraft is increased to 100%. Interception range reduced to 1 tile.
+- Rocket Artillery: Combat Strength: 45, Ranged Combat Strength: 65. Requires Aluminum to train.
+- Bomber: Combat Strength increased to 70.
+  - B17: Combat Strength increased to 75.
+- Stealth Bomber: Combat Strength increased to 95.
+- Giant Death Robot: cost increased to 402 Production
+
+
+INTERFACE
+
+- Added ingame civilization drafter at game creation.
+- Added an indicator if the patch version is up to date.
+- The vote initiator is no longer displayed when starting a Scrap/IRR vote.
+- Added display of theme bonus requirements for museums and wonders in their descriptions.
+
+
+GAME MECHANICS
+
+- Default City attack range increased to 2 tiles.
+- The duration of Caravan trade missions is set to 20 Turns.
+- A player who has entered the Information Age can no longer make non-aggression pacts.
+- The Luxury Resource required for WLTKD will now be selected from the luxuries within the borders of human players or City-States at the time of the update. 
+- A successful coup in a City-State automatically makes peace with that City-State.
+
+
+BUG FIXES
+
+- Fixed a bug where a Peace Treaty with a computer player lasted 1 Turn in MP Games (now after making peace with a computer player one cannot declare war for the next 5 turns), fixed the interface when making peace.
+- Enemy civilian units will now correctly block the hex they are on, preventing a citizen from being placed on it.
+- Fixed a bug where it was possible to make a trade deal during a war.
+- Fixed a bug where it was sometimes impossible to select Air Units carried by Carriers or Submarines in vanilla UI.
+- Fixed a bug where Naval Units would ignore enemy ZoC when moving to a City tile.
+- Fixed a bug where it was possible to purchase more than two Great Scientists after completing Rationalism and adopting "To the Glory of God" Reformation belief.
+
+
+NEW UNIQUE BUILDINGS
+
+- AMERICA
+  - Film Studio — a unique American replacement for Broadcast Tower. Besides increasing Culture output of a city it increases a civilization's Happiness and Gold output. It cannot provide more Happiness than there are Citizens in a city. 
+
+- ARABIA
+  - Madrasa — a unique Arabian replacement for University. It increases the Science output of the city, and it's even more effective if the city is near to jungle tiles or if the city produces lots of Faith. The city must already have a Library in order to construct a Madrasa. 
+
+- ASSYRIA
+  - Sennacherib Garden — a unique Assyrian replacement for Garden. It provides +1 Food and +1 Culture. Unlike the Garden Sennacherib Garden does not have to be built next to a River or Lake. 
+
+- AUSTRIA
+  - Ski Resort — a unique Austrian replacement for Hotel. Ski Resort increases Culture output of a city if it has mountains nearby. 
+
+- BABYLON
+  - Ziggurat — a unique Babylonian replacement for Shrine. It costs more Production and an additional Gold maintenance but provides +1 Faith and +1 Culture after Masonry is researched. 
+
+- BRAZIL
+  - Football Stadium — a unique Brazilian replacement for Stadium that provides +8 Tourism. It cannot provide more Happiness than there are Citizens in a city. 
+
+- BYZANTIUM
+  - Hippodrome — a unique Byzantine building replacing Colosseum. It cost no maintenance and provides +10% Combat Strength to Mounted and Ranged Mounted units and also increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+
+- CARTHAGE
+  - Cothon — a unique Carthaginian replacement for Harbor. Cothon provides Combat Bonus to all naval units fighting in city's territory. It also improves the range and Gold yield of sea trade routes. It allows "water city connections" (see rules) between cities. 
+
+- CHINA
+  - Teahouse — a unique Chinese replacement for Zoo. It provides an additional Culture and also more Happiness to your empire, but it cannot provide more happiness than there are citizens in the city. The city must possess a Colosseum before Teahouse can be constructed. 
+
+- DENMARK
+  - Stave Church — a unique Danish replacement for Temple. It provides a lot of Faith if the city has forest tiles. 
+
+- EGYPT
+  - Stonecutter Workshop — a unique Egyptian replacement for Stone Works. It increases tile improvement construction speed in this city by 25% and can be built anywhere. 
+
+- ENGLAND
+  - Textile Factory — a unique English building replacing Factory. It provides less base Production but in return increases the production of other city tiles. The city must already possess a Workshop. 1 Coal is consumed to increase Textile Factory's base production. 
+
+- ETHIOPIA
+  - Amba — a unique Ethiopian replacement for Military Base. It is cheaper and provides an additional City Strength bonus if the city is built within 2 tiles of a Mountain. 
+
+- FRANCE
+  - Restaurant — a unique French replacement for Zoo. It provides +3 Food and increases the Happiness of your empire, but it cannot provide more happiness than there are citizens in the city. The city must possess a Colosseum before the Restaurant can be constructed. 
+
+- GERMANY
+  - Prussian Staff College — a unique German replacement for Military Academy. It provides Science and a unique Promotion for all land military units trained in the city. 
+
+- GREECE
+  - Agora — a unique Greek replacement for Market. It provides and additional Culture. Trade routes other players make to a city with an Agora will generate an extra 1 Gold for the city owner and the trade route owner gains an additional 1 Gold for the trade route. 
+
+- INDIA
+  - Ashram — a unique Indian replacement for Temple. Ashram increases the Faith of a city and increases Food output of a city. 
+
+- INDONESIA
+  - Kampong — a unique Indonesian replacement for Lighthouse. It provides +1 Food and an additional Food from Coast and Ocean Tiles without resources. Kampong increases the Food output of water tiles and Fish and it increases the Production output of all sea resources. 
+
+- JAPAN
+  - Jinja — a unique Japanese replacement for Shrine. It increases the Faith generated by a city and increases a civilization's Happiness. Jinja cannot provide more Happiness than there are Citizens in a city.
+
+- KOREA
+  - Seowon — a unique Korean replacement for Public School. It costs less and requires less gold maintenance. The city must have already constructed a university in order to build Seowon. 
+
+- MONGOLIA
+  - Yam — a unique Mongolian replacement for caravansary. It provides more Gold from connections between this city and a Capital. Also provides 2 Horses. 
+
+- MOROCCO
+  - Medina Quarter — a unique Moroccan replacement for Bank. It reduces Gold cost of purchasing buildings in the city by 15%. Trade routes other players make to a city with a Medina Quarter will generate an extra 1 Gold for the city owner and the trade route owner gains an additional 1 Gold for the trade route. 
+
+- PERSIA
+  - Pairidaeza — a unique Persian replacement for Garden. It increases the speed at which Great People are generated in the city by 35%. Pairidaeza can be constructed only in cities next to a river or lake. 
+
+- POLAND
+  - Barbakan is — unique Poland replacement for Castle. Barbakan deals a lot of damage to units that end their turn next to a city. The city must possess Walls before Barbakan can be constructed. 
+
+- POLYNESIA
+  - Pa — a unique Polynesian replacement for Walls. It increases a city's Defense Strength by 5 and Hit Points by 50. Unlike Walls Pa can be useful in peacetime. 
+
+- PORTUGAL
+  - Torre de Belem — a unique Portuguese replacement for Castle. Torre de Belem increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. Provides +3 Production after Gunpowder is researched. The city must possess Walls before Torre de Belem can be constructed. 
+
+- ROME
+  - Thermae — a unique Roman replacement for Circus. It increases unit's HP regeneration in the city and also increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+
+- RUSSIA
+  - The Research Institute — a Russian replacement for Research Laboratory. It costs no Gold maintenance and greatly increases the Science output of a city. The city must already possess a Public School to construct the Research Institute. 
+
+- SIAM
+  - Floating Market — a unique Siamese building that replaces Market. It can produce more Gold than usual if a city has some fresh tiles. Trade routes other players make to a city with a Floating Market will generate an extra 1 Gold for the city owner and the trade route owner gains an additional 1 Gold for the trade route. 
+
+- SONGHAI
+  - Slave Market — a unique bank replacement for Songhai. It provides Gold each time a citizen is born. Trade routes other players make to a city with a Slave Market will generate an extra 1 Gold for the city owner and the trade route owner gains an additional 1 Gold for the trade route. 
+
+- SPAIN
+  - La Misión — a unique Spanish replacement for Courthouse. It costs more and becomes available later but can be built in non-occupied cities. Converts all citizens to players religion after construction. Also La Misión increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+
+- SWEDEN
+  - Skansen — a unique Swedish replacement for Museum. It provides additional Culture depends on the quantity of old buildings in the city. Contains 2 slots for Great Works of Art. 
+
+- THE AZTECS
+  - Amoxcalli — a unique Aztec replacement for Library. It slightly increases Culture output of a city and has a slot for a Great Work of Writing which, when filled, gives 2 Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+
+- THE CELTS
+  - Helvetian Silversmith — a unique Celtic replacement for Mint. It provides 1 Culture. Helvetian Silversmith can only be constructed in a city with improved gold, silver, copper or gems resources nearby. Helvetian Silversmith increases the Gold output of each such resource the city has access to. 
+
+- THE HUNS
+  - Khan’s Yurt — a unique Hunnic replacement for Palace. Your Yurt is the seat of your government. Early in the game it provides a significant portion of your capital city's culture, gold, science, and production. It also forms the heart of your empire's trading system. Although the Yurt is automatically rebuilt in another city if your capital is captured, it can still be a terrible blow to your civilization (and it makes it impossible for you to win a Domination victory until you get it back). Protect your Yurt! 
+
+- THE INCA
+  - Qullqa — a unique Incan replacement for Granary and Barn. It is a combination of both of early Food buildings in the game. Build it if you want to speed up the city's growth. 
+
+- THE IROQUOIS
+  - Canoe Dock — a unique Iroquois replacement for caravansary. Besides improving external land trade routes it is available for construction earlier and is cheaper to construct. Provides +2 Gold in the city and +1 Gold from Camps. 
+
+- THE MAYA
+  - Ballcourt — a unique Mayan replacement for colosseum. Increases Golden Age points by 50 at the end of every Maya Long Count calendar cycle (every 394 years). 
+
+- THE NETHERLANDS
+  - Grachten — a unique Dutch replacement for Hydro Plant. It increases Gold output instead of Production of every tile the city works which is also adjacent to the river. Grachten requires no Aluminum for construction. Also provides +4 Production. 
+
+- THE OTTOMANS
+  - Hammam — a unique Turkish replacement for Colosseum. Hammam decreases the amount of Food a city needs to increase in size by 10% and increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+
+- THE SHOSHONE
+  - Sun Dance Tipi — a unique Shoshone replacement for Circus. Unlike Circus it can be constructed if city has an improved source of Bison nearby. 
+
+- THE ZULUS
+  - Isibaya — a unique Zulu replacement for Stable. It can only be constructed in a city near to one or more improved horse, sheep or cattle resources. Isibaya provides +1 Food on Pastures. 
+
+- VENICE
+  - Glassblowing Workshop — a unique Venetian building replacing Windmill. It provides an additional Culture and increases wonder production in the city. 
 `,
         },
     },
