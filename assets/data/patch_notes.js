@@ -1062,6 +1062,17 @@ const patchNotes = {
 - ЯПОНИЯ
   - Дзиндзя — Заменяет святилище. В дополнение к обычным особенностям дает +1 к настроению в городе.
 `,
+            "11.0a": `
+- Исправлена ошибка, из-за которой после выхода игрока из игры у остальных игроков могли многократно увеличиться ресурсы.
+- Исправлена ошибка, из-за которой уникальное повышение Ипподрома могло быть получено при повышении юнита.
+- Исправлены некоторые новые описания.
+- Изменена иконка очков веры на клетках.
+`,
+            "11.0b": `
+- Исправлена ошибка, из-за которой инкский пращник не устаревал;
+- Исправлена ошибка, из-за которой при выдаче квестов городов-государств на Пожертвование золота или Обещание защиты ломался интерфейс города-государства, выдавшего квест;
+- Исправлено описание Садов Сеннахериба а английской локализации.
+`,
         },
     },
     en: {
@@ -2109,6 +2120,17 @@ NEW UNIQUE BUILDINGS
 
 - VENICE
   - Glassblowing Workshop — a unique Venetian building replacing Windmill. It provides an additional Culture and increases wonder production in the city. 
+`,
+            "11.0a": `
+- Fixed a bug where other Players' Resources could multiply after a Player disconnected.
+- Fixed a bug where the unique Promotion of Hippodrome could be taken on Unit level up.
+- Fixed some new descriptions.
+- Updated Faith yield terrain icons.
+`,
+            "11.0b": `
+- Fixed a bug where the Inca Slinger would never become obsolete.
+- Fixed a bug where the City-State UI would break after giving a Gold donation or pledge protection Quest.
+- Fixed description of Sennacherib Garden in English localization.
 `,
         },
     },
