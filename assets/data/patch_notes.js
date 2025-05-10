@@ -624,7 +624,7 @@ const patchNotes = {
 - Фарфоровая пагода дает +25% к науке.
 - Лувр дает трех археологов, а не художника.
 `,
-            "10.4a-c": `
+            "10.4a-e": `
 - Добавлены раздельные таймеры ограничения войны при пересоюживании для каждого города-государства.
 - Исправлена ошибка, из-за которой начиная с патча 10.1b не работали бонусы в защите при сражении дальнобойных юнитов (Шошонский бонус, бонус Химедзи, защитник веры, отечественная война);
 - Добавлены новые эмоции для внутриигрового чата.
@@ -644,8 +644,6 @@ const patchNotes = {
   - Иконка цветочка заменена на зеленый крест;
   - Исправлена ошибка, из-за которой иконки отображались на вражеских юнитах;
   - Исправлена ошибка, из-за которой цветочек (зеленый крест) показывался на иконках кораблей, которые не могут лечиться (находятся не на своей территории), а также юнитах, погруженных на борт.
-`,
-            "10.4d": `
 - В списке юнитов больше не показывается статус ОП юнита (полные/неполные/отсутствие ОП), вместо этого показывается его ОЗ.
 - Воздушные юниты теперь группируются с военными юнитами, а не с мирными в списке юнитов.
 - Процент вложенного производства во всемирную выставку теперь корректно отображается на панели уведомлений и в городе игрока.
@@ -655,8 +653,6 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой игрок получал научный штраф при захвате города с Оракулом.
 - Исправлена ошибка, из-за которой игроку, основавшему пантеон, не показывалось описание пантеона на панели уведомлений.
 - Исправлена ошибка, из-за которой Александрийская библиотека давала неправильное количество науки в дуэльном режиме.
-`,
-            "10.4e": `
 - Исправлена ошибка, из-за которой выигравший Всемирную выставку человек получал 1024 бесплатных института.
 `,
             "10.5": `
@@ -722,13 +718,9 @@ const patchNotes = {
 - Дуэльный режим:
   - Можно дарить всех великих людей союзнику.
 `,
-            "10.5a": `
+            "10.5a-g": `
 - Исправлена ошибка, из-за которой политика Культурный обмен в Эстетике не увеличивала количество слотов специалистов в гильдиях.
-`,
-            "10.5b": `
 - Исправлена ошибка, из-за которой некоторые здания могли получать лишние слоты специалистов.
-`,
-            "10.5c": `
 - Исправления ошибок:
   - Исправлена ошибка, из-за которой боевая мощь юнитов дальнего боя при сражении против других юнитов дальнего боя не увеличивалась во время золотого века при взятии реформации Символизм;
   - Исправлена ошибка, из-за которой в некоторых случаях у игроков оставался обзор вокруг города, в котором было построено ЦРУ;
@@ -758,11 +750,7 @@ const patchNotes = {
 
 - Свобода:
   - Научное общество (1 тир): +1% к науке в городах с населением 5+, +4% в городах 10+, +9% в городах 15+ и тд.
-`,
-            "10.5d": `
 - Исправлена ошибка, из-за которой возникали рассинхроны, ломающие некоторые аспекты игры.
-`,
-            "10.5e": `
 - Исправлена ошибка, из-за которой нельзя было купить второго великого ученого, если был закрыт Рационализм и принята реформация Во славу божью;
 - Исправлена ошибка, из-за которой мир с компьютерными игроками длился всегда 1 ход;
 - Исправлена ошибка, из-за которой прогресс производства юнитов сбрасывался при исследовании усовершенствованного юнита;
@@ -770,11 +758,7 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой культура, получаемая Бразилией во время золотого века, рассчитывалась неправильно;
 - Исправлена ошибка, из-за которой Венеция не становилась изначальным владельцем города-государство при покупке Венецианским торговцем;
 - Изменены иконки очков веры на клетках.
-`,
-            "10.5f": `
 - Исправлена ошибка, из-за которой у некоторых игроков появлялось сообщение о создании юнитов других империй.
-`,
-            "10.5g": `
 - Убрано \`Исправлена ошибка, из-за которой мир с компьютерными игроками длился всегда 1 ход\`, из-за чего возникала ошибка при заключении других договоров (тем не менее в интерфейсе будет писаться, что мир заключается на 5 ходов).
 `,
             "11.0": `
@@ -1678,7 +1662,7 @@ const patchNotes = {
 - East India Company provides +4 Gold and +20% Gold in the city.  
 - Porcelain Tower grants +25% Science.  
 - Louvre provides three archaeologists instead of a Great Artist.  `,
-            "10.4a-c": `
+            "10.4a-e": `
 - Added separate war limitation timers for re-allying with each city-state.  
 - Fixed a bug where defensive bonuses in battles with ranged units (Shoshone bonus, Himeji bonus, Defender of the Faith, Patriotic War) stopped working since patch 10.1b.  
 - New emotes added for the in-game chat.  
@@ -1701,8 +1685,6 @@ const patchNotes = {
   - The flower icon has been replaced with a green cross.  
   - Fixed a bug where icons were displayed on enemy units.  
   - Fixed a bug where the flower (green cross) was shown on ships that cannot heal (not on their own territory) and on units embarked on transports.  
-`,
-            "10.4d": `
 - The unit list no longer displays the status of experience points (full/partial/missing XP). Instead, it shows the unit's HP.  
 - Air units are now grouped with military units rather than civilian units in the unit list.  
 - The percentage of production contributed to the World’s Fair now correctly displays in the notifications panel and in the player’s city.  
@@ -1712,8 +1694,6 @@ const patchNotes = {
 - Fixed a bug where the player incurred a science penalty when capturing a city with the Oracle.  
 - Fixed a bug where players who founded a pantheon did not see the pantheon description in the notifications panel.  
 - Fixed a bug where the Great Library provided the incorrect amount of science in Duel mode.  
-`,
-            "10.4e": `
 - Fixed a bug where the player who won the World’s Fair received 1,024 free policies.
 `,
             "10.5": `
@@ -1779,13 +1759,9 @@ const patchNotes = {
 - Duel Mode:
   - Players can gift all great people to an ally.
 `,
-            "10.5a": `
+            "10.5a-g": `
 - Fixed a bug where the "Cultural Exchange" policy in Aesthetics did not increase the number of specialist slots in guilds.
-`,
-            "10.5b": `
 - Fixed a bug where some buildings received excess specialist slots.
-`,
-            "10.5c": `
 - Bug Fixes:
   - Fixed a bug where the Combat Strength of ranged units when fighting against other ranged units did not increase during the Golden Age when taking the Symbolism reformation;
   - Fixed a bug where in some cases players were left with a vision around the city where the National Intelligence Agency was built;
@@ -1815,11 +1791,7 @@ const patchNotes = {
 
 - Freedom:
   - Learned Society (Tenet Level 1): +1%, +4%, +9%, +16%, +25%, +36%, 49%, 64% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+. 
-`,
-            "10.5d": `
 - Fixed a bug that was causing desyncs, breaking some aspects of the game.
-`,
-            "10.5e": `
 - Fixed a bug where a player could not purchase a second Great Scientist after finishing Rationalism and adopting "To the Glory of God" Reformation belief;
 - Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn;
 - Fixed a bug where Unit production progress was reset when researching an improved Unit;
@@ -1827,11 +1799,7 @@ const patchNotes = {
 - Fixed a bug where the Culture received by Brazil during the Golden Age was calculated incorrectly;
 - Fixed a bug where Venice did not become the original owner of a City-State when bought out by Merchant of Venice;
 - Updated Faith yield terrain icons.
-`,
-            "10.5f": `
 - Fixed a bug where some players would get a message about training Units from other Civilizations.
-`,
-            "10.5g": `
 - Removed \`Fixed a bug where a Peace Treaty with computer civs always lasted 1 Turn\`, that caused an issue with other Agreements (however, the UI will still show that the Peace Treaty is for 5 Turns).
 `,
             "11.0": `
