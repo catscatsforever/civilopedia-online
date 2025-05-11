@@ -1057,6 +1057,9 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой при выдаче квестов городов-государств на Пожертвование золота или Обещание защиты ломался интерфейс города-государства, выдавшего квест;
 - Исправлено описание Садов Сеннахериба а английской локализации.
 `,
+            "11.0c": `
+- Исправлены некоторые ошибки, связанные с внутриигровым драфтером (готовность к драфту сбрасывается при отключении игрока из лобби, вызванные драфтером технические сообщения больше не будут выводиться во время игры).
+`,
         },
     },
     en: {
@@ -2099,6 +2102,9 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where the Inca Slinger would never become obsolete.
 - Fixed a bug where the City-State UI would break after giving a Gold donation or pledge protection Quest.
 - Fixed description of Sennacherib Garden in English localization.
+`,
+            "11.0c": `
+- Fixed some bugs related to Ingame Civilization Drafter (draft readiness resets when a player is disconnected from the lobby, draft-related technical messages are no longer displayed during the game).
 `,
         },
     },
