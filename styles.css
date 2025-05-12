@@ -30,6 +30,7 @@
     transform: translate(-50%, -50%);
     font-size: 1.3rem;
     color: rgba(255, 255, 200, 255) !important;
+    filter: drop-shadow(1px 1px 1px black) drop-shadow(0 0 2px black);
     }
 #loaderHL {
     position: absolute;
@@ -538,3 +539,14 @@ del .icon-cont::after {
     right: -1px;
     bottom: 1.2ex;
 }
+ a {
+     color: inherit;
+ }
+
+ a:hover {
+     color: rgba(255, 255, 140, 255);
+ }
+
+ .tooltip-inner a {
+     text-decoration-line: none;
+ }

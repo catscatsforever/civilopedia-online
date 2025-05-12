@@ -19,6 +19,7 @@ var tag_mappings = {
     "COLOR_NEGATIVE_TEXT": "<span style='color:rgb(255,76,76)'>",
     "COLOR_CYAN": "<span style='color:#00E2E2'>",
     "ENDCOLOR": "</span>",
+    "\\LINK": "</a>",
     ICON_ALPHA: "<span class='icon-cont'><img class='icon align-top' src='./assets/images/icon_images/Civ5Icon.Alpha.png'></span>",
     ICON_BLOCKADED: "<span class='icon-cont'><img class='icon align-top' src='./assets/images/icon_images/Civ5Icon.Blockaded.png'></span>",
     ICON_BULLET: "<span class='icon-cont'><img class='icon align-top' src='./assets/images/icon_images/Civ5Icon.Bullet.png'></span>",
@@ -290,7 +291,12 @@ function get_translation(language, key, gcase = 0, encodeTags) {
         return parse_tags(language, key, encodeTags)
     }
 }
-
+let replacer = {
+    [Symbol.replace](text) {
+        let re = `(?<=[^a-z0-9а-яё_>-]|^)(${Object.keys(articleList).sort((a,b)=>{return a.length<b.length}).map(entry => RegExp.escape(entry)).join('|')})(?=[^a-z0-9а-яё_<-]|$)`;
+        return text.replaceAll(new RegExp(re, "ig"), (m,p1)=>`[LINK=#${articleList[p1.toLowerCase()]}]${p1}[\\LINK]`);
+    }
+}
 function addMarkup(text) {
     return text
         .trim()
@@ -399,6 +405,9 @@ function parse_tags(language, text, encodeTags) {
                 return String.fromCodePoint(i)
             }
             return `${tag_mappings[a]}`
+        }
+        if (a.substring(0,5) === 'LINK=') {
+            return `<a href="${a.substring(5).replace('"','&quot;')}">`
         }
         return ''
     })
@@ -538,7 +547,7 @@ $(document).on("click", '#forwardbutton', () => {
 
 window.addEventListener("popstate", (e) => {
     $('[data-bs-toggle="tooltip"]').tooltip('dispose')
-    currentTopic = e.state.index
+    currentTopic = e.state ? e.state.index : 0
     if (!search_article(location.hash.substring(1), true)) {
         search_article('PEDIA_HOME_PAGE', true)
     }
