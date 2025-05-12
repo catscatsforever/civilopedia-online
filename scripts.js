@@ -11,6 +11,7 @@ let listOfTopicsViewed = []
 let currentTopic = -1
 let patchDiff
 let encodeList = {}
+let articleList = {}
 
 var tag_mappings = {
     "NEWLINE": "<br>",
@@ -256,7 +257,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
     content_mapping.push({item_id: 'PATCH_FULL_CHANGELOG', view_id: 'view_5', strings: {title: 'TXT_KEY_PATCH_FULL_CHANGELOG_TITLE'}, diff: getPatchDiff()})
-    content_mapping.push(...Object.entries(patchNotes.ru.versions).map(([k, v]) => {return {item_id: `PATCH${k}`, view_id: 'view_4', strings: {title: `TXT_KEY_PATCH_${k}_TITLE`, text: `TXT_KEY_PATCH_${k}_SUMMARY`}}}))
+    let latestVersion = '0'
+    content_mapping.push(...Object.entries(patchNotes.ru.versions).map(([k, v]) => {latestVersion = k; return {item_id: `PATCH${k}`, view_id: 'view_4', strings: {title: `TXT_KEY_PATCH_${k}_TITLE`, text: `TXT_KEY_PATCH_${k}_SUMMARY`}}}))
+
+    articleList = {...Object.entries(content_mapping.filter(x => x?.strings.title).map((item) => {return {label: item.strings.title, id: item.item_id}})).reduce((acc, [k, v]) => {return {...acc, [get_translation('en', v.label).toLowerCase()]: v.id, [get_translation('ru', v.label).toLowerCase()]: v.id}}, {})}
     data_mappings.categories[0].sections.push(
         /*{
             label: 'TXT_KEY_PATCH_FULL_TITLE',
@@ -266,6 +270,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             label: 'TXT_KEY_PATCH_VERSIONS_TITLE',
             items: Object.entries(patchNotes.ru.versions).map(([k, v]) => {return {id: `PATCH${k}`, label: `TXT_KEY_PATCH_${k}_TITLE`}}).sort((a, b) => -a.label.localeCompare(b.label, undefined, {numeric: true}))
         })
+    console.log('latest', latestVersion)
+    localStorage.setItem('latestVersion', latestVersion);
     translations['en'] = {...translations['en'], ...patchTxtTags.en, ...Object.entries(patchNotes.en.versions).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Version ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru.versions).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     if (!search_article(location.hash.substring(1))) {
@@ -308,6 +314,7 @@ function addMarkup(text) {
         .replaceAll(/__([^_]+)__/gm, (m, c1) => `<u>${c1}</u>`)  // underline __text__
         .replaceAll(/\*\*([^\*]+)\*\*/gm, (m, c1) => `<b>${c1}</b>`)  // bold **text**
         .replaceAll(/_([^_]+)_/gm, (m, c1) => `<i>${c1}</i>`).replaceAll(/\*([^\*]+)\*/gm, (m, c1) => `<i>${c1}</i>`)  // italics *text*/_text_
+        .replace(replacer)  // search for possible article links
 }
 
 function getPatchDiff() {
