@@ -1838,21 +1838,21 @@ THE AZTECS
 
 THE IROQUOIS
 
-- Unique Bonus: Units move through Forest and Jungle in friendly territory as if they were Roads. These tiles can be used to establish City Connections upon researching The Wheel. Units ignore terrain costs when moving into any tile with Forest outside friendly territory. Caravans move along Forest and Jungle as if they were Roads. Lumbermills become available upon researching Agriculture.
+- Unique ability: Units move through Forest and Jungle in friendly territory as if they were Roads. These tiles can be used to establish City Connections upon researching The Wheel. Units ignore terrain costs when moving into any tile with Forest outside friendly territory. Caravans move along Forest and Jungle as if they were Roads. Lumbermills become available upon researching Agriculture.
 
 
 CARTHAGE
 
-- Unique Bonus: Allows Food and Production to be moved along trade routes inside your civilization from the beginning of the game. +2 Gold per turn for every exported Luxury resource. Units may cross mountains, taking 50 HP damage if they end a turn on a mountain.
+- Unique ability: Allows Food and Production to be moved along trade routes inside your civilization from the beginning of the game. +2 Gold per turn for every exported Luxury resource. Units may cross mountains, taking 50 HP damage if they end a turn on a mountain.
 
 THE CELTS
 
-- Unique Bonus: +1 Faith per city with an adjacent Forest. Bonus increases to +2 Faith in Cities with 3 or more adjacent Forest tiles. 
+- Unique ability: +1 Faith per city with an adjacent Forest. Bonus increases to +2 Faith in Cities with 3 or more adjacent Forest tiles. 
 
 
 THE INCA
 
-- Unique Bonus: Units ignore terrain costs when moving into any tile with Hills. Half maintenance costs for improvements.
+- Unique ability: Units ignore terrain costs when moving into any tile with Hills. Half maintenance costs for improvements.
 - Slinger: Replaces the Scout. Combat Strength: 4, Ranged Combat Strength: 5. “May Not Melee Attack”, “Withdraw Before Melee”. When leveling up, can choose Scout's promotions. Upgrades to Archer.
 
 
@@ -2059,7 +2059,7 @@ NEW UNIQUE BUILDINGS
   - Slave Market — a unique bank replacement for Songhai. It provides Gold each time a citizen is born. Trade routes other players make to a city with a Slave Market will generate an extra 1 Gold for the city owner and the trade route owner gains an additional 1 Gold for the trade route. 
 
 - SPAIN
-  - La Misión — a unique Spanish replacement for Courthouse. It costs more and becomes available later but can be built in non-occupied cities. Converts all citizens to players religion after construction. Also La Misión increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
+  - Mission — a unique Spanish replacement for Courthouse. It costs more and becomes available later but can be built in non-occupied cities. Converts all citizens to players religion after construction. Also Mission increases a civilization's Happiness. It cannot provide more Happiness than there are Citizens in a city. 
 
 - SWEDEN
   - Skansen — a unique Swedish replacement for Museum. It provides additional Culture depends on the quantity of old buildings in the city. Contains 2 slots for Great Works of Art. 
@@ -2112,8 +2112,8 @@ NEW UNIQUE BUILDINGS
 - Fixed some bugs related to Ingame Civilization Drafter (draft readiness resets when a player is disconnected from the lobby, draft-related technical messages are no longer displayed during the game).
 `,
             "11.0d": `
-- Fixed a bug where La Misión would not eliminate extra Unhappiness from an Occupied City;
-- Fixed a bug where La Misión would not be given for free with the Iron Curtain social policy;
+- Fixed a bug where Mission would not eliminate extra Unhappiness from an Occupied City;
+- Fixed a bug where Mission would not be given for free with the Iron Curtain social policy;
 - Fixed a bug where adopting Philanthropy social policy could cause Anarchy after World Congress vote.
 `,
         },
