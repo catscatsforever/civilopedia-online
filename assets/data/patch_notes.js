@@ -1060,6 +1060,11 @@ const patchNotes = {
             "11.0c": `
 - Исправлены некоторые ошибки, связанные с внутриигровым драфтером (готовность к драфту сбрасывается при отключении игрока из лобби, вызванные драфтером технические сообщения больше не будут выводиться во время игры).
 `,
+            "11.0d": `
+- Исправлена ошибка, из-за которой Миссия не снимала недовольство в оккупированных городах;
+- Исправлена ошибка, из-за которой Миссия не давалась бесплатно при захвате города при принятой политике Железный занавес;
+- Исправлена ошибка, из-за которой при принятии политики Филантропия мог появляться статус анархии после голосования на мировом конгрессе.
+`,
         },
     },
     en: {
@@ -2105,6 +2110,11 @@ NEW UNIQUE BUILDINGS
 `,
             "11.0c": `
 - Fixed some bugs related to Ingame Civilization Drafter (draft readiness resets when a player is disconnected from the lobby, draft-related technical messages are no longer displayed during the game).
+`,
+            "11.0d": `
+- Fixed a bug where La Misión would not eliminate extra Unhappiness from an Occupied City;
+- Fixed a bug where La Misión would not be given for free with the Iron Curtain social policy;
+- Fixed a bug where adopting Philanthropy social policy could cause Anarchy after World Congress vote.
 `,
         },
     },
