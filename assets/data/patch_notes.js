@@ -1065,6 +1065,10 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой Миссия не давалась бесплатно при захвате города при принятой политике Железный занавес;
 - Исправлена ошибка, из-за которой при принятии политики Филантропия мог появляться статус анархии после голосования на мировом конгрессе.
 `,
+            "11.0e": `
+- Исправлена ошибка, из-за которой квартал Медина давал скидку на покупку юнитов.
+- Исправлена ошибка, из-за которой кнопка голосования могла не появляться или быть некликабельной.
+`,
         },
     },
     en: {
@@ -2115,6 +2119,10 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where Mission would not eliminate extra Unhappiness from an Occupied City;
 - Fixed a bug where Mission would not be given for free with the Iron Curtain social policy;
 - Fixed a bug where adopting Philanthropy social policy could cause Anarchy after World Congress vote.
+`,
+            "11.0e": `
+- Fixed a bug where Medina Quarter would give a discount on unit purchases.
+- Fixed a bug where the voting button would not appear or could be unclickable.
 `,
         },
     },
