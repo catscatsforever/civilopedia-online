@@ -1069,6 +1069,9 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой квартал Медина давал скидку на покупку юнитов.
 - Исправлена ошибка, из-за которой кнопка голосования могла не появляться или быть некликабельной.
 `,
+            "11.0f": `
+- Исправлена ошибка, из-за которой испанскую Миссию невозможно было построить в священных городах чужих религий.
+`,
         },
     },
     en: {
@@ -2123,6 +2126,9 @@ NEW UNIQUE BUILDINGS
             "11.0e": `
 - Fixed a bug where Medina Quarter would give a discount on unit purchases.
 - Fixed a bug where the voting button would not appear or could be unclickable.
+`,
+            "11.0f": `
+- Fixed a bug where the Spanish Mission could not be built in sacred cities of foreign religions.
 `,
         },
     },
