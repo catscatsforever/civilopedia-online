@@ -299,7 +299,7 @@ function get_translation(language, key, gcase = 0, encodeTags) {
 }
 let replacer = {
     [Symbol.replace](text) {
-        let re = `(?<=[^a-z0-9а-яё_>-]|^)(${Object.keys(articleList).sort((a,b)=>{return a.length<b.length}).map(entry => RegExp.escape(entry)).join('|')})(?=[^a-z0-9а-яё_<-]|$)`;
+        let re = `(?<=[^a-z0-9а-яё_>-]|^)(${Object.keys(articleList).sort((a,b)=>{return a.length<b.length}).map(entry => RegExp.escape(entry)).join('|')})(?=<\\/li>|[^a-z0-9а-яё_<-]|$)`;
         return text.replaceAll(new RegExp(re, "ig"), (m,p1)=>`[LINK=#${articleList[p1.toLowerCase()]}]${p1}[\\LINK]`);
     }
 }
