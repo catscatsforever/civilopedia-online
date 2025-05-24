@@ -2176,6 +2176,49 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where the Spanish Mission could not be built in sacred cities of foreign religions.
 `,
             "11.1": `
+- TRADITION
+  - Provides a free culture building in your first 4 cities (now only culture buildings from the appropriate building chain are given).
+
+- PATRONAGE 
+  - Finisher: The purchase cost of a Great Person is 1000 Gold (1500 Scientist) and does not change.
+
+- FREEDOM
+  - Learned Society (Tenet Level 1->2): +1%, +4%, +9%, +16%, +25%, +36%, 49%, 64% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+.
+  - Urbanization (Tenet Level 2->1): +1 Local Happiness from every Water Mill, Aqueduct, Hospital, and Medical Lab.
+
+- AUTOCRACY
+  - Militarism (Tenet Level 2): +2 Local Happiness from every Armory and Military Academy. 
+
+- ORDER
+  - Socialist Realism (Tenet Level 1): +1 Local Happiness from Monuments, Amphitheaters and Opera Houses. 
+
+- THE MAYA
+  - Pyramid: +1 Science, +2 Faith, costs 26 Production.
+
+- INDIA
+  - War Elephant: Costs 37 Production. 
+
+- UNIQUE BUILDING CHANGES
+  - Ski Resort (Austria) — Replaces Hotel. In addition to the usual features, +2 Culture in every tile next to a Mountain.
+  - Textile Factory (England) — Replaces Factory. Each source of Silk, Furs, Cotton and Sheep worked by this City produce +1 Production.
+  - Madrasa (Arabia) — Replaces University. 25% Faith produced by this city converts to Science.
+  - Amoxcalli (The Aztecs) — Replaces Library. In addition to the usual features, it provides +1 Culture. 1 free slot for a Great Work of Writing which, when filled, gives 2 Happiness
+  - Football Stadium (Brazil) — Replaces Stadium. Costs less Production (201). Provides +4 Happiness and +8 Tourism.
+  - Ziggurat (Babylon) — Replaces Shrine. Costs 26 Production and 1 Gold to maintain. Upon discovering Masonry it gains +1 Faith and +1 Culture.
+  - Stave Church (Denmark) — Replaces Temple. In addition to the usual features, doubles the pantheon bonus of the dominant religion's Pantheon (the Pantheon itself too) in the City.
+  - Ashram (Индия) — Replaces Temple. In addition to the usual features, +15% Food. Provides additional +15% Food if there are no other cities 5 tile away from this city.
+  - Ballcourt (The Maya) — Replaces Colosseum. In addition to the usual features, increases Golden Age points by 30 at the end of every Maya Long Count calendar cycle (every 394 years).
+  - Slave Market (Songhai) — Replaces Bank. In addition to the usual features, gain 50 Gold each time a citizen is born.
+  - Sun Dance Tipi (The Shoshone) — Replaces Circus. In addition to the usual features, can be built if there is an improved source of Bison or Deer in the City.
+
+- BUG FIXES
+  - Fixed a bug where the combat strength of ranged units was incorrectly calculated with the Assyria bonus.
+  - Fixed a bug where the combat strength of ranged units was incorrectly calculated with the Ethiopia bonus.
+  - Fixed a bug where the combat strength of ranged units was incorrectly calculated when adopting the Discipline Policy.
+  - Satellites of Spain can no longer build a Mission.
+  - Fixed a bug where in some cases a City could request a Luxury Resource not located within the boundaries of a Player controlled Civilization or City-States to start a WLTKD.
+  - Fixed a bug where it was possible to buy a Great Admiral for Faith in a land City.
+  - Fixed a bug where the bonuses of the "God-King" and "Monument to the Gods" Pantheons were incorrectly doubled when adopting the Religious Tolerance Policy.
 `,
         },
     },
