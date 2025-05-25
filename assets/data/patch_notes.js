@@ -5,8 +5,22 @@ const patchTxtTags = {
         'TXT_KEY_PATCH_ADDED': 'Добавлено:',
         'TXT_KEY_PATCH_REMOVED': 'Удалено:',
         'TXT_KEY_PATCH_HOME_PAGE_LABEL': 'Турнирный патч',
-        'TXT_KEY_PATCH_HOME_PAGE_TEXT': `
-Текущая версия: {TXT_KEY_MULTIPLAYER_STAGING_ROOM}
+        'TXT_KEY_PATCH_HOME_PAGE_TEXT':  `
+Текущая версия: [COLOR_POSITIVE_TEXT][LINK=#PATCH${localStorage.getItem('latestVersion') ?? '11.0'}]{TXT_KEY_PATCH_VERSION}[\\LINK][ENDCOLOR][NEWLINE]
+[NEWLINE]
+Это онлайн версия цивилопедии для игры Sid Meier's Civilization V, включающая изменения [LINK=https://github.com/catscatsforever/Civ5-Patch]Патча для ФФА6 Турнира[\\LINK][NEWLINE]
+[NEWLINE]
+Турнирный патч — это глобальное дополнение, изначально созданное для проведения турниров с исправлениями баланса и ошибок оригинальной игры, сейчас предлагает расширение игровых механик, новые уникальные бонусы и многое другое! Предназначен в первую очередь для игр по сети (ФФА, дуэли).[NEWLINE]
+Подробное описание изменений вы можете посмотреть через панель навигации слева.[NEWLINE]
+[NEWLINE]
+Установка[NEWLINE]
+[NEWLINE]
+- [LINK=https://github.com/catscatsforever/Civ5-Patch/releases]Скачать из репозитория[\\LINK][NEWLINE]
+- [LINK=https://docs.google.com/document/d/1CIhWQHXBoCd-A-PpHAn4gbuej8Pha-fcbGJFxFj_fZo]Альтернативная ссылка[\\LINK][NEWLINE]
+Для установки распакуйте архив в директорию ...\\Sid Meier's Civilization V\\Assets\\DLC[NEWLINE]
+Примечание: перед первым запуском игры с патчем обязательно запустите файл ui_check.bat, который расположен в корневой папке патча![NEWLINE]
+[NEWLINE]
+Патч совместим с EUI версии 1.28g ([LINK=https://forums.civfanatics.com/resources/civ5-enhanced-user-interface.24303/history]скачать[\\LINK]), после добавления или отключения EUI необходимо заново запустить ui_check.bat[NEWLINE]
         `,
     },
     en: {
@@ -15,8 +29,22 @@ const patchTxtTags = {
         'TXT_KEY_PATCH_ADDED': 'Added:',
         'TXT_KEY_PATCH_REMOVED': 'Removed:',
         'TXT_KEY_PATCH_HOME_PAGE_LABEL': 'Tournament Patch',
-        'TXT_KEY_PATCH_HOME_PAGE_TEXT': `
-Current version: {TXT_KEY_MULTIPLAYER_STAGING_ROOM}
+        'TXT_KEY_PATCH_HOME_PAGE_TEXT':  `
+Current version: [COLOR_POSITIVE_TEXT][LINK=#PATCH${localStorage.getItem('latestVersion') ?? '11.0'}]{TXT_KEY_PATCH_VERSION}[\\LINK][ENDCOLOR][NEWLINE]
+[NEWLINE]
+This is the online version of the Civilopedia for the game Sid Meier's Civilization V, including changes from the [LINK=https://github.com/catscatsforever/Civ5-Patch]FFA6 Tournament Patch[\\LINK][NEWLINE]
+[NEWLINE]
+Tournament Patch is a global add-on that was originally created for tournaments with balance tweaks and bug fixes for the base game. Now, it also offers expanded game mechanics, new unique bonuses and much more! It is primarily intended for online play (FFA, duels).[NEWLINE]
+A detailed description of the changes can be found in the navigation bar on the left side of the screen.[NEWLINE]
+[NEWLINE]
+Installation[NEWLINE]
+[NEWLINE]
+- [LINK=https://github.com/catscatsforever/Civ5-Patch/releases]Download from repository[\\LINK][NEWLINE]
+- [LINK=https://docs.google.com/document/d/1CIhWQHXBoCd-A-PpHAn4gbuej8Pha-fcbGJFxFj_fZo]Alternative link[\\LINK][NEWLINE]
+To install the patch, extract the archive into the ...\\Sid Meier's Civilization V\\Assets\\DLC directory.[NEWLINE]
+Note: Before starting the game with the patch for the first time, be sure to run the ui_check.bat file located in the root folder of the patch![NEWLINE]
+[NEWLINE]
+Patch is compatible with EUI version 1.28g ([LINK=https://forums.civfanatics.com/resources/civ5-enhanced-user-interface.24303/history]download[\\LINK]), after adding or disabling EUI you need to run ui_check.bat again.[NEWLINE]
         `,
     },
 }
