@@ -552,6 +552,18 @@ $(document).on("click", '#forwardbutton', () => {
     }
 })
 
+$(document).on("click", 'a', function (e) {
+    if (this.pathname === window.location.pathname) {
+        //console.log('a', e.target.hash.slice(1))
+        search_article(e.target.hash.slice(1))
+    }
+    else {
+        //console.log('external', e.target.href)
+        window.open(e.target.href, '_blank')
+    }
+    e.preventDefault()
+})
+
 window.addEventListener("popstate", (e) => {
     $('[data-bs-toggle="tooltip"]').tooltip('dispose')
     currentTopic = e.state ? e.state.index : 0
