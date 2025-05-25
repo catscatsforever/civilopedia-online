@@ -1074,30 +1074,20 @@ const patchNotes = {
 - ЯПОНИЯ
   - Дзиндзя — Заменяет святилище. В дополнение к обычным особенностям дает +1 к настроению в городе.
 `,
-            "11.0a": `
+            "11.0a-f": `
 - Исправлена ошибка, из-за которой после выхода игрока из игры у остальных игроков могли многократно увеличиться ресурсы.
 - Исправлена ошибка, из-за которой уникальное повышение Ипподрома могло быть получено при повышении юнита.
 - Исправлены некоторые новые описания.
 - Изменена иконка очков веры на клетках.
-`,
-            "11.0b": `
 - Исправлена ошибка, из-за которой инкский пращник не устаревал;
 - Исправлена ошибка, из-за которой при выдаче квестов городов-государств на Пожертвование золота или Обещание защиты ломался интерфейс города-государства, выдавшего квест;
 - Исправлено описание Садов Сеннахериба а английской локализации.
-`,
-            "11.0c": `
 - Исправлены некоторые ошибки, связанные с внутриигровым драфтером (готовность к драфту сбрасывается при отключении игрока из лобби, вызванные драфтером технические сообщения больше не будут выводиться во время игры).
-`,
-            "11.0d": `
 - Исправлена ошибка, из-за которой Миссия не снимала недовольство в оккупированных городах;
 - Исправлена ошибка, из-за которой Миссия не давалась бесплатно при захвате города при принятой политике Железный занавес;
 - Исправлена ошибка, из-за которой при принятии политики Филантропия мог появляться статус анархии после голосования на мировом конгрессе.
-`,
-            "11.0e": `
 - Исправлена ошибка, из-за которой квартал Медина давал скидку на покупку юнитов.
 - Исправлена ошибка, из-за которой кнопка голосования могла не появляться или быть некликабельной.
-`,
-            "11.0f": `
 - Исправлена ошибка, из-за которой испанскую Миссию невозможно было построить в священных городах чужих религий.
 `,
             "11.1": `
@@ -2177,35 +2167,25 @@ NEW UNIQUE BUILDINGS
 - VENICE
   - Glassblowing Workshop — a unique Venetian building replacing Windmill. It provides an additional Culture and increases wonder production in the city. 
 `,
-            "11.0a": `
+            "11.0a-f": `
 - Fixed a bug where other Players' Resources could multiply after a Player disconnected.
 - Fixed a bug where the unique Promotion of Hippodrome could be taken on Unit level up.
 - Fixed some new descriptions.
 - Updated Faith yield terrain icons.
-`,
-            "11.0b": `
 - Fixed a bug where the Inca Slinger would never become obsolete.
 - Fixed a bug where the City-State UI would break after giving a Gold donation or pledge protection Quest.
 - Fixed description of Sennacherib Garden in English localization.
-`,
-            "11.0c": `
 - Fixed some bugs related to Ingame Civilization Drafter (draft readiness resets when a player is disconnected from the lobby, draft-related technical messages are no longer displayed during the game).
-`,
-            "11.0d": `
 - Fixed a bug where Mission would not eliminate extra Unhappiness from an Occupied City;
 - Fixed a bug where Mission would not be given for free with the Iron Curtain social policy;
 - Fixed a bug where adopting Philanthropy social policy could cause Anarchy after World Congress vote.
-`,
-            "11.0e": `
 - Fixed a bug where Medina Quarter would give a discount on unit purchases.
 - Fixed a bug where the voting button would not appear or could be unclickable.
-`,
-            "11.0f": `
 - Fixed a bug where the Spanish Mission could not be built in sacred cities of foreign religions.
 `,
             "11.1": `
 - TRADITION
-  - Provides a free culture building in your first 4 cities (now only culture buildings from the appropriate building chain are given).
+  - Legalism: Provides a free culture building in your first 4 cities (now only culture buildings from the appropriate building chain are given).
 
 - PATRONAGE 
   - Finisher: The purchase cost of a Great Person is 1000 Gold (1500 Scientist) and does not change.
