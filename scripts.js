@@ -276,9 +276,15 @@ document.addEventListener("DOMContentLoaded", async function () {
     translations['ru'] = {...translations['ru'], ...patchTxtTags.ru, ...Object.entries(patchNotes.ru.versions).reduce((acc, [k, v]) => {return {...acc, [`TXT_KEY_PATCH_${k}_TITLE`]: `Версия ${k}`, [`TXT_KEY_PATCH_${k}_SUMMARY`]: '<ul>' + addMarkup(v) + '</ul>'}}, {})}
     if (!search_article(location.hash.substring(1))) {
         currentTopic++
+    if (!search_article(location.hash.substring(1), true)) {
+        currentTopic = 0
         listOfTopicsViewed.push(get_info_from_item_id('PEDIA_HOME_PAGE'))
         history.replaceState({list: listOfTopicsViewed, index: currentTopic}, '', '#PEDIA_HOME_PAGE');
         search_article('PEDIA_HOME_PAGE', true)
+    } else {
+        currentTopic = 0
+        listOfTopicsViewed.push(get_info_from_item_id(location.hash.substring(1)))
+        history.replaceState({list: listOfTopicsViewed, index: 0}, '', `#${current_item.id}`);
     }
     create_listeners()
     $( "#pedia-search" ).autocomplete({
