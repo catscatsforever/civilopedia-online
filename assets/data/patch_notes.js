@@ -1551,6 +1551,11 @@ const patchNotes = {
   - Исправлена ошибка, из-за которой можно было купить адмирала за очки веры в наземном городе.
   - Исправлена ошибка, из-за которой бонусы пантеонов "Божественный правитель" и "Памятник богам" некорректно удваивались при принятии института Веротерпимость.
 `,
+            "11.1a": `
+- Исправлена ошибка, из-за которой Венеция могла сделать сателлитом свой город.
+- Исправлена ошибка, из-за которой в интерфейсе не показывался бонус к атаке против городов от некоторых повышений.
+- Исправлена ошибка, из-за которой в интерфейсе некорректно отображалось счастье со строений, полученное от пантеонов.
+`,
         },
     },
     en: {
@@ -3057,6 +3062,11 @@ NEW UNIQUE BUILDINGS
   - Fixed a bug where in some cases a City could request a Luxury Resource not located within the boundaries of a Player controlled Civilization or City-States to start a WLTKD.
   - Fixed a bug where it was possible to buy a Great Admiral for Faith in a land City.
   - Fixed a bug where the bonuses of the "God-King" and "Monument to the Gods" Pantheons were incorrectly doubled when adopting the Religious Tolerance Policy.
+`,
+            "11.1a": `
+- Fixed a bug where Venice could sometimes make its city a puppet.
+- Fixed a bug where the attack modifier against Cities was not displayed for some Promotions.
+- Fixed a bug where Happiness from Buildings received from Pantheon Beliefs was displayed incorrectly.
 `,
         },
     },
