@@ -1556,6 +1556,10 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой в интерфейсе не показывался бонус к атаке против городов от некоторых повышений.
 - Исправлена ошибка, из-за которой в интерфейсе некорректно отображалось счастье со строений, полученное от пантеонов.
 `,
+            "11.1b": `
+- Исправлена ошибка, из-за которой Невольничий рынок не давал золото за новых жителей при взятии политики "Переселение" и постройке Останкино.
+- Исправлена ошибка, из-за которой кнопка завершения хода могла становиться неактивной после объявления войны между игроками.
+`,
         },
     },
     en: {
@@ -3067,6 +3071,10 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where Venice could sometimes make its city a puppet.
 - Fixed a bug where the attack modifier against Cities was not displayed for some Promotions.
 - Fixed a bug where Happiness from Buildings received from Pantheon Beliefs was displayed incorrectly.
+`,
+            "11.1b": `
+- Fixed a bug where Slave Market did not provide Gold after adopting the "Resettlement" Policy or building the CN Tower.
+- Fixed a bug where end of turn button could become disabled after declaration of war between Players.
 `,
         },
     },
