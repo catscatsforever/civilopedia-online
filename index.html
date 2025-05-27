@@ -1439,6 +1439,7 @@
                   {{#each this.strings}}
                     {{#if (eq @key "title")}}
                     {{else if (eq @key "image")}}
+                    {{else if (eq @key "historical_info")}}
                     {{else}}
                       <u value="{{@key}}">{{translate (get_item_label @key)}}</u>
                       {{#if (is_object this)}}
@@ -1470,27 +1471,30 @@
               </h5>
               <div class="row mb-3 gx-0">
                 {{#each this.strings}}
-                  <div class="info-box-content">
-                    <u value="{{@key}}">{{translate this.label}}</u>
-                    {{#if (is_object this.new)}}
-                      <div class="row g-0">
-                        {{#each this.old}}
-                          <del class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                               data-bs-title="{{translate (get_item_name_v this)}}">
-                            <img class="img-fluid" src="{{get_item_image_v this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
-                          </del>
-                        {{/each}}
-                        {{#each this.new}}
-                          <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                               data-bs-title="{{translate (get_item_name this)}}">
-                            <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
-                          </ins>
-                        {{/each}}
-                      </div>
-                    {{else}}
-                      {{{get_diff this.old this.new}}}
-                    {{/if}}
-                  </div>
+                  {{#if (eq @key "historical_info")}}
+                  {{else}}
+                    <div class="info-box-content">
+                      <u value="{{@key}}">{{translate this.label}}</u>
+                      {{#if (is_object this.new)}}
+                        <div class="row g-0">
+                          {{#each this.old}}
+                            <del class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
+                                 data-bs-title="{{translate (get_item_name_v this)}}">
+                              <img class="img-fluid" src="{{get_item_image_v this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
+                            </del>
+                          {{/each}}
+                          {{#each this.new}}
+                            <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
+                                 data-bs-title="{{translate (get_item_name this)}}">
+                              <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
+                            </ins>
+                          {{/each}}
+                        </div>
+                      {{else}}
+                        {{{get_diff this.old this.new}}}
+                      {{/if}}
+                    </div>
+                  {{/if}}
                 {{/each}}
               </div>
             {{/each}}
