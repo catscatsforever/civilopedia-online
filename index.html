@@ -1445,7 +1445,7 @@
                       {{#if (is_object this)}}
                         <div class="row g-0">
                           {{#each this}}
-                            <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
+                            <ins class="p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
                                  data-bs-title="{{translate (get_item_name this)}}">
                               <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                             </ins>
@@ -1478,13 +1478,13 @@
                       {{#if (is_object this.new)}}
                         <div class="row g-0">
                           {{#each this.old}}
-                            <del class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
+                            <del class="p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
                                  data-bs-title="{{translate (get_item_name_v this)}}">
                               <img class="img-fluid" src="{{get_item_image_v this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                             </del>
                           {{/each}}
                           {{#each this.new}}
-                            <ins class="col-1 p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
+                            <ins class="p-1 small-image" value="{{this}}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom"
                                  data-bs-title="{{translate (get_item_name this)}}">
                               <img class="img-fluid" src="{{get_item_image this}}" style="background-image:url(./assets/images/64x64frame.png); background-size: contain;"/>
                             </ins>

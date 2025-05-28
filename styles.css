@@ -128,10 +128,15 @@ body {
 }
 
 
+#desktop-content {
+    --mwidth: 100vw;
+}
+
 @media only screen and (min-width: 1280px) {
     #desktop-content{
         margin-left: 9.5vw;
         margin-right: 9.5vw;
+        --mwidth: 81vw;
     }
 }
 
@@ -139,6 +144,7 @@ body {
     #desktop-content{
         margin-left: 12.5vw;
         margin-right: 12.5vw;
+        --mwidth: 75vw;
     }
 }
 
@@ -146,6 +152,7 @@ body {
     #desktop-content{
         margin-left: 14vw;
         margin-right: 14vw;
+        --mwidth: 72vw;
     }
 }
 
@@ -153,6 +160,7 @@ body {
     #desktop-content{
         margin-left: 19vw;
         margin-right:19vw;
+        --mwidth: 62vw;
     }
 }
 
@@ -160,6 +168,7 @@ body {
     #desktop-content{
         margin-left: 23vw;
         margin-right:23vw;
+        --mwidth: 56vw;
     }
 }
 
@@ -523,6 +532,11 @@ ins {
 
 ins img:not(.icon) {
     filter: drop-shadow(0 0 3px green) drop-shadow(0 0 3px green) drop-shadow(0 0 3px green);
+}
+
+ins.small-image, del.small-image {
+    width: calc(var(--mwidth)/20);
+    min-width: 40px;
 }
 
 #current_heading, h1, h2, h3, h4, h5, h6 {
