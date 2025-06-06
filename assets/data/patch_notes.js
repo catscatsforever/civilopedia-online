@@ -3088,15 +3088,15 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where end of turn button could become disabled after declaration of war between Players.
 `,
             "11.1c": `
-- Компьютерные игроки больше не могут ставить крепости, если включена опция Настройка ИИ.
-- Компьютерные игроки больше не могут отправлять шпионов в города, если включена опция Настройка ИИ.
-- На после игровых графиках добавлена всплывающая подсказка с точными значениями данных.
-- Исправлена ошибка, из-за которой при обнаружении города над ним не показывалось количество самолетов в ванильном интерфейсе.
-- Исправлена ошибка, из-за которой обновление обзора перехватчиков некорректно отображалось при свапе авианосцев с перехватчиками на борту.
-- Исправлена ошибка, из-за которой нельзя было взять повышения Уклонение и Дальность после повышения Воздушная наводка I.
-- Исправлена ошибка, из-за которой верования Примат Папы и Обряды посвящения не срабатывали для разных религий, если одно из них уже было активировано.
-- Исправлена ошибка, из-за которой некоторые квесты истекали на ход позже положенного.
-- Исправлена ошибка, из-за которой после вырубки леса/джунглей или осушения болота пропадал обзор на некоторых клетках.
+- Computer Players can no longer place citadels if the AI Tweaks option is enabled.
+- Computer Players can no longer send spies to Cities if the AI Tweaks option is enabled.
+- A tooltip with precise data values has been added for post game graphs.
+- Fixed a bug where the vanilla UI would not show the number of Air Units in a City when revealed.
+- Fixed a bug where the Air Units' vision could be updated incorrectly when swapping Carriers with Air Units on board.
+- Fixed a bug where it was not possible to take the Evasion and Range Promotions after the Air Targeting I Promotion.
+- Fixed a bug where Papal Primacy and Initiation Rites Beliefs would not work for different Religions if one of them was already activated.
+- Fixed a bug where some Quests would expire one turn later than they should.
+- Fixed a bug where some tiles would lose Visibility after chopping down a Forest/Jungle or clearing a Marsh.
 `,
         },
     },
