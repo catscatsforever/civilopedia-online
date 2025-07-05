@@ -1571,6 +1571,39 @@ const patchNotes = {
 - Исправлена ошибка, из-за которой некоторые квесты истекали на ход позже положенного.
 - Исправлена ошибка, из-за которой после вырубки леса/джунглей или осушения болота пропадал обзор на некоторых клетках.
 `,
+            "11.1d": `
+- Количество очков великого полководца, получаемых от войны с городом-государством, игроком-компьютером или варварами, уменьшено в два раза.
+- В турнирном режиме нельзя переименовывать религию.
+- Повышение Зачистка неба 1,2,3: +33%, +33%, +34%  к боевой мощи при зачистке неба.
+- Покупка городов-государств с помощью Дипломатической унии Австрии или Венецианского торговца уменьшает счетчик необходимых голосов для дипломатической победы на такое же количество очков, как и захват городов-государств.
+- Города-сателлиты больше не дают культуру и науку.
+- Голосование за скрап партии: при наличии всего одного игрока против скрапа ему присуждается победа в партии.
+- Гильдии не считаются чудесами или национальными чудесами при добавлении соответствующих модификаторов к производству.
+- Если клетка города не исследована, то бонусы от строений больше не будут отображаться.
+- Секретные операции (Свобода, 1 тир): Дает дополнительного шпиона. Посылая шпиона в город-государство, получите дополнительно 5 очков влияния за ход, если у вас менее 90 очков влияния.
+
+
+НАЦИИ
+
+- Ашрам (Индия): В дополнение к обычным особенностям дает +10% к избытку пищи в городе. Дает дополнительно +10% к избытку пищи в городе, если в четырех клетках от центра города нет центров других городов.
+- Б-17 (Америка): Боевая мощь: 70.
+- Лыжники (Дания): Заменяют штурмовую пехоту.
+- Каролинская пехота (Швеция): Заменяют штурмовую пехоту.
+
+
+ИСПРАВЛЕНИЕ ОШИБОК
+
+- Исправлена ошибка, из-за которой ресурс мог перепривязаться к другому городу, необязательно отличающемуся от предыдущего, при изучении кем-либо технологии, которая открывает этот ресурс.
+- Исправлена ошибка, из-за которой при принятии кем-либо Железного занавеса (Порядок, тир 2) сбрасывались внешние караваны у всех игроков.
+- Исправлена ошибка, из-за которой можно было увидеть значки продукции открытого другим игроком стратегического ресурса, если игрок сам не открыл еще этот ресурс.
+- Исправлена ошибка, из-за которой можно было сразу же заключать мир с городами-государствами через окно дипломатии: мир с третьим лицом.
+
+
+Better Pangaea V5.3a:
+
+- Добавлена настройка Построить хребты (по умолчанию Да). Если данная настройка выключена, то будет создаваться меньше узких проходов и внутренних морей.
+- Стратегический уголь теперь не может появиться в радиусе 5 клеток от  вражеской столицы и в радиусе 4 клеток от города-государства.
+`,
         },
     },
     en: {
@@ -3097,6 +3130,39 @@ NEW UNIQUE BUILDINGS
 - Fixed a bug where Papal Primacy and Initiation Rites Beliefs would not work for different Religions if one of them was already activated.
 - Fixed a bug where some Quests would expire one turn later than they should.
 - Fixed a bug where some tiles would lose Visibility after chopping down a Forest/Jungle or clearing a Marsh.
+`,
+            "11.1d": `
+- The amount of Great General points gained from wars with a city-state, AI players, and Barbarians has been halved.
+- You cannot rename a religion in tournament mode.
+- "Air Combat I", "Air Combat II" and "Air Combat III": +33%, +33%, +34% Combat Strength when performing Air Sweeps.
+- Buying out City-States with Austria's Diplomatic Union ability or the Merchant of Venice reduces the required number of Delegates for a Diplomatic Victory by the same amount as when capturing City-States.
+- Puppet Cities no longer yield Culture or Science.
+- SCRAP Voting: if there is exactly one voter against Scrap, they are awarded the victory instead.
+- Guilds do not count as Wonders or National Wonders when the appropriate Production modifiers are applied.
+- Unexplored City Tiles will no longer display Building Bonuses.
+- Covert Action (Freedom, Tenet Level 1): Provides an additional spy. Sending a spy into a City-State gain 5 more Influence per turn if you have less than 90 Influence.
+
+
+NATIONS
+
+- Ashram (India): +10% Food. Provides an additional +10% Food if there are no other Cities 4 Tiles away from this City.
+- B17 (America): Ranged Combat: 70.
+- Norwegian Ski Infantry (Denmark): Replaces Great War Infantry.
+- Carolean (Sweden): Replaces Great War Infantry.
+
+
+BUG FIXES
+
+- Fixed a bug where a Resource could be reattached to another City, not necessarily different from the previous City, when discovering a Technology that unlocked the Resource.
+- Fixed a bug where all players' external Trade Routes would reset when someone adopted the Iron Curtain (Order, Tenet Level 2) Policy.
+- Fixed a bug where it was possible to see the yield terrain icons of a Strategic Resource opened by another Player if the Player had not yet discovered the Resource.
+- Fixed a bug where it was possible to immediately negotiate peace with City-States through the diplomacy window: peace with a third party.
+
+
+Better Pangaea V5.3a:
+
+- Added option Build Ridges (default ON). If this option is turned off, fewer narrow passages and inland seas will be created.
+- Strategic Coal cannot now spawn within 5 Tiles of an enemy Capital and within 4 Tiles of a City-State.
 `,
         },
     },
