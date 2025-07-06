@@ -1604,6 +1604,12 @@ Better Pangaea V5.3a:
 - Добавлена настройка Построить хребты (по умолчанию Да). Если данная настройка выключена, то будет создаваться меньше узких проходов и внутренних морей.
 - Стратегический уголь теперь не может появиться в радиусе 5 клеток от  вражеской столицы и в радиусе 4 клеток от города-государства.
 `,
+            "11.1e": `
+ИСПРАВЛЕНИЕ ОШИБОК
+
+- Исправлена ошибка, из-за которой сателлиты могли строить гильдии.
+- Исправлена ошибка, из-за которой если ровно один игрок голосовал НЕТ за сдачу, то ему засчитывалась победа в партии.
+`,
         },
     },
     en: {
@@ -3163,6 +3169,12 @@ Better Pangaea V5.3a:
 
 - Added option Build Ridges (default ON). If this option is turned off, fewer narrow passages and inland seas will be created.
 - Strategic Coal cannot now spawn within 5 Tiles of an enemy Capital and within 4 Tiles of a City-State.
+`,
+            "11.1e": `
+BUG FIXES
+
+- Fixed a bug where Puppet Cities could build guilds.
+- Fixed a bug where if a Player voted NO for CC, whey were awarded the victory.
 `,
         },
     },
