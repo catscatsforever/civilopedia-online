@@ -1610,6 +1610,9 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой сателлиты могли строить гильдии.
 - Исправлена ошибка, из-за которой если ровно один игрок голосовал НЕТ за сдачу, то ему засчитывалась победа в партии.
 `,
+            "11.1f": `
+- Исправлена ошибка, из-за которой во время голосования за скрап игра могла присудить победу одному из игроков, проголосовавших против скрапа, если количество таких игроков было больше одного.
+`,
         },
     },
     en: {
@@ -3175,6 +3178,9 @@ BUG FIXES
 
 - Fixed a bug where Puppet Cities could build guilds.
 - Fixed a bug where if a Player voted NO for CC, whey were awarded the victory.
+`,
+            "11.1f": `
+- Fixed a bug where during SCRAP voting the game could award a win to one of the Players who voted against SCRAP if the number of such Players was more than one.
 `,
         },
     },
