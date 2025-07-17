@@ -1613,6 +1613,32 @@ Better Pangaea V5.3a:
             "11.1f": `
 - Исправлена ошибка, из-за которой во время голосования за скрап игра могла присудить победу одному из игроков, проголосовавших против скрапа, если количество таких игроков было больше одного.
 `,
+            "11.2": `
+ОБЩИЕ ИЗМЕНЕНИЯ
+
+- Города-сателлиты имеют 75% штраф к выработке науки и культуры.
+- Повышение Засада I доступно после изучения технологии Железная дорога.
+- Наследие Клаузевица теперь дает +25% бонус к атаке.
+
+ОТМЕНЕННЫЕ ИЗМЕНЕНИЯ
+
+- Если клетка города не исследована, то бонусы от строений больше не будут отображаться.
+- Исправлена ошибка, из-за которой можно было увидеть значки продукции открытого другим игроком стратегического ресурса, если игрок сам не открыл еще этот ресурс.
+
+НОВЫЕ ГРАФИКИ
+
+- Золото за убийство юнитов.
+- Культура за убийство юнитов.
+- Эффективная культура за ход.
+- Золото, потраченное на покупку великих людей.
+- Золото, потраченное на покупку клеток.
+- Золото, полученное за грабеж клеток.
+- Золото, полученное за грабеж торговых путей.
+- Очки веры, потраченные на покупку военных юнитов.
+- Еда за ход от торговых путей.
+- Производство за ход от торговых путей.
+- Ходы анархии.
+`,
         },
     },
     en: {
@@ -3181,6 +3207,32 @@ BUG FIXES
 `,
             "11.1f": `
 - Fixed a bug where during SCRAP voting the game could award a win to one of the Players who voted against SCRAP if the number of such Players was more than one.
+`,
+            "11.2": `
+GENERAL CHANGES:
+
+- Puppet Cities have a 75% penalty to Science and Culture production.
+- Ambush I upgrade is available after learning Railroad technology.
+- Clausewitz's Legacy now gives +25% combat strength attack bonus.
+
+REVERTED CHANGES
+
+- Unexplored City Tiles will no longer display Building Bonuses.
+- Fixed a bug where it was possible to see the yield terrain icons of a Strategic Resource opened by another Player if the Player had not yet discovered the Resource.
+
+NEW END-OF-GAME GRAPHS
+
+- Gold [ICON_GOLD] from killing Units
+- Culture [ICON_CULTURE] from killing Units
+- Effective Culture [ICON_CULTURE] Per Turn
+- Gold [ICON_GOLD] spent on Great People purchases
+- Gold [ICON_GOLD] spent on Tiles purchases
+- Gold [ICON_GOLD] gained from pillaging Tiles
+- Gold [ICON_GOLD] gained from plundering Trade Routes
+- Faith [ICON_PEACE] spent on Military Units purchases
+- Food [ICON_FOOD] per turn from [ICON_INTERNATIONAL_TRADE] Trade Routes
+- Production [ICON_PRODUCTION] per turn from [ICON_INTERNATIONAL_TRADE] Trade Routes
+- Anarchy [ICON_HAPPINESS_4] Turns
 `,
         },
     },
