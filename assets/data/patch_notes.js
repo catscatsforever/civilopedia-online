@@ -1639,6 +1639,10 @@ Better Pangaea V5.3a:
 - Производство за ход от торговых путей.
 - Ходы анархии.
 `,
+            "11.2a": `
+- Исправлена ошибка, из-за которой график эффективной культуры показывал значения просто культуры в ход.
+- Исправлена ошибка, из-за которой боевой бонус Ассирии в некоторых случаях не отображался.
+`,
         },
     },
     en: {
@@ -3233,6 +3237,10 @@ NEW END-OF-GAME GRAPHS
 - Food [ICON_FOOD] per turn from [ICON_INTERNATIONAL_TRADE] Trade Routes
 - Production [ICON_PRODUCTION] per turn from [ICON_INTERNATIONAL_TRADE] Trade Routes
 - Anarchy [ICON_HAPPINESS_4] Turns
+`,
+            "11.2a": `
+- Fixed a bug where the Effective Culture [ICON_CULTURE] Per Turn graph would show values of just Culture [ICON_CULTURE] Per Turn.
+- Fixed a bug where Assyria's combat bonus was not displayed in some cases.
 `,
         },
     },
