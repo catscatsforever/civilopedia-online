@@ -1632,6 +1632,9 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой график эффективной культуры показывал значения просто культуры в ход.
 - Исправлена ошибка, из-за которой боевой бонус Ассирии в некоторых случаях не отображался.
 `,
+            "11.2b": `
+- Исправлена ошибка, из-за которой мог оставаться обзор на клетки после убийства/удаления юнитов с повышением "Воздушная разведка" (триплан, истребитель, реактивный истребитель).
+`,
         },
     },
     en: {
@@ -3218,6 +3221,9 @@ NEW END-OF-GAME GRAPHS
             "11.2a": `
 - Fixed a bug where the Effective Culture [ICON_CULTURE] Per Turn graph would show values of just Culture [ICON_CULTURE] Per Turn.
 - Fixed a bug where Assyria's combat bonus was not displayed in some cases.
+`,
+            "11.2b": `
+- Fixed a bug where a tile could stay visible after killing/removing units with the Air Recon promotion (Triplane, Fighter, Jet Fighter).
 `,
         },
     },
