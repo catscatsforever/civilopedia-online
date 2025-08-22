@@ -1635,6 +1635,9 @@ Better Pangaea V5.3a:
             "11.2b": `
 - Исправлена ошибка, из-за которой мог оставаться обзор на клетки после убийства/удаления юнитов с повышением "Воздушная разведка" (триплан, истребитель, реактивный истребитель).
 `,
+            "11.2c": `
+- Исправлены множественные ошибки видимости клеток, вызванные некорректным обсчетом видимости клеток юнитами, если на клетке с этим юнитом есть юнит с повышение "Воздушная разведка". (Пример: в момент постройки/покупки эсминца если в городе находился истребитель, можно было увидеть вражескую подлодку, даже если между подлодкой и эсминцем была пересеченная местность.)
+`,
         },
     },
     en: {
@@ -3224,6 +3227,9 @@ NEW END-OF-GAME GRAPHS
 `,
             "11.2b": `
 - Fixed a bug where a tile could stay visible after killing/removing units with the Air Recon promotion (Triplane, Fighter, Jet Fighter).
+`,
+            "11.2c": `
+- Fixed multiple tile visibility bugs caused by units incorrectly calculating tile visibility if there is a Unit with the “Air Recon” promotion on the same tile (e.g. when building/buying a destroyer, if there was a fighter in the City, you could see an enemy submarine, even if there was rough terrain between the submarine and the destroyer).
 `,
         },
     },
