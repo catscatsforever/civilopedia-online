@@ -3300,7 +3300,7 @@ NEW END-OF-GAME GRAPHS
 - Fixed multiple tile visibility bugs caused by units incorrectly calculating tile visibility if there is a Unit with the “Air Recon” promotion on the same tile (e.g. when building/buying a destroyer, if there was a fighter in the City, you could see an enemy submarine, even if there was rough terrain between the submarine and the destroyer).
 `,
             "11.3": `
-- ИСПРАВЛЕНИЯ ОШИБОК
+- BUG FIXES
   - Исправлена ошибка, из-за которой дипломатия канонерок не давала бонус к сбору дани с городов-государств.
   - Исправлена ошибка, из-за которой в городе могли появиться лишние демографические показатели при "генералинге" его клеток.
   - Исправлена ошибка, из-за которой на одну клетку можно было поместить несколько юнитов одного типа.
