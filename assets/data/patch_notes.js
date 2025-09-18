@@ -1710,6 +1710,9 @@ Better Pangaea V5.3a:
 - НАЦИИ
   - Рим: +15% к производству зданий в городах, соединенных со столицей.
 `,
+            "11.3a": `
+- Исправлена ошибка, из-за которой иконки юнитов некорректно могли отображаться.
+            `
         },
     },
     en: {
@@ -2811,7 +2814,7 @@ Better Pangaea V5.3a:
   - Atheism: Cities (founder only) produce half the normal amount of Faith;
   - Symbolism: Starts or extends the Golden Age for 2 turns each time a Great Person is expended, during a Golden Age units receive a +10% Combat Strength bonus.
 
-- Interface:
+- User Interface:
   - Added a window that appears after starting the game if ui_check.bat has not been run;
   - In single-player, the civilization list is now sorted by civilization name instead of leader name;
   - Added "May Paradrop" status for XCOM Squad and Paratrooper;
@@ -2998,7 +3001,7 @@ UNITS
 - Giant Death Robot: cost increased to 402 Production
 
 
-INTERFACE
+USER INTERFACE
 
 - Added ingame civilization drafter at game creation.
 - Added an indicator if the patch version is up to date.
@@ -3301,80 +3304,83 @@ NEW END-OF-GAME GRAPHS
 `,
             "11.3": `
 - BUG FIXES
-  - Исправлена ошибка, из-за которой дипломатия канонерок не давала бонус к сбору дани с городов-государств.
-  - Исправлена ошибка, из-за которой в городе могли появиться лишние демографические показатели при "генералинге" его клеток.
-  - Исправлена ошибка, из-за которой на одну клетку можно было поместить несколько юнитов одного типа.
-  - Исправлена ошибка, из-за которой в некоторых случаях было видно вражеские юниты в тумане войны (например после потери города было видно захвативший его юнит).
-  - Исправлена ошибка, из-за которой описания принятых верований в уведомлениях укрепления/реформирования религий не отображались (EUI).
+  - Fixed a bug where Gunboat Diplomacy would not grant a tribute collection bonus from City-States.
+  - Fixed a bug where extra yields could appear in a city after Great General's "Culture Bomb" action.
+  - Fixed a bug where multiple Units of the same type could be placed on a single tile.
+  - Fixed a bug where enemy Units would be visible in the fog of war in some cases (for example, after losing a City, the Unit that captured it was visible).
+  - Fixed a bug where descriptions of adopted Beliefs would not be displayed in Religion enhancing/reforming notifications (EUI).
 
 
-- ИНТЕРФЕЙС
-  - Индикатор сбора дани с города-государства обновляется в течение хода, при перемещении юнитов возле города-государства (ванильный UI).
-  - (все виды UI) Индикатор сбора дани теперь виден даже во время дружбы или союза с городом-государством (все виды UI).
+- USER INTERFACE
+  - The tribute collection indicator for City-States is updated during the turn when units are moved near the City-State (vanilla UI).
+  - The tribute collection indicator is now visible even when there is a friendship or alliance with a City-State (all UI types).
 
 
-- ОБЩИЕ ИЗМЕНЕНИЯ
-  - Голосование за скрап: Добавлена новая настройка для объявления игрока победителем, если он был единственным против скрапа (по умолчанию для скрапа необходимо согласие всех игроков).
-  - Великий инженер: Количество получаемого производства, получаемого за ускорение строительства в городе переработано: 100 + 26 производства за жителя.
-  - Заводской комплекс: Дает 6 базового производства.
-  - Бомбардировщик Стелс: Боевая мощь 85.
-  - Большое плато: 3 производства и 5 золота.
+- GENERAL CHANGES
+  - Scrap vote: A new setting was added to declare a player the winner if they were the only one against the scrap (by default, the scrap requires the consent of all players).
+  - Great Engineer: The amount of Production received for speeding up construction in the city has been revised to 100 + 26 Production per citizen.
+  - Manufactory: Provides 6 base Production.
+  - Stealth Bomber: Ranged Combat 85.
+  - The Grand Mesa: 3 Production and 5 Gold.
 
 
-- ЧЕСТЬ
-  - Закрытие: Больше не убирает ограничение на количество получаемой культуры за убийство юнитов.
+- HONOR
+  - Finisher: no longer removes a cap on the amount of Culture gained from killing units.
 
 
-- НАБОЖНОСТЬ
-  - Для принятия реформации необходимо принять Организованную религию и Теократию.
-  - Для принятия Теократии больше не нужно принимать Организованную религию.
-  - Закрытие: Святыни дают дополнительно +3 к пище.
+- PIETY
+  - To adopt Reformation, one must adopt Organized Religion and Theocracy.
+  - To adopt Theocracy, one no longer needs to adopt Organized Religion.
+  - Finisher: Shrines provide an additional +3 to food.
 
 
-- МЕЦЕНАТСТВО
-  - Схоластика: +10% к культуре в столице за каждого действующего дипломата. +3 к науке от жандармерий и полицейских участков. Они строятся на 50% быстрее.
+- PATRONAGE
+  - Scholasticism: +10% Culture in the Capital for every active Diplomat. Build Constabularies and Police Stations 50% faster. They provide +3 Science each.
 
 
-- КОММЕРЦИЯ
-  - Открытие: Дополнительно ускоряет постройку рынков, банков и бирж на 50%.
-  - Меркантилизм: Больше не дает бонус к производству при постройке рынков, банков и бирж.
+- COMMERCE
+  - Opener: additionally, it provides +50% Production towards Markets, Banks and Stock Exchanges constructing.
+  - Mercantilism: No longer provides +50% Production towards Markets, Banks and Stock Exchanges constructing.
 
 
-- ПОРЯДОК
-  - Народный герой (1 тир): Скорость появления великих людей увеличивается на 25%.
-  - Железный занавес (2 тир): Бесплатный суд в захваченных городах. Внутренние торговые маршруты дают на 100% больше еды и производства. Международные торговые пути больше недоступны.
+- ORDER
+  - Hero of the People (Tenet Level 1): The rate at which Great People are born is increased by 25%.
+  - Iron Curtain (Tenet Level 2): Free Courthouse upon city capture. Internal trade routes provide 100% more Food or Production. International Trade Routes are no longer available.
 
 
-- СВОБОДА
-  - Авангард (1 тир): Скорость появления великих людей увеличивается на 25%.
-  - Капитализм (+1 к настроению за каждый рынок, банк и биржу) перемещен в 2 тир.
-  - Новый курс (Увеличивает на +1 производство от специалистов во всех городах) перемещен в 1 тир.
+- FREEDOM
+  - Avant Garde (Tenet Level 1): The rate at which Great People are born is increased by 25%.
+  - Capitalism (Capitalism +1 Local Happiness from every Market, Bank and Stock Exchange) moved to Tenet Level 2.
+  - New Deal (+1 Production from Specialists in every city) moved to Tenet Level 1.
 
 
-- АВТОКРАТИЯ
-  - Культ личности (+50% к туризму для держав, воюющих с вами) перемещен во 2 тир.
-  - Блицкриг (+3 к передвижению для всех великих полководцев. Бронированные юниты получают +15% к атаке, +1 ОП и игнорируют вражеские зоны контроля) перемещен в 3 тир.
+- AUTOCRACY
+  - Cult of Personality (+50% Tourism to civilizations at war with you) moved to Tenet Level 2.
+  - Lightning Warfare (+3 Movement for Great Generals. Armor units gain +15% attack, +1 Movement and ignore enemy ZOC) moved to Tenet Level 3.
 
 
-- ПАНТЕОНЫ
-  - Посланник богов: +2 к науке и +1 к вере в городах с торговыми путями. Дворец дает +2 к науке и +1 к вере.
-  - Памятники богам: +20% к производству чудес света Древнейшего мира и Античности. Чудеса света Древнейшего мира и Античности (кроме национальных чудес) дают +1 к настроению.
+- PANTHEON BELIEFS
+  - Messenger of the Gods: +2 Science and +1 Faith in cities with a City Connection. Palace provides +2 Science and +1 Faith.
+  - Monument to the Gods: +20% Production of Ancient/Classical Wonders. Ancient/Classical Wonders (except national wonders) provide +1 happiness.
 
 
-- РЕЛИГИЯ:ОСНОВАТЕЛЬ
-  - Ритуальное погребение: +1 к настроению в державе за каждый город, исповедующий ту же религию.
-  - Пагода: Стоимость 150/220 веры.
+- FOUNDER BELIEFS
+  - Ceremonial Burial: +1 Global Happiness for every city following this religion.
+  - Pagodas: Costs 150/220 Faith.
 
 
-- НОВЫЕ ЗДАНИЯ
-  - Футбольный стадион (Бразилия): Открывается в Биологии.
-  - Плавучий рынок (Сиам): Добавить 1 базового золота.
-  - Хаммам (Турция): Стоит дороже (80 производства).
+- NEW BUILDINGS
+  - Football Stadium (Brazil): available at Biology.
+  - Floating Market (Siam): +1 Gold base.
+  - Hammam (The Ottomans): Costs more (80 Production).
 
 
-- НАЦИИ
-  - Рим: +15% к производству зданий в городах, соединенных со столицей.
+- NATIONS
+  - Rome: +15% Production towards buildings construction in cities with a City Connection.
 `,
+            "11.3a": `
+- Fixed a bug where Unit icons could be displayed incorrectly.
+            `
         },
     },
 }
