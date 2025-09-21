@@ -1712,7 +1712,7 @@ Better Pangaea V5.3a:
 `,
             "11.3a": `
 - Исправлена ошибка, из-за которой иконки юнитов некорректно могли отображаться.
-            `
+`,
         },
     },
     en: {
@@ -3380,7 +3380,7 @@ NEW END-OF-GAME GRAPHS
 `,
             "11.3a": `
 - Fixed a bug where Unit icons could be displayed incorrectly.
-            `
+`,
         },
     },
 }
