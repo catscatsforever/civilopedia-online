@@ -1713,6 +1713,51 @@ Better Pangaea V5.3a:
             "11.3a": `
 - Исправлена ошибка, из-за которой иконки юнитов некорректно могли отображаться.
 `,
+            "11.4": `
+- ИСПРАВЛЕНИЯ ОШИБОК
+  - Исправлена ошибка, из-за которой индикатор пищи в городе не обновлялся при сборе соотв. руинки.
+  - Исправлена ошибка, из-за которой максимальные значения графиков могли относиться к предыдущим партиям текущей игровой сессии.
+  - Останкино больше не дает бесплатные радиовышки в городах после захата (и радиовышки не пропадают после потери города с Останкино).
+  - Исправлена ошибка, из-за которой в некоторых случаях в городе могла остаться "скрытая" радиовышка после постройки или захвате Останкино.
+  - Исправлена ошибка, из-за которой можно было отправлять дипломата в столицу игрока-компьютера (при этом он сразу же эвакуировался).
+
+- ОБЩИЕ ИЗМЕНЕНИЯ
+  - Внешние торговые пути к игрокам-цивилизациям дают в три раза больше науки, чем раньше. *(1,5 науки за каждую неизвестную технологию)*
+  - Дипломаты больше не дают бонус к давлению туризмом.
+
+- ИНТЕРФЕЙС
+  - Редактор горячих клавиш: добавлен поиск, список упорядочен по названию.
+  - Добавлена возможность удалять целые слова в игровом чате сочетанием клавиш Ctrl+Backspace.
+
+- НАЦИИ
+  - Испания: Нахождение чудес природы дает в два раза больше счастья и 100 золота. **При основании столицы появляется разведывательный юнит (не имеет ОП).** *(Больше не удваивает бонус от чудес природы)*
+  - Марокко: Дополнительные +2 золота и +1 культура за эпоху за каждый торговый путь в другую державу или город-государство. **Внешние торговые пути дают +1 к пище и +1 к производству в городе.** Владельцы торговых путей получают +2 золота за каждый торговый путь в Марокко.
+
+- ЗДАНИЯ
+  - Квартал медина (Марокко): **Внешние сухопутные караваны, исходящие из города, не могут быть разграблены.** Стоимость покупки зданий в городе снижается на 15%.
+
+  - Сеть Грахтов (Нидерланды): Дает +1 к золоту и +1 к производству на каждой клетке рядом с рекой. Город должен располагаться рядом с рекой. *(Больше не дает базового производства)*
+
+- ПАНТЕОНЫ
+  - Священные воды: +1 к настроению и **+1 к золоту** за города на пресной воде.
+
+- СВОБОДА
+  - Новый курс (Свобода 1 тир): Специалисты **(кроме великих ученых)** дают +1 к производству.
+
+- ПОРЯДОК
+  - Двойные агенты (1 тир): Дает дополнительного шпиона. Дает +1 к эффективности контршпионажа во всех городах. **Контршпионы показывают наличие вражеских шпионов и дипломатов в городе.**
+
+- РЕЛИГИЯ:РЕФОРМАЦИИ
+  - Единство пророков: Рядом со столицей появляются два великих пророка. Пророки становятся на 25% сильнее, а для их появления требуется на 25% меньше веры. **Каждый великий пророк после шестого не становится дороже.**
+
+- Добавлена новая настройка при создании игры: Блиц режим
+  - При наличии таймера время на ход уменьшено (30 секунд + 15 секунд за каждую эпоху).
+  - Время ожидания перед объявлением войны игроку после пересоюживания его союзного города-государства уменьшено.
+  - Разброс урона отключен.
+  - Рабочие городов-государств пропадают после захвата.
+  - Империя не падает в анархию из-за невыбора социального института.
+  - Можно ставить авиацию на перехват в любое время.
+`,
         },
     },
     en: {
@@ -3380,6 +3425,50 @@ NEW END-OF-GAME GRAPHS
 `,
             "11.3a": `
 - Fixed a bug where Unit icons could be displayed incorrectly.
+`,
+            "11.4": `
+- BUG FIXES
+  - Fixed a bug where the City growth indicator would not update when collecting corresponding Ancient Ruins.
+  - Fixed a bug where Replay Graph values could be related to previous games of the current game session.
+  - The CN Tower no longer gives free Broadcast Tower in Cities after capture (and Broadcast Towers do not disappear after losing a City with the CN Tower).
+  - Fixed a bug where in some cases a "hidden" Broadcast Tower could remain in the City after building or capturing the CN Tower.
+  - Fixed a bug where a Diplomat could be sent to the Capital of a Computer Player (in which case he was immediately evacuated).
+
+- GENERAL CHANGES
+  - International Trade Routes to human Players now provide 3 times more Science than before. *(1.5 Science for each unknown Technology)*
+  - Diplomats no longer provide a bonus to Tourism pressure.
+
+- USER INTERFACE
+  - Ingame Hotkey Manager: added search, list sorted by name.
+  - Added the ability to delete entire words in the game chat using the Ctrl+Backspace key combination.
+
+- NATIONS
+  - Spain: [ICON_GOLD] Gold bonus for discovering a Natural Wonder. [ICON_HAPPINESS_1] Happiness from finding Natural Wonders doubled. When founding [ICON_CAPITAL] Capital, receives a free Scout. *(Yields from Natural Wonders are no longer doubled)*
+  - Morocco: Receives +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture per era for each Trade Route with a different civ or City-State. The Trade Route owners receive +2 [ICON_GOLD] Gold for each Trade Route sent to Morocco. Cities receive +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production for each outgoing international Trade Route.
+
+- BUILDINGS
+  - Medina Quarter (Morocco): [ICON_GOLD] Gold cost of purchasing buildings in the city reduced by 15%. Outcoming land trade routes cannot be plundered.
+  - Grachten (The Netherlands): +1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production in every tile next to a River. City must be built next to River.
+
+- PANTHEON BELIEFS
+  - +1 [ICON_HAPPINESS_1] Happiness and +1 [ICON_GOLD] Gold from cities on fresh water
+
+- FREEDOM
+  - New Deal (Tenet Level 1): +1 Production from Specialists (except Scientists) in every city.
+
+- ORDER
+  - Double Agents (Tenet Level 1): Provides an additional spy. Provides +1 to counter-intelligence effectiveness in all cities. Counter-spies are able to detect that enemy established surveillance in cities.
+
+- REFORMATION BELIEFS
+  - Unity of the Prophets: 2 free Prophets appear near your [ICON_CAPITAL] Capital. Prophets 25% stronger and earned with 25% less [ICON_PEACE] Faith. The maximum amount of faith required for a Great Prophet to appear is the same as the amount required for the sixth Great Prophet. 
+
+- Added a new setting when creating a game: Blitz Mode.
+  - If Turn Timer is turned on players have less time to do actions (30s + 15s each era);
+  - Players can declare war sooner after allying another player's CS;
+  - Damage randomization is disabled;
+  - City-State workers disappear when captured;
+  - Not choosing a Social Policy will not cause your Civilization to enter anarchy.
+  - Planes can always be set to interception.
 `,
         },
     },
