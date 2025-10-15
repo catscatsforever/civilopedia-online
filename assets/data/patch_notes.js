@@ -1758,6 +1758,13 @@ Better Pangaea V5.3a:
   - Империя не падает в анархию из-за невыбора социального института.
   - Можно ставить авиацию на перехват в любое время.
 `,
+            "11.4a": `
+- ~~Внешние торговые пути к игрокам-цивилизациям дают в три раза больше науки, чем раньше.~~
+- Таймер в блиц режиме: 45 секунд + 15 секунд за эпоху. Увеличение времени на ход происходит на следующий ход после выхода хотя бы одного игрока в следующую эпоху.
+- Испания: Разведчик может двигаться сразу же.
+- Пращник (Инки): Боевая мощь в ближнем бою: 5, дальнем бою: 5. Дальность атаки: 1.
+- Единство пророков (реформация): Рядом со столицей появляются два великих пророка. Пророки становятся на 25% сильнее, а для их появления требуется на 25% меньше веры. Каждый великий пророк после девятого не становится дороже.
+`,
         },
     },
     en: {
@@ -3463,12 +3470,19 @@ NEW END-OF-GAME GRAPHS
   - Unity of the Prophets: 2 free Prophets appear near your [ICON_CAPITAL] Capital. Prophets 25% stronger and earned with 25% less [ICON_PEACE] Faith. The maximum amount of faith required for a Great Prophet to appear is the same as the amount required for the sixth Great Prophet. 
 
 - Added a new setting when creating a game: Blitz Mode.
-  - If Turn Timer is turned on players have less time to do actions (30s + 15s each era);
+  - If Turn Timer is turned on players have less time to do actions (30s + 15s each Era);
   - Players can declare war sooner after allying another player's CS;
   - Damage randomization is disabled;
   - City-State workers disappear when captured;
   - Not choosing a Social Policy will not cause your Civilization to enter anarchy.
   - Planes can always be set to interception.
+`,
+            "11.4a": `
+- ~~International Trade Routes to human Players now provide 3 times more Science than before.~~
+- Blitz Mode Turn Timer: 45s + 15s each Era. The time per turn increases on the next turn after at least one Player advances to the next Era.
+- Spain: the bonus Scout can move immediately.
+- Slinger (The Inca): Combat Power: 5, Ranged Combat: 5. Range: 1.
+- Unity of the Prophets (Reformation Belief): 2 free Prophets appear near your Capital. Prophets 25% stronger and earned with 25% less Faith. Prophets Faith cost stops increasing after 9th Prophet is born.
 `,
         },
     },
