@@ -1765,6 +1765,31 @@ Better Pangaea V5.3a:
 - Пращник (Инки): Боевая мощь в ближнем бою: 5, дальнем бою: 5. Дальность атаки: 1.
 - Единство пророков (реформация): Рядом со столицей появляются два великих пророка. Пророки становятся на 25% сильнее, а для их появления требуется на 25% меньше веры. Каждый великий пророк после девятого не становится дороже.
 `,
+            "11.4b": `
+- ОБЩИЕ ИЗМЕНЕНИЯ
+  - Рабочие городов-государств пропадают при захвате в обычном режиме игры (теперь работает во всех режимах: обычный, дуэльный, блиц).
+  - Города-государства могут строить рабочих в любой момент игры (убрано ограничение на 20 ход).
+
+- ЭСТЕТИКА
+  - Художественный гений: Появляется великий художник. Во время золотого века наука увеличивается на 10% (раньше 15%).
+
+- ЧУДЕСА СВЕТА
+  - Эйфелева башня: В дополнение к обычным особенностям возле города появляется великий торговец.
+  - Прорский колосс: Требуется автократия. Помимо дополнительных **+5 (раньше +2)** к настроению, "Прорский колосс" дает еще +1 к к настроению за каждые 2 принятых вами общественных института.
+  - Великая стена: **Переработано.** При пересечении ваших границ вражеские юниты будут тратить все ОП, а также не смогут восстанавливать ОЗ каждый ход и получать ОЗ за грабеж. В городе, где было создано это чудо, бесплатно появляются стены. После открытия химии Великая стена утрачивает свое значение.
+
+- ИНТЕРФЕЙС
+  - Редактор горячих клавиш: добавлена опция отображения сочетания горячих клавиш поверх действий юнита.
+  - Редактор горячих клавиш: добавлена подсказка (при наведении курсора в поле редактирования), предупреждающая о возможных конфликтах сочетаний горячих клавиш.
+  - Экран города: добавлена возможность задать режим бесконечного строительства для юнита (клик ЛКМ по порядковому номеру в очереди). Проект в режиме бесконечного строительства в ход выпуска будет снова добавлен в начало очереди производства.
+
+- БЛИЦ РЕЖИМ
+  - Таймер: 30 секунд + 15 секунд за эпоху (+ 15 дополнительно за средневековье).
+  - Города-государства, варвары и компьютерные игроки не оказывают влияние на изменение длительности хода.
+
+- ИСПРАВЛЕНИЯ ОШИБОК
+  - Исправлена ошибка, из-за которой баннер города не обновлялся после атаки или при перемещении шпионов.
+`,
         },
     },
     en: {
@@ -3483,6 +3508,31 @@ NEW END-OF-GAME GRAPHS
 - Spain: the bonus Scout can move immediately.
 - Slinger (The Inca): Combat Power: 5, Ranged Combat: 5. Range: 1.
 - Unity of the Prophets (Reformation Belief): 2 free Prophets appear near your Capital. Prophets 25% stronger and earned with 25% less Faith. Prophets Faith cost stops increasing after 9th Prophet is born.
+`,
+            "11.4b": `
+- GENERAL CHANGES
+  - City-State Workers disappear when captured in normal game mode (now applied to all modes: normal, duel, blitz).
+  - City-states can build Workers at any point in the game (the 20-turn limit has been removed).
+
+- AESTHETICS
+  - Artistic Genius: A Great Artist appears. Cities gain +15% Science during Golden Ages.  Cities gain +10% Science during Golden Ages (previously 15%).
+
+- WONDERS
+  - Eiffel Tower: In addition to the usual effects, a Great Merchant appears near the City.
+  - Prora: Requires Autocracy. In addition to the +5 Happiness, the Prora Resort also provides +1 more Happiness for every 2 Policies you have adopted. 
+  - Great Wall: **Reworked.** Crossing your borders by enemy Land Units consumes all Movement Points. They cannot heal every turn, nor can they gain HP by pillaging tiles within your territory. Provides Walls for free in the City in which it is built. Upon discovering Chemistry, The Great Wall becomes obsolete.
+
+- USER INTERFACE
+  - Hotkey Editor: Added an option to display hotkeys on top of unit actions.
+  - Hotkey Editor: Added a tooltip (when hovering over the edit field) warning of possible hotkey conflicts.
+  - City Screen: Added the ability to set an infinite construction mode for a Unit (left click on the queue number). Once complete, it will be added back to the beginning of the queue.
+
+- BLITZ MODE
+  - Turn Timer: 30 seconds + 15 seconds per Era (+ 15 additional seconds for the Middle Ages).
+  - The duration of the turn is not affected by City-States, Barbarians, or computer Players.
+
+- BUG FIXES
+  - Fixed a bug where the city banner did not update after an attack or when moving spies.
 `,
         },
     },
