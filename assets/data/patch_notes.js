@@ -1790,6 +1790,48 @@ Better Pangaea V5.3a:
 - ИСПРАВЛЕНИЯ ОШИБОК
   - Исправлена ошибка, из-за которой баннер города не обновлялся после атаки или при перемещении шпионов.
 `,
+            "11.5": `
+- ОБЩИЕ ИЗМЕНЕНИЯ
+  - Стоимость рабочего **уменьшена до 40 производства** (раньше 46 производства).
+  - Каждое второе закрытие полной ветки институтов дает бесплатный институт.
+  - Нельзя покупать больше одного воздушного юнита в городе в ход.
+
+- РЕЛИГИЯ:ПАНТЕОНЫ
+  - Богиня любви: +1 к настроению за города с населением 6+,~~ культурный рост границ городов ускоряется на 15%,~~ рядом со столицей появляется отряд рабочих.
+
+- РЕЛИГИЯ:ОСНОВАТЕЛЬ
+  - Обряды посвящения: +67 золота (на быстрой скорости) каждый раз, когда какой-нибудь город принимает эту религию. **Ближайший город основателя религии, исповедующий эту религию, получает дополнительную территорию (3 клетки) (вновь обращенный город будет ближайшим).**
+  - Примат папы: **+75 влияния** (ранее +60) каждый раз, когда какой-нибудь город-государство принимает эту религию.
+
+- РЕЛИГИЯ:ПОЧИТАТЕЛЬ
+  - Хоралы (Храм дает +2 к культуре в городах с 5 почитателями): Требование к количеству последователей удалено.
+  - Религиозный центр (Храм дает +2 к настроению в городах с 5 почитателями): Требование к количеству последователей удалено.
+
+- НАБОЖНОСТЬ
+  - Закрытие: Святыни дают **+2 к пище** (ранее +3 к пище). 
+
+- КОММЕРЦИЯ
+  - Меркантилизм: Сокращает на 20% стоимость приобретаемых в городе объектов. **+2 к культуре** (ранее +1) от каждого рынка, банка и биржи.
+
+- МОРЕПЛАВАНИЕ
+  - Школа навигации: Появляется великий флотоводец. +2 к передвижению для всех великих флотоводцев. Великие флотоводцы появляются на 50% быстрее. **+1 к культуре за каждую гавань, морской порт и маяк.**
+
+- РАЦИОНАЛИЗМ
+  - Закрытие: Больше **не дает** бесплатный общественный институт.
+
+- СВОБОДА
+  - Научное общество (тир 2): +1%, +4%, +9%, +16%, +25%, +36% к науке в городах с населением 5+, 10+, 15+, 20+, 25+, 30+. (Максимум достигается при 30 жителях)
+
+- ВСЕМИРНЫЙ КОНГРЕСС
+  - Памятники культуры: Каждое чудо света приносит +2 единицы культуры (ранее +3) своему городу.
+  - Памятники природы: Каждое чудо природы дает +10 к культуре (ранее +5).
+
+- ИСПРАВЛЕНИЯ ОШИБОК
+  - Исправлена ошибка, из-за которой шпион, путешествующий в свой город уже считался контршпионом.
+  - Исправлена ошибка, из-за которой при принятии догмата Двойные агенты (порядок) вражеские шпионы в городах игрока "подсвечивались" в момент отправки контршпиона до его полного установления наблюдения.
+  - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века).
+  - Исправлена ошибка, из-за которой в некоторых случаях юнит терял не все ОП, если имел больше ОП, чем следует (кроме стартового поселенца).
+`,
         },
     },
     en: {
@@ -3533,6 +3575,48 @@ NEW END-OF-GAME GRAPHS
 
 - BUG FIXES
   - Fixed a bug where the city banner did not update after an attack or when moving spies.
+`,
+            "11.5": `
+- GENERAL CHANGES
+  - Worker: **cost reduced to 40 Production** (previously 46 production).
+  - Every second completion of a Policy Branch grants you a free Policy.
+  - Players cannot purchase more than one Air Unit per City per Turn.
+
+- PANTHEON BELIEFS
+  - Goddess of Love: +1 Happiness from cities with population of 6~~ and +15% faster border growth~~, a free Worker appears near the Capital.
+
+- FOUNDER BELIEFS
+  - Initiation Rites: +67 Gold (Quick Speed) **and borders expansion of the nearest City following your religion** when each City first converts to this religion (3 tiles) (the newly converted City counts as the closest).
+  - Papal Primacy: Increase of **75 to Influence** (previously 60) when each City-State first converts to this religion.
+
+- FOLLOWER BELIEFS
+  - Chorales (Temples provide +2 Culture in cities with 5 followers): Requirement for number of followers removed.
+  - Religious Center (Temples provide +2 Happiness in cities with 5 followers): Requirement for number of followers removed.
+
+- PIETY
+  - Finisher: Holy Sites provide **+2 Food** (previously +3 Food). 
+
+- COMMERCE
+  - Mercantilism: Purchasing items in Cities requires 20% less Gold. **+2 Culture** (previously +1) for each Market, Bank and Stock Exchange.
+
+- EXPLORATION
+  - Navigation School: A Great Admiral appears. +2 Movement for all Great Admirals. Great Admirals are earned 50% faster. **+1 Culture for each Lighthouse, Harbor and Seaport.** 
+
+- RATIONALISM
+  - Finisher: no longer provides 1 Free Social Policy.
+
+- FREEDOM
+  - Learned Society (Tenet Level 2): +1%, +4%, +9%, +16%, +25%, +36% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+. (Capped at 30 Citizens)
+
+- WORLD CONGRESS
+  - Cultural Heritage Sites: Each World Wonder provides **+2 Culture** (previously +3) to its city.
+  - Natural Heritage Sites: Each Natural Wonder provides **+10 Culture** (previously +5) when worked.
+
+- BUG FIXES
+  - Fixed a bug where a spy traveling to their own City would be already considered a counter-spy.
+  - Fixed a bug where adopting Double Agents (Order: Tenet Level 1) Social Policy would highlight enemy spies in the Player's Cities before the counter-spy had fully established surveillance.
+  - Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).
+  - Fixed a bug where in some cases a Unit would not lose all its Movement Points if it had more than it should (exception for the starting Settler).
 `,
         },
     },
