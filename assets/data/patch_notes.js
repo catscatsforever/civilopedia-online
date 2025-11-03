@@ -1832,6 +1832,17 @@ Better Pangaea V5.3a:
   - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века).
   - Исправлена ошибка, из-за которой в некоторых случаях юнит терял не все ОП, если имел больше ОП, чем следует (кроме стартового поселенца).
 `,
+            "11.5a": `
+- ИСПРАВЛЕНИЯ ОШИБОК
+  - Исправлена ошибка, приводившая появлению "фантомных" караванов.
+`,
+            "11.5b": `
+- Исправлена ошибка, из-за которой повышение юнита появлялось в начале хода.
+`,
+            "11.5c": `
+- УБРАНО
+  - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века). (Вызывало баг с караванами)
+`,
         },
     },
     en: {
@@ -3617,6 +3628,16 @@ NEW END-OF-GAME GRAPHS
   - Fixed a bug where adopting Double Agents (Order: Tenet Level 1) Social Policy would highlight enemy spies in the Player's Cities before the counter-spy had fully established surveillance.
   - Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).
   - Fixed a bug where in some cases a Unit would not lose all its Movement Points if it had more than it should (exception for the starting Settler).
+`,
+            "11.5a": `
+- BUG FIXES
+  - Fixed a bug where "ghost" Caravans could appear.
+`,
+            "11.5b": `
+- Fixed a bug where Unit Promotions could reappear at the start of the Turn.
+`,
+            "11.5c": `
+- ~~Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).~~
 `,
         },
     },
