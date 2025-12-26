@@ -1843,6 +1843,12 @@ Better Pangaea V5.3a:
 - УБРАНО
   - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века). (Вызывало баг с караванами)
 `,
+            "11.6": `
+- ОБЩЕЕ
+  - Дворец дает +1 к вере.
+  - Для принятия пантеона необходимо накопить 30 очков веры (+2 очка веры за каждый принятый пантеон).
+  - Все юниты типа огнестрельные войска (gunpowder) имеют 3 ОП.
+`,
         },
     },
     en: {
@@ -3638,6 +3644,12 @@ NEW END-OF-GAME GRAPHS
 `,
             "11.5c": `
 - ~~Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).~~
+`,
+            "11.6": `
+- GENERAL CHANGES
+  - The Palace gives 1 [ICON_PEACE] Faith.
+  - Adopting a Pantheon requires 30 Faith (+2 Faith for each Pantheon adopted).
+  - All Gunpowder Units have 3 Movement Points.
 `,
         },
     },
