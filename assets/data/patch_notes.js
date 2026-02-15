@@ -3859,7 +3859,209 @@ NEW END-OF-GAME GRAPHS
   - All Gunpowder Units have 3 Movement Points.
 `,
             "12.0": `
-WIP
+BUG FIXES
+
+- Fixed a bug where City-States could offer quests to establish a trade route when the creation of such trade route was banned at the World Congress. These quests will disappear once the ban is accepted.
+- Fixed a bug where City-States could offer quests to add a Luxury Resource to the Trade Network when the Resource was banned at the World Congress. These quests will disappear once the ban is accepted.
+- Fixed a bug where the "Sacred Waters" Pantheon was working incorrectly.
+- Fixed a bug where the "Treaty of Friendship" Resolution effect was still functioning after being canceled.
+- Fixed a bug where Tourism from "Dictatorship of the Proletariat" (Order: Tenet Level 3) was added incorrectly.
+- The Gatling gun fires at full Ranged Combat Strength within the second range with the "Range" Promotion.
+
+
+GENERAL CHANGES
+
+- Granary/Qullqa are not destroyed when capturing a City.
+- Clearing Jungle and Marsh takes 2 Turns (Quick Speed).
+- All Great People have "Ignores Terrain Cost" Promotion.
+- Each Social Policy adopted after the sixth costs 15% less than before.
+- Sydney Opera House: can be built anywhere.
+- Food and Production yields from Internal Trade Routes are now added directly to a City's base output (i.e. all types of Trade Routes benefit from modifiers from various buildings and beliefs).
+- Stable: also provides a production bonus when building Ranged Mounted Units.
+- Culture is now calculated and displayed with an accuracy of 0.01.
+- Great Wall: damages all enemy Units that end their Turn on the owner's territory by 10 HP, prevents them from healing every turn or gaining HP from pillaging. Provides free Walls in the City in which it is built. Upon discovering Artillery, The Great Wall becomes obsolete.
+- Customs House: Doubles the amount of Strategic Resources added to the Trade Network.
+- The remaining turns before Stealing Technology are now updated immediately after building Constabularies and Police Stations.
+
+
+NATIONS 
+
+- Yam (Mongolia): additional +25% Gold in Capital. 
+- Mongolia:  Combat Strength +30% when fighting City-State units or attacking a City-State itself. All mounted units have +1 Movement. Units are 30% more effective at tributing City-States. Courthouses provide +3 Food and +3 Production.
+- The Netherlands: added coastal starting bias. 
+- Babylon: Receive free Great Scientist when you discover Education. Earn Great Scientists 33% faster.
+- Spain: Gold bonus for discovering a Natural Wonder. Happiness from finding Natural Wonders doubled. When founding Capital, receives a free Scout. Cities founded after Medieval Era start with additional Tiles (5), Population (5) and Buildings (Monument, Granary, Library, Aqueduct and Mission).
+
+
+WAR AND BARBARIANS
+
+- A shortage of Strategic Resources limits the maximum healing for affected Units to 10 HP per Turn.
+- Human Players no longer have combat bonuses against Barbarians. 
+- Barbarian Units have same Combat Strength as their regular versions (Spearman, Archer). 
+- The minimum distance between Barbarian Encampments is now 8 Tiles (previously 6).
+- Gold received from Barbarian Encampments has been increased to 40 (120 gold for Songhai, 60 for Germany). 
+- The random spread of Combat Damage has been disabled.
+- After capturing a City-State and building a Courthouse there, the Player who built the Courthouse last is considered the original owner of the City (when the City is recaptured, the owner's buildings are not destroyed, population does not disappear, etc.).
+- Players receive a bonus for each Capital under their control (except their own): +5% to total Science and Culture, +5 to Happiness, and +15% to the Tourism output. Players receive a Combat Bonus when fighting Units belonging to a Player who controls more than one Capital: +5% to Combat Strength (for each Capital).
+
+
+CITY-STATES
+
+- Scientific City-States: +2/3/5/7/10/15 Science (friends) and +4/6/10/14/20/30 Science (ally). 
+- Maritime and Industrial City-States: The bonus has been updated. Now, fractional values for Food and Production are added to cities without being rounded (Siam, Resolution in the World Congress):
+  - Ancient Era (+1 0, +2 0) 
+  - Classical Era (+2 0, +3 0) 
+  - Medieval Era (+2 0, +3 +1) 
+  - Renaissance Era (+2 0, +3 +1) 
+  - Industrial Era (+3 0, +4 +1) 
+  - Modern Era (+3 0, +4 +1) 
+  - Atomic Era (+3 0, +6 +1) 
+  - Information Era (+3 0, +6 +2) 
+
+- Players can now always see their Influence with City-States, even when at war. The Player with the most Influence over a City-State becomes its ally, even if they are at war.
+
+
+ESPIONAGE
+
+- The coup mechanics have been redesigned: when in a City-State, spies receive coup points each Turn, depending on their rank (3, 5, or 7 per Turn). Once they have accumulated 100 points, players can press a button to receive influence (60) with the City-State. While it is possible to collect tribute from the City-State, the amount of coup points temporarily increases by 30. Spies receive 30 coup points when completing a City-State quest.
+
+
+CITY-STATE QUESTS
+- Connect a Luxury Resource to the trade network (20 Turns): 20 Influence initially and +2 influence per Turn while the Luxury Resource is still available for the remainder of the quest duration.
+- Establish a Trade Route (20 turns): 20 influence initially and +2 influence per Turn while the Route is active for the remainder of the quest duration.
+
+
+PROMOTIONS 
+
+- Promotions "Medic I" and "Medic II" heal 10 HP per Turn. 
+- "Heal Instantly" removed. 
+- Upon Promotion, Unit restores 10 HP.
+- "Enhanced medic" (Khan): This Unit and all others in adjacent tiles Heal 20 Additional HP per turn.
+
+
+TECHNOLOGIES 
+
+- Dynamite" no longer requires "Fertilizer".
+- Iron Resource is revealed by "Chopping".
+
+
+RELIGION 
+
+- Great Prophet is guaranteed to appear once the required amount of Faith is accumulated. Any excess Faith does not disappear. The cost of the first Great Prophet has been increased to 201 Faith in a quick speed game (the cost of subsequent Great Prophets has not changed).
+
+
+PANTHEON BELIEFS
+
+- New Pantheon Seafood Rituals: +1 Faith for each Crab, Pearls, and Whales resource and +2 Faith for each Fish
+- Desert Folklore: +1 Faith from Flood Plains tiles. +2 Faith and +1 Production from Oases. 
+- New Pantheon Spirit Animals: +1 Faith for each Cattle and Sheep resource. 
+
+
+FOUNDER BELIEFS
+
+- Papal Primacy: Increase of 65 to Influence when each City-State first converts to this religion. 
+
+
+FOLLOWER BELIEFS
+
+- Choral Music: Temples provide +2 Culture. Grand Temple provides +5 Culture. 
+- Feed the World: Shrines provide +1 and Temples provide +2 Food each. Grand Temple provides +3 Food. 
+- Asceticism: Shrines provide +1 Happiness in cities with 3 followers, Gold cost of purchasing buildings reduced by 10%. Grand Temple provides +3 Happiness. 
+- Swords into Plowshares: 15% faster Growth Rate for city. Grand Temple provides +10% Food. 
+- Religious Community: +1% Production for each follower (max +10%). Grand Temple provides +3 Production. 
+
+
+REFORMATION BELIEFS
+
+- Atheism: +1 Food and +1 Production from Strategic and Luxury resources. 
+- Prophecy: +20% Production towards Wonder construction. +1 from World Wonders, allows to build World Wonders without Policy requirements.
+- Sacred Sites: Temples and buildings purchased with Faith gain +3 Gold and +1 Culture.
+- Underground Sect: An additional spy appears. All Spies receive +1 to technology stealing effectiveness and steal them 50% faster.
+
+
+ORDER 
+
+- Iron Curtain (Tenet Level 2): Internal trade routes provide 100% more Food or Production. International Trade Routes are no longer available. +1 Trade Route.
+
+
+AUTOCRACY 
+
+- Police State (Tenet Level 1): +3 Local Happiness from every Courthouse. Build Courthouses in half the usual time.
+- ЭElite Forces (Tenet Level 2): Military units heal additional 10 HP. Gunpowder units get "March" Promotion.
+
+
+FREEDOM 
+
+- New Deal (Tenet Level 3): +1 Production from Specialists in every city.
+- Media Culture (Tenet Level 1): +34% Tourism generated by cities with a Broadcast Tower.
+
+
+UNITS 
+
+- Non-siege Range Units receive a 50% Combat Power penalty when attacking Naval Units.
+- Anti-Tank Gun: Combat Type changed to Anti-Tank Units.
+- Battleship: upgrades to Missile Cruiser. 
+- Missile Cruiser has "Indirect Fire" Promotion. 
+- XCOM Squad pays no MP cost to pillage Improvements and plunder Trade Routes. 
+- Guided Missile: 140 Ranged Combat Power.
+- Foreign Legion can be upgraded for 100 Gold (Quick Speed). 
+- Gatling Gun: Range increased to 2 (from 1), but receives a 50% Ranged Combat Strength penalty when attacking within the second range. 
+- Bazooka: "Ambush I" Promotion is available after "Accuracy I" or "Barrage I".
+- All Lancers have Attack Bonus vs Ranged Mounted (33%).
+
+- Minuteman (America): Combat Strength increased to 26 (previously 24). 
+- B17 (America): Range increased to 11 (previously 10). 
+- Camel Archer (Arabia): Combat Strength (Melee) increased to 17. 
+- Siege Tower (Assyria): now cannot pillage Improvements and does not have the built-in "Cover I" Promotion. Gets +100% Combat Strength when defending.
+- Hussar (Austria): flank attack bonus increased to 20% (previously 15%). 
+- Jaguar (The Aztecs): Combat Strength increased to 9 (previously 8). 
+- Bowman (Babylon): +20% Ranged Combat Strength when attacking an adjacent tile. 
+- Pracinha (Brazil): Combat Strength increased to 80 (previously 75), gains +10% Combat Strength for every adjacent Pracinha. 
+- Cataphract (Byzantium): Movement Points increased to 4 (previously 3). 
+- Dromon (Byzantium): can move after attacking (ability does not remain after upgrade). 
+- African Forest Elephant (Carthage): double movement rate through Forest and Jungle.
+- Pictish Warrior (The Celts): earns 100% (previously 50%) of opponents' strength as Faith for kills. Has built-in "Cover I" Promotion. 
+- Chu-Ko-Nu (China): now ignores enemy Combat Strength bonuses from Terrain (hills, forests, jungles). 
+- Norwegian Ski Infantry (Denmark): has built-in "Drill I" Promotion. 
+- Berserker (Denmark): fights as though they were at full strength even when damaged.
+- War Chariot (Egypt): has built-in "ZOC Ignoring" Promotion.
+- Longbowman (England): splash attacks units adjacent to main target with 20% effectiveness. 
+- Mehal Sefari (Ethiopia): The Combat Strength bonus near the Capital has been changed (50% in the Capital (previously 30%), -5% (previously 3%) for every tile away from the Capital). 
+- Musketeer (France): +20% Combat Strength when has less than 50 HP.
+- Panzer (Germany): Combat Strength increased to 82 (previously 80). 
+- Hoplite (Greece): +50% Great General points. 
+- Companion Cavalry (Greece): additional +15% combat bonus with Great General in same tile (like Hakkapeliitta). 
+- Horse Archer (The Huns): has built-in "Accuracy I" Promotion.
+- Battering Ram (The Huns): no longer has "Penalty on Defense (33%)" Promotion. 
+- Slinger (The Inca): Range increased to 2 (from 1), but receives a 50% Ranged Combat Strength penalty when attacking within the second range.
+- War Elephant (India): can Move After Attacking.
+- Kris Swordsman (Indonesia): cost reduced to 40 Production (previously 50). 
+- Mohawk Warrior (Iroquois): requires 50% less experience to earn their next promotion.
+- Zero (Japan): has built-in "Air Repair" Promotion.
+- Samurai (Japan): 33% Compat Strength bonus when attacking full HP units. 
+- Hwach'a (Korea): Combat Strength (Melee) reduced to 10 (previously 11), Ranged Combat Strength reduced to 24 (previously 26). No longer needs to set up prior to firing.
+- Turtle Ship (Korea): +10% Bonus in combat within friendly territory.
+- Atlatlist (The Maya): replaces Composite Bowman. Gets 25% Combat Bonus against Damaged Enemy Units (ability does not remain after upgrade).
+- Keshik (Mongolia): no MP cost to pillage Improvements and plunder Trade Routes. 
+- Berber Cavalry (Morocco): double movement rate through desert tiles.
+- Sea Beggar (The Netherlands): gets "Boarding Party I" and "Boarding Party II" Promotions. 
+- Immortal (Persia): has built-in "March" Promotion. Combat Strength increased to 11. 
+- Winged Hussar (Poland): has built-in "Shock I" Promotion. 
+- Maori Warrior (Polynesia): Combat Strength increased to 10 (previously 8). 
+- Nau (Portugal): costs no maintenance. 
+- Legion (Rome): has a higher Combat Strength bonuses when fortifying (25% on the first turn and 50% on the second). 
+- Ballista (Rome): no longer has limited visibility range. 
+- Cossack (Russia): cost reduced to 150 Production (as before). 
+- Pathfinder (The Shoshone): cost reduced to 26 Production. 
+- Comanche Riders (The Shoshone): restores 10 more HP within friendly territory. 
+- Naresuan's Elephant (Siam): +15% Combat Strength bonus if there are no friendly land units in adjacent tiles. 
+- Mandekalu Cavalry (Songhai): earns 100% (previously 50%) of opponents' strength as Faith for kills.
+- Conquistador (Spain): Combat Bonus outside Friendly Territory (20%).
+- Tercio (Spain): Movement Points increased to 3 (previously 2). 
+- Carolean (Sweden): Combat Strength increased to 55. 
+- Hakkapeliitta (Sweden): has built-in "Great Generals II" Promotion.
+- Great Galleass (Venice): Movement Points increased to 4. 
+- Impi (The Zulus): has built-in "Accuracy I" Promotion.
 `,
         },
     },
