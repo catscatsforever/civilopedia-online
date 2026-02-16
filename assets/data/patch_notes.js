@@ -2056,6 +2056,17 @@ Better Pangaea V5.3a:
 - Великий галеас (Венеция): Имеет 4 ОП. 
 - Импи (Зулусы): Имеют встроенное повышение "Точность I". 
 `,
+            "12.0a": `
+ИСПРАВЛЕНИЯ ОШИБОК
+
+- Исправлена ошибка, из-за которой Шошоны на старте имели воина, а не следопыта.
+- Исправлена ошибка, из-за которой Великая стена наносила урон в зависимости от количества городов при её постройке.
+- Исправлена ошибка, из-за которой на панели сражения отображалось неверное количество наносимого урона авиацией.
+- Исправлена ошибка, из-за которой японская уникальная особенность не работала на авиацию.
+- Исправлена ошибка, из-за которой политика Элитные войска не давала повышение Марш новым юнитам.
+- Исправлена ошибка, из-за которой в некоторых случаях запуск ядерной ракеты мог привести к вылету игры.
+- Исправлена ошибка, из-за которой во время перемещения шпиона в город-государство на кнопке переворота писались очки переворота.
+`,
         },
     },
     en: {
@@ -3987,7 +3998,7 @@ ORDER
 AUTOCRACY 
 
 - Police State (Tenet Level 1): +3 Local Happiness from every Courthouse. Build Courthouses in half the usual time.
-- ЭElite Forces (Tenet Level 2): Military units heal additional 10 HP. Gunpowder units get "March" Promotion.
+- Elite Forces (Tenet Level 2): Military units heal additional 10 HP. Gunpowder units get "March" Promotion.
 
 
 FREEDOM 
@@ -4062,6 +4073,17 @@ UNITS
 - Hakkapeliitta (Sweden): has built-in "Great Generals II" Promotion.
 - Great Galleass (Venice): Movement Points increased to 4. 
 - Impi (The Zulus): has built-in "Accuracy I" Promotion.
+`,
+            "12.0a": `
+BUG FIXES
+
+- Fixed a bug where the Shoshone started with a Warrior instead of a Pathfinder.
+- Fixed a bug where the Great Wall dealt damage based on the number of Cities when it was built.
+- Fixed a bug where the battle panel could display incorrect damage dealt by aircraft.
+- Fixed a bug where the Japanese unique ability did not work on aircraft.
+- Fixed a bug where "Elite Forces" Social Policy would not grant the "March" Promotion to new Units.
+- Fixed a bug where in some cases launching Nuclear Missile could crash the game.
+- Fixed a bug where City-State coup points could be displayed incorrectly.
 `,
         },
     },
