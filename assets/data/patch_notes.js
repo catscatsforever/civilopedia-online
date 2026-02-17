@@ -2067,6 +2067,18 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой в некоторых случаях запуск ядерной ракеты мог привести к вылету игры.
 - Исправлена ошибка, из-за которой во время перемещения шпиона в город-государство на кнопке переворота писались очки переворота.
 `,
+            "12.0b": `
+ИСПРАВЛЕНИЯ ОШИБОК
+
+- Повышение базуки "Бонус против бронетанк. войск (33)" теперь работает только в атаке.
+- Исправлена ошибка, из-за которой в некоторых случаях игрок продолжал видеть клетки города-государства, когда не должен был.
+- Исправлена ошибка, из-за которой у великого пророка отсутствовало повышение "Нет штрафов ОП за местность".
+- Исправлена ошибка, из-за которой миссионеры могли перемещаться сразу же после "автопокупки".
+- Исправлена ошибка, из-за которой шпионы не покидали города-государства после начала действия резолюции "Движение неприсоединения".
+- Исправлена ошибка, из-за которой юниты, построенные в городе с икандой, появлялись с неполным запасом ОП.
+- Начиная золотой век при игре за Персию в начале или середине хода юниты сразу же получат +1 ОП (кроме тех, которые не имеют ОП). После окончания золотого века юниты больше не будут иметь "лишних" ОП.
+- Изменение количества ОП у юнитов в середине хода (кроме тех, которые не имеют ОП) теперь обновляется сразу после получения соответствующих повышений.
+`,
         },
     },
     en: {
@@ -4084,6 +4096,18 @@ BUG FIXES
 - Fixed a bug where "Elite Forces" Social Policy would not grant the "March" Promotion to new Units.
 - Fixed a bug where in some cases launching Nuclear Missile could crash the game.
 - Fixed a bug where City-State coup points could be displayed incorrectly.
+`,
+            "12.0b": `
+BUG FIXES
+
+- "Bonus vs Armor (33)" Bazooka Promotion now only works when attacking.
+- Fixed a bug where Players could see City-State Tiles in some cases when they shouldn't have.
+- Fixed a bug where Great Prophet lacked the "Ignores Terrain Cost" Promotion.
+- Fixed a bug where Missionaries could move immediately after auto-purchasing.
+- Fixed a bug where spies would not leave City-States after "Non-Aligned Movement" Resolution took effect.
+- Fixed a bug where Units built in a City with Ikanda would spawn with missing HP.
+- When the Golden Age begins while playing as Persia at the start or middle of a Turn, units will immediately receive +1 MP, except those without MP. Once the Golden Age ends, units will no longer have extra MP.
+- Changes to the MP of units in the middle of a Turn (except for those without MP) are now updated immediately.
 `,
         },
     },
