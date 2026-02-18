@@ -1758,15 +1758,12 @@ Better Pangaea V5.3a:
   - Империя не падает в анархию из-за невыбора социального института.
   - Можно ставить авиацию на перехват в любое время.
 `,
-            "11.4a": `
-- ~~Внешние торговые пути к игрокам-цивилизациям дают в три раза больше науки, чем раньше.~~
-- Таймер в блиц режиме: 45 секунд + 15 секунд за эпоху. Увеличение времени на ход происходит на следующий ход после выхода хотя бы одного игрока в следующую эпоху.
-- Испания: Разведчик может двигаться сразу же.
-- Пращник (Инки): Боевая мощь в ближнем бою: 5, дальнем бою: 5. Дальность атаки: 1.
-- Единство пророков (реформация): Рядом со столицей появляются два великих пророка. Пророки становятся на 25% сильнее, а для их появления требуется на 25% меньше веры. Каждый великий пророк после девятого не становится дороже.
-`,
-            "11.4b": `
+            "11.4a-b": `
 - ОБЩИЕ ИЗМЕНЕНИЯ
+  - ~~Внешние торговые пути к игрокам-цивилизациям дают в три раза больше науки, чем раньше.~~
+  - Испания: Разведчик может двигаться сразу же.
+  - Пращник (Инки): Боевая мощь в ближнем бою: 5, дальнем бою: 5. Дальность атаки: 1.
+  - Единство пророков (реформация): Рядом со столицей появляются два великих пророка. Пророки становятся на 25% сильнее, а для их появления требуется на 25% меньше веры. Каждый великий пророк после девятого не становится дороже.
   - Рабочие городов-государств пропадают при захвате в обычном режиме игры (теперь работает во всех режимах: обычный, дуэльный, блиц).
   - Города-государства могут строить рабочих в любой момент игры (убрано ограничение на 20 ход).
 
@@ -1784,7 +1781,7 @@ Better Pangaea V5.3a:
   - Экран города: добавлена возможность задать режим бесконечного строительства для юнита (клик ЛКМ по порядковому номеру в очереди). Проект в режиме бесконечного строительства в ход выпуска будет снова добавлен в начало очереди производства.
 
 - БЛИЦ РЕЖИМ
-  - Таймер: 30 секунд + 15 секунд за эпоху (+ 15 дополнительно за средневековье).
+  - Таймер в блиц режиме: 30 секунд + 15 секунд за эпоху (+ 15 дополнительно за средневековье). Увеличение времени на ход происходит на следующий ход после выхода хотя бы одного игрока в следующую эпоху.
   - Города-государства, варвары и компьютерные игроки не оказывают влияние на изменение длительности хода.
 
 - ИСПРАВЛЕНИЯ ОШИБОК
@@ -1832,16 +1829,11 @@ Better Pangaea V5.3a:
   - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века).
   - Исправлена ошибка, из-за которой в некоторых случаях юнит терял не все ОП, если имел больше ОП, чем следует (кроме стартового поселенца).
 `,
-            "11.5a": `
+            "11.5a-c": `
 - ИСПРАВЛЕНИЯ ОШИБОК
   - Исправлена ошибка, приводившая появлению "фантомных" караванов.
-`,
-            "11.5b": `
-- Исправлена ошибка, из-за которой повышение юнита появлялось в начале хода.
-`,
-            "11.5c": `
-- УБРАНО
-  - Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века). (Вызывало баг с караванами)
+  - Исправлена ошибка, из-за которой повышение юнита появлялось в начале хода.
+  - ~~Исправлена ошибка, из-за которой количество ОП юнитов в некоторых случаях обновлялось некорректно (начало и окончание персидского золотого века).~~ (Вызывало баг с караванами)
 `,
             "11.6": `
 - ОБЩЕЕ
@@ -3797,15 +3789,12 @@ NEW END-OF-GAME GRAPHS
   - Not choosing a Social Policy will not cause your Civilization to enter anarchy.
   - Planes can always be set to interception.
 `,
-            "11.4a": `
-- ~~International Trade Routes to human Players now provide 3 times more Science than before.~~
-- Blitz Mode Turn Timer: 45s + 15s each Era. The time per turn increases on the next turn after at least one Player advances to the next Era.
-- Spain: the bonus Scout can move immediately.
-- Slinger (The Inca): Combat Power: 5, Ranged Combat: 5. Range: 1.
-- Unity of the Prophets (Reformation Belief): 2 free Prophets appear near your Capital. Prophets 25% stronger and earned with 25% less Faith. Prophets Faith cost stops increasing after 9th Prophet is born.
-`,
-            "11.4b": `
+            "11.4a-b": `
 - GENERAL CHANGES
+  - ~~International Trade Routes to human Players now provide 3 times more Science than before.~~
+  - Spain: the bonus Scout can move immediately.
+  - Slinger (The Inca): Combat Power: 5, Ranged Combat: 5. Range: 1.
+  - Unity of the Prophets (Reformation Belief): 2 free Prophets appear near your Capital. Prophets 25% stronger and earned with 25% less Faith. Prophets Faith cost stops increasing after 9th Prophet is born.
   - City-State Workers disappear when captured in normal game mode (now applied to all modes: normal, duel, blitz).
   - City-states can build Workers at any point in the game (the 20-turn limit has been removed).
 
@@ -3823,7 +3812,7 @@ NEW END-OF-GAME GRAPHS
   - City Screen: Added the ability to set an infinite construction mode for a Unit (left click on the queue number). Once complete, it will be added back to the beginning of the queue.
 
 - BLITZ MODE
-  - Turn Timer: 30 seconds + 15 seconds per Era (+ 15 additional seconds for the Middle Ages).
+  - Turn Timer: 30 seconds + 15 seconds per Era (+ 15 additional seconds for the Middle Ages). The time per turn increases on the next turn after at least one Player advances to the next Era.
   - The duration of the turn is not affected by City-States, Barbarians, or computer Players.
 
 - BUG FIXES
@@ -3871,14 +3860,10 @@ NEW END-OF-GAME GRAPHS
   - Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).
   - Fixed a bug where in some cases a Unit would not lose all its Movement Points if it had more than it should (exception for the starting Settler).
 `,
-            "11.5a": `
+            "11.5a-c": `
 - BUG FIXES
   - Fixed a bug where "ghost" Caravans could appear.
-`,
-            "11.5b": `
-- Fixed a bug where Unit Promotions could reappear at the start of the Turn.
-`,
-            "11.5c": `
+  - Fixed a bug where Unit Promotions could reappear at the start of the Turn.
 - ~~Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).~~
 `,
             "11.6": `
