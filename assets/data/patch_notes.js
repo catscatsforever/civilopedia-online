@@ -3864,7 +3864,7 @@ NEW END-OF-GAME GRAPHS
 - BUG FIXES
   - Fixed a bug where "ghost" Caravans could appear.
   - Fixed a bug where Unit Promotions could reappear at the start of the Turn.
-- ~~Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).~~
+  - ~~Fixed a bug where in some cases Movement Points could be updated incorrectly (Persian Golden Age).~~
 `,
             "11.6": `
 - GENERAL CHANGES
