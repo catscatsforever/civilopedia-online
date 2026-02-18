@@ -2079,6 +2079,12 @@ Better Pangaea V5.3a:
 - Начиная золотой век при игре за Персию в начале или середине хода юниты сразу же получат +1 ОП (кроме тех, которые не имеют ОП). После окончания золотого века юниты больше не будут иметь "лишних" ОП.
 - Изменение количества ОП у юнитов в середине хода (кроме тех, которые не имеют ОП) теперь обновляется сразу после получения соответствующих повышений.
 `,
+            "12.0c": `
+ИСПРАВЛЕНИЯ ОШИБОК
+
+- Исправлена ошибка, из-за которой при дальнобойной атаке не давался бонус за количество захваченных столиц.
+- Исправлена ошибка, из-за которой политика Веротерпимость давала золото за города на пресной клетке так, как будто основанная религия была с пантеоном Священные воды.
+`,
         },
     },
     en: {
@@ -4108,6 +4114,12 @@ BUG FIXES
 - Fixed a bug where Units built in a City with Ikanda would spawn with missing HP.
 - When the Golden Age begins while playing as Persia at the start or middle of a Turn, units will immediately receive +1 MP, except those without MP. Once the Golden Age ends, units will no longer have extra MP.
 - Changes to the MP of units in the middle of a Turn (except for those without MP) are now updated immediately.
+`,
+            "12.0c": `
+BUG FIXES
+
+- Fixed a bug where there was no combat bonus for the number of captured capitals during a ranged attack.
+- Fixed a bug where the "Religious Tolerance" Social Policy granted Gold to Cities on fresh water as if the founded Religion had the "Sacred Waters" Pantheon.
 `,
         },
     },
