@@ -53,7 +53,7 @@ Patch is compatible with EUI version 1.28g ([LINK=https://forums.civfanatics.com
 const patchNotes = {
     ru: {
         full: `
-Версия 12.0a
+Версия 12.0c
 
 ## I. Здания и чудеса света
 
@@ -568,6 +568,7 @@ const patchNotes = {
 - Пулемет Гатлинга: Дальность атаки увеличена до 2 (ранее 1), но получает 50% штраф к боевой мощи, атакуя на максимально возможную дальность.  
 - Базука: Теперь можно брать повышение "Засада" после повышений "Точность I" или "Заградительный огонь I".   
 - Все типы уланов получают повышение против конных застрельщиков (33%).
+- Повышение базуки "Бонус против бронетанк. войск (33)" теперь работает только в атаке.
 
 ## VIII. Уникальные юниты
 
@@ -2219,7 +2220,7 @@ Better Pangaea V5.3a:
     },
     en: {
         full: `
-Version 12.0a
+Version 12.0c
 
 ## I. Buildings and Wonders
 
@@ -2734,6 +2735,7 @@ Autocracy:
 - Gatling Gun: Attack range increased to 2 (previously 1), but receives a 50% combat strength penalty when attacking at maximum possible range.
 - Bazooka: Can now take the "Ambush" promotion after "Accuracy I" or "Barrage I" promotions.
 - All types of Lancers receive a bonus against Ranged Mounted Units (33%).
+- "Bonus vs Armor (33)" Bazooka Promotion now only works when attacking.
 
 ## VIII. Unique Units
 
