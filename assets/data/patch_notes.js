@@ -2216,6 +2216,53 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой при дальнобойной атаке не давался бонус за количество захваченных столиц.
 - Исправлена ошибка, из-за которой политика Веротерпимость давала золото за города на пресной клетке так, как будто основанная религия была с пантеоном Священные воды.
 `,
+            "12.1": `
+ЮНИТЫ
+  - Йомены: больше не наносят урон юнитам держав, с которыми не находятся в войне. Также не наносят урон юнитам в городах. Уведомления о нанесении урона "по области" больше не показываются.
+  - Крылатые гусары: Боевая мощь уменьшена до 26 (ранее 28).
+
+РЕЛИГИЯ:УКРЕПЛЕНИЕ
+  - Реликварий: Дает по 50 очков веры и 50 очков культуры (на быстрой скорости) (ранее 60 веры и 60 культуры) после каждого использования и исчезновения великого человека
+  - Справедливая война: +30% к боевой мощи рядом с вражескими городами, исповедующими эту религию. Пророки получают повышение "Лидерство" и +1 ОП
+  - Святой орден: -50% к стоимости покупки миссионеров и инквизиторов за веру, инквизиторы получают повышения "Медик I" и "Медик II" и могут аннексировать нейтральную территорию, прилегающую к вашей земле
+
+ШПИОНЫ В ГОРОДАХ-ГОСУДАРСТВАХ
+  - При нахождении в городе-государстве в зависимости от своего ранга шпион получает очки переворота каждый ход (5, 7, 10 в ход (ранее 3,5,7 в ход)).
+
+МОРЕПЛАВАНИЕ
+  - Закрытие мореплавания: При принятии всех общественных институтов мореплавания маяки, гавани и морские порты дают дополнительно +1 (ранее +2) к пище, +1 (ранее +2) к производству, +1 (ранее +2) к науке, и радиус обзора боевых кораблей увеличивается на 1. Также позволяет приобретать великих флотоводцев за счет веры, начиная с Новейшего времени.
+
+ПОРЯДОК
+  - Отечественная война: +20% к боевой мощи в защите (ранее и в атаке и в защите) при сражении на дружественной территории.
+
+НОВЫЕ ГРАФИКИ
+  - Захваченные города
+  - Боевая мощь распущенных юнитов
+  - Эффективное производство [ICON_PRODUCTION] за ход
+  - Очки веры [ICON_PEACE], потраченные на покупку мирных юнитов
+  - Пища [ICON_FOOD], сохраненная при росте города
+  - Золото [ICON_GOLD] за ход от [ICON_INTERNATIONAL_TRADE] торговых путей
+  - Убитые вражеские великие генералы [ICON_GREAT_GENERAL]
+  - Эффективная стоимость изученных технологий
+  - Производство [ICON_PRODUCTION], вложенное в здания
+  - Производство [ICON_PRODUCTION], вложенное в военные юниты
+  - Производство [ICON_PRODUCTION], вложенное в мирные юниты
+  - Производство [ICON_PRODUCTION], вложенное в чудеса света
+  - Наука от договоров об исследованиях
+  - Наука [ICON_RESEARCH], сэкономленная благодаря научным скидкам
+  - Наука [ICON_RESEARCH], потерянная из-за дефицита бюджета
+  - Наука [ICON_RESEARCH] за ход от культурного влияния
+  - Наука [ICON_RESEARCH] за ход от Религии
+  - Юниты: повышения квалификации
+  - Юниты: восстановленные Очки Здоровья
+  - Юниты: Очки здоровья, потерянные из-за истощения
+
+ИСПРАВЛЕНИЕ ОШИБОК
+  - Исправлена ошибка, из-за которой покупка городов-государств венецианским торговцем или уникальной особенностью Австрии считалась за контроль столицы игрока и давала соответствующие бонусы.
+  - Исправлена ошибка, из-за которой великая стена устаревала в химии.
+  - Исправлена ошибка, из-за которой при принятии Железного занавеса в порядке внешние торговые пути не отменялись сразу же.
+  - Исправлена ошибка, из-за которой в некоторых случаях устаревший юнит мог пропадать из очереди постройки на следующий ход после устаревания.
+`,
         },
     },
     en: {
@@ -4383,6 +4430,53 @@ BUG FIXES
 
 - Fixed a bug where there was no combat bonus for the number of captured capitals during a ranged attack.
 - Fixed a bug where the "Religious Tolerance" Social Policy granted Gold to Cities on fresh water as if the founded Religion had the "Sacred Waters" Pantheon.
+`,
+            "12.1": `
+UNITS
+  - Longbowman: no longer deals damage to Units of Players with whom it's owner is not at war. Also does not deal damage to Units in Cities. Notifications about splash damage are no longer displayed.
+  - Winged Hussar: Combat Strength decreased to 26 (previously 28).
+
+RELIGION: ENHANCER BELIEFS
+  - Reliquary: Gain 50 Faith and 50 Culture (Quick Speed) each time a Great Person is expended (previously 60/60)
+  - Just War: +30% Combat Strength near enemy cities that follow this religion. Great Prophets gain "Leadership" Promotion and +1 MP
+  - Holy Order: Missionaries and Inquisitors cost 50% less Faith, Inquisitors gain "Medic" and "Medic II" Promotions and can annex neutral territory that is adjacent to your borders
+
+ESPIONAGE
+  - When stationed in a City-State, depending on their rank, a spy gains coup points each turn (5, 7, 10 per turn (previously 3, 5, 7)).
+
+EXPLORATION
+  - Adopting all policies in the Exploration tree gives +1 Sight for Naval combat units and Lighthouses, Harbors and Seaports provide +1 (previously +2) Food, +1 (previously +2) Production and +1 (previously +2) Science. It also allows the purchase of Great Admirals with Faith starting in the Industrial Era.
+
+ORDER
+  - Patriotic War: +20% defense (previously both attack & defence) bonus in friendly territory.
+
+NEW END-OF-GAME GRAPHS
+  - Conquered Cities
+  - Disbanded Units' Combat Strength
+  - Effective Production [ICON_PRODUCTION] Per Turn
+  - Faith [ICON_PEACE] spent on Non-Combat Units purchases
+  - Food [ICON_FOOD] kept after City Growth
+  - GPT [ICON_GOLD] from Trade Routes
+  - Killed enemy Great Generals [ICON_GREAT_GENERAL]
+  - Known Technologies' effective Cost
+  - Production [ICON_PRODUCTION] spent on Buildings
+  - Production [ICON_PRODUCTION] spent on Combat Units
+  - Production [ICON_PRODUCTION] spent on Non-Combat Units
+  - Production [ICON_PRODUCTION] spent on World Wonders
+  - Science [ICON_RESEARCH] gained from Research Agreements
+  - Science [ICON_RESEARCH] gained from Technology discounts
+  - Science [ICON_RESEARCH] lost due to deficit
+  - Science [ICON_RESEARCH] Per Turn from Cultural Influence
+  - Science [ICON_RESEARCH] Per Turn from Religion
+  - Units: XP Promotions
+  - Units: restored HP
+  - Units: HP lost to attrition
+
+BUG FIXES
+  - Fixed a bug where purchasing City-States with a Merchant of Venice or Austria's unique ability was counted as controlling the player's capital and granted the corresponding bonuses.
+  - Fixed a bug where the Great Wall became obsolete in Chemistry.
+  - Fixed a bug where accepting the Iron Curtain did not immediately cancel International Trade Routes.
+  - Fixed a bug where in some cases an obsolete Unit could completely disappear from the build queue next turn after becoming obsolete.
 `,
         },
     },
