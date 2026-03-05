@@ -2276,9 +2276,9 @@ Better Pangaea V5.3a:
 
 BETTER PANGAEA 5.4
 
-- Исправлена ошибка, из-за которой в некоторых случаях стратегические ресурсы могли не появиться.
-- Минимальное расстояние между изначальными появлениями стартовых поселенцев игроков увеличено до 9 клеток.
-- Минимальное расстояние до клеток побережья при появлении на суше увеличено до 3 клеток (раньше игрок мог появиться на суше в двух клетках от воды).
+  - Исправлена ошибка, из-за которой в некоторых случаях стратегические ресурсы могли не появиться.
+  - Минимальное расстояние между изначальными появлениями стартовых поселенцев игроков увеличено до 9 клеток.
+  - Минимальное расстояние до клеток побережья при появлении на суше увеличено до 3 клеток (раньше игрок мог появиться на суше в двух клетках от воды).
 
 НОВЫЕ НАСТРОЙКИ
   - Добавлена опция Хребты: Случайно. При выборе этой опции наличие хребтов будет выбрано случайно.
@@ -4512,9 +4512,9 @@ BUG FIXES
 
 
 BETTER PANGAEA 5.4
-- Fixed a bug where in some cases strategic resources couldn't be spawned.
-- The minimum distance between starting settlers increased to 9 tiles.
-- The minimum distance from coastal tiles for an inland spawn increased to 3 tiles (previously players could spawn on land two tiles away from water).
+  - Fixed a bug where in some cases strategic resources couldn't be spawned.
+  - The minimum distance between starting settlers increased to 9 tiles.
+  - The minimum distance from coastal tiles for an inland spawn increased to 3 tiles (previously players could spawn on land two tiles away from water).
 
 NEW MAP OPTIONS
   - added Ridges option: Random. When this option is selected, the appearance of ridges will be chosen randomly.
