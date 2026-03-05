@@ -2263,6 +2263,28 @@ Better Pangaea V5.3a:
   - Исправлена ошибка, из-за которой при принятии Железного занавеса в порядке внешние торговые пути не отменялись сразу же.
   - Исправлена ошибка, из-за которой в некоторых случаях устаревший юнит мог пропадать из очереди постройки на следующий ход после устаревания.
 `,
+            "12.1a": `
+ИДЕОЛОГИЯ: СВОБОДА
+  - Научное общество: +1%, +4%, +9%, +16%, +25%, +36%, **+49%** к науке в городах с населением 5+, 10+, 15+, 20+, 25+, 30+, **35+**.
+
+ИСПРАВЛЕНИЕ ОШИБОК
+  - Исправлена ошибка, из-за которой великая стена устаревала в химии.
+  - Исправлена ошибка, из-за которой великая стена работала на морские юниты.
+  - Исправлена ошибка, из-за которой в некоторых случаях количество редких ресурсов захваченных (купленных) городов-государств удваивалось.
+  - Исправлена ошибка, из-за которой в некоторых случаях при отрицательном влиянии на город-государство (от 0 до -1) ему нельзя было пообещать защиту.
+
+
+BETTER PANGAEA 5.4
+
+- Исправлена ошибка, из-за которой в некоторых случаях стратегические ресурсы могли не появиться.
+- Минимальное расстояние между изначальными появлениями стартовых поселенцев игроков увеличено до 9 клеток.
+- Минимальное расстояние до клеток побережья при появлении на суше увеличено до 3 клеток (раньше игрок мог появиться на суше в двух клетках от воды).
+
+НОВЫЕ НАСТРОЙКИ
+  - Добавлена опция Хребты: Случайно. При выборе этой опции наличие хребтов будет выбрано случайно.
+  - Старт на суше: Мне повезет!/Без морских держав. При выборе опции "Без морских держав" нации с привязкой к воде будут начинать игру на побережье.
+  - Старт на побережье: Мне повезет!/Только морские державы. При выборе опции "Только морские державы" нации без привязки к воде не могут начать игру на побережье.
+`,
         },
     },
     en: {
@@ -4477,6 +4499,27 @@ BUG FIXES
   - Fixed a bug where the Great Wall became obsolete in Chemistry.
   - Fixed a bug where accepting the Iron Curtain did not immediately cancel International Trade Routes.
   - Fixed a bug where in some cases an obsolete Unit could completely disappear from the build queue next turn after becoming obsolete.
+`,
+            "12.1a": `
+IDEOLOGY: FREEDOM
+  - Learned Society: +1%, +4%, +9%, +16%, +25%, +36%, +49% Science in cities with population of 5+, 10+, 15+, 20+, 25+, 30+, 35+, 40+.
+
+BUG FIXES
+  - Fixed a bug where the Great Wall became obsolete in Chemistry.
+  - Fixed a bug where the Great Wall affected Naval Units.
+  - Fixed a bug where the amount of rare resources from captured/bought out City-States could double in some cases.
+  - Fixed a bug where in some cases it wouldn't be possible to pledge to protect a City-State while at negative influence (from 0 to -1).
+
+
+BETTER PANGAEA 5.4
+- Fixed a bug where in some cases strategic resources couldn't be spawned.
+- The minimum distance between starting settlers increased to 9 tiles.
+- The minimum distance from coastal tiles for an inland spawn increased to 3 tiles (previously players could spawn on land two tiles away from water).
+
+NEW MAP OPTIONS
+  - added Ridges option: Random. When this option is selected, the appearance of ridges will be chosen randomly.
+  - Inland Spawns: Random/Inland Civs Only. With the "Inland Civs Only" option civilizations with a coastal bias will only spawn on the coast.
+  - Coastal Spawns: Random/Coastal Civs Only. With the "Coastal Civs Only" option civilizations without a coastal bias cannot spawn on the coast.
 `,
         },
     },
