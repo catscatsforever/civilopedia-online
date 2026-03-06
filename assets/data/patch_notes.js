@@ -2285,6 +2285,12 @@ BETTER PANGAEA 5.4
   - Старт на суше: Мне повезет!/Без морских держав. При выборе опции "Без морских держав" нации с привязкой к воде будут начинать игру на побережье.
   - Старт на побережье: Мне повезет!/Только морские державы. При выборе опции "Только морские державы" нации без привязки к воде не могут начать игру на побережье.
 `,
+            "12.1b": `
+- Новый график: Очки веры, потраченные на покупку зданий.
+- Исправлены неточности графика эффективного производства в ход.
+- Экран победы: улучшен повтор карты, панель графиков.
+- Послеигровая статистика содержит более подробные данные о карте.
+`,
         },
     },
     en: {
@@ -4520,6 +4526,12 @@ NEW MAP OPTIONS
   - added Ridges option: Random. When this option is selected, the appearance of ridges will be chosen randomly.
   - Inland Spawns: Random/Inland Civs Only. With the "Inland Civs Only" option civilizations with a coastal bias will only spawn on the coast.
   - Coastal Spawns: Random/Coastal Civs Only. With the "Coastal Civs Only" option civilizations without a coastal bias cannot spawn on the coast.
+`,
+            "12.1b": `
+- New graph: Faith [ICON_PEACE] spent on Buildings purchases.
+- Fixed inaccuracies in the Effective Production Per Turn graph.
+- Victory Screen: improved map replay, graph panel.
+- Post-game statistics contain more detailed data about the Map.
 `,
         },
     },
