@@ -2291,6 +2291,10 @@ BETTER PANGAEA 5.4
 - Экран победы: улучшен повтор карты, панель графиков.
 - Послеигровая статистика содержит более подробные данные о карте.
 `,
+            "12.1c": `
+- Уведомление о принятой идеологии теперь показывает тип принятой идеологии и цивилизацию, которая её приняла.
+- График очков веры, потраченной на покупку мирных юнитов, теперь учитывает пророков.
+`,
         },
     },
     en: {
@@ -4532,6 +4536,10 @@ NEW MAP OPTIONS
 - Fixed inaccuracies in the Effective Production Per Turn graph.
 - Victory Screen: improved map replay, graph panel.
 - Post-game statistics contain more detailed data about the Map.
+`,
+            "12.1c": `
+- The Ideology adopted notification now shows the type of Ideology and the Civilization that adopted it.
+- The graph showing Faith spent on Non-Combat Units purchases now includes Great Prophets.
 `,
         },
     },
