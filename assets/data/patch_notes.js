@@ -2295,6 +2295,15 @@ BETTER PANGAEA 5.4
 - Уведомление о принятой идеологии теперь показывает тип принятой идеологии и цивилизацию, которая её приняла.
 - График очков веры, потраченной на покупку мирных юнитов, теперь учитывает пророков.
 `,
+            "12.1d": `
+- Исправлена ошибка, из-за которой захваченные города не меняли изначального владельца в случае, если предыдущий изначальный владелец полностью выбит из игры.
+- Исправлена ошибка, из-за которой бонус к боевой мощи от "Справедливой войны" не работал на дальнобойные юниты при атаке городов.
+- Исправлена ошибка, из-за которой бонус к боевой мощи юнитов в атаке при атаке городов не отображался на панели сражения.
+- Исправлена ошибка, из-за которой бонус к боевой мощи от повышения "Тренировка на высоте" (Килиманджаро) не работал на дальнобойные юниты.
+- Исправлена ошибка, из-за которой при атаке городом дальнобойного юнита на панели сражения писался бонус к боевой мощи от укрепления.
+- Исправлена ошибка, из-за которой при атаке городом юнита бонус/штраф к боевой мощи от пересеченной местности не работал.
+- Исправлена ошибка, из-за которой бомбардировщики наносили неправильный урон, если их перехватывали истребители.
+`,
         },
     },
     en: {
@@ -4540,6 +4549,15 @@ NEW MAP OPTIONS
             "12.1c": `
 - The Ideology adopted notification now shows the type of Ideology and the Civilization that adopted it.
 - The graph showing Faith spent on Non-Combat Units purchases now includes Great Prophets.
+`,
+            "12.1d": `
+- Fixed a bug where conquered Cities did not change their original owners if the previous owner was completely eliminated from the Game.
+- Fixed a bug where the combat strength bonus from the "Just War" Enhancer Belief did not work on ranged Units when attacking Cities.
+- Fixed a bug where the combat strength attack bonus was not displayed when attacking Cities.
+- Fixed a bug where the combat strength bonus from the "Altitude Training" (Mt. Kilimanjaro) Promotion did not work on ranged Units.
+- Fixed a bug where the fortification combat bonus for a ranged Unit attacked by a City was not displayed.
+- Fixed a bug where the rough terrain combat bonus/penalty for a Unit attacked by a City was not displayed.
+- Fixed a bug where bombers dealt incorrect damage when intercepted by fighters.
 `,
         },
     },
