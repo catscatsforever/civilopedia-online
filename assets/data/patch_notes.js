@@ -2304,6 +2304,74 @@ BETTER PANGAEA 5.4
 - Исправлена ошибка, из-за которой при атаке городом юнита бонус/штраф к боевой мощи от пересеченной местности не работал.
 - Исправлена ошибка, из-за которой бомбардировщики наносили неправильный урон, если их перехватывали истребители.
 `,
+            "12.2": `
+- ВОЛЯ 
+    - Меритократия: Улучшает на +1 настроение каждого города, связанного со столицей. Сокращает на **5%** (ранее 10%) недовольство от граждан в неоккупированных городах. 
+
+- ЧЕСТЬ 
+  - Кодекс чести: Больше не дает бесплатного великого полководца. 
+  - Воинские традиции: Больше не дает бесплатную технологию за захват городов. 
+  - Закрытие: Принятие всех общественных институтов чести позволяет получать золото за каждого убитого врага. **При захвате неоккупированного города цивилизации с населением 5+ вы бесплатно получаете одну технологию, уже изученную этой цивилизацией (только один раз за город). Получение города в результате торговой сделки не считается.** Также позволяет приобретать великих полководцев за счет веры, начиная с Новейшего времени. 
+
+- МЕЦЕНАТСТВО 
+  - Схоластика: **+20%** (ранее +10%) к культуре в столице за каждого действующего дипломата. +3 к науке от жандармерий и полицейских участков. Они строятся на 50% быстрее.     
+
+- ЭСТЕТИКА 
+  - Открытие: Принятие эстетики позволит вам получать великих писателей, художников и музыкантов на 25% быстрее**, а также увеличит скорость постройки их гильдий на 50%**. Открывает постройку галереи Уффици. 
+  - Художественный гений: Появляется великий художник. Города производят на **15%** (ранее 10%) больше науки во время золотого века. 
+
+- КОММЕРЦИЯ 
+  - Протекционизм можно принять после открытия Коммерции. 
+  - Для принятия Меркантилизма теперь необходимо принять Протекционизм. 
+  - Для принятия Караванов фургонов теперь необходимо принять Наемную армию.  
+
+- ИДЕОЛОГИЯ: ПОРЯДОК 
+  - Партийное руководство (**Тир2 -> Тир 1**): **+1** (ранее +2) к пище, производству, науке, культуре и **золоту** каждого города. 
+  - Рабочие факультеты (**Тир 1 -> Тир 2**): Фабрики и углевыжигательные заводы дают +5 к науке и строятся на 30% быстрее.
+
+- ИДЕОЛОГИЯ: СВОБОДА 
+  - Новый курс (Тир 3): Увеличивает на +1 производство **и науку** от специалистов во всех городах. 
+
+- РЕЛИГИЯ: ПАНТЕОНЫ 
+  - Морские обряды: +1 к вере **и +1 к золоту** от каждого источника крабов, жемчуга и китов и +2 к вере от каждого источника рыбы 
+  - Тотемные животные: +1 к вере от каждого источника скота, **оленей** и овец 
+  - Священный путь: Дает +1 к культуре за каждую обрабатываемую клетку джунглей и озер. **+1 к пище от озер**
+  - Обряды ремесленников: +1 к пище и +1 к производству в городах с населением **4+** (ранее 3+) 
+  - Посланник богов: +2 к науке и +1 к вере в городах с торговыми путями. ~~Дворец дает +2 к науке и +1 к вере~~
+
+- РЕЛИГИЯ: ПОЧИТАТЕЛЬ 
+  - Религиозное искусство: Национальные чудеса дают **+3** (ранее +2) к культуре и **+3** (ранее +2) к туризму в городе 
+
+- РЕЛИГИЯ: УКРЕПЛЕНИЕ 
+  - Религиозные тексты: Религия распространяется к городам на **30%** (ранее на 20%) дальше (и на 50% быстрее после открытия печатного пресса) 
+
+- РЕЛИГИЯ: РЕФОРМАЦИИ 
+  - Иезуитское образование: Можно строить **библиотеки**, университеты, школы и лаборатории с помощью веры. Эти здания дают **+1** (ранее +2) к науке.
+
+- НАЦИИ 
+  - Швеция: При передаче великого человека городу-государству влияние на него растет на 90. У великих ученых, великих инженеров и великих торговцев свои отдельные счетчики великих людей~~, но скорость их появления уменьшена на 25%.~~ 
+  - Нидерланды: Оставляет **100%** (ранее 50%) от настроения за редкий ресурс, если последняя его единица была продана другой державе. 
+  - Кобуксон (Корея): Боевая мощь уменьшена до **34** (ранее 36). 
+  - Гельветская мастерская украшений (Кельты): Теперь дает +2 к золоту и не требует ресурсов для постройки. 
+  - Стеклодувная мастерская (Венеция): Стоимость уменьшена до **167** (ранее 201) производства. 
+  - Торре-де-Белем (Португалия): Для постройки больше не требуется наличие стен. 
+  - Текстильная мастерская (Англия): Базовое производство увеличено до **6** (ранее 4). 
+  - Медресе (Аравия): **50%** (ранее 25%) очков веры, производимых городом, добавляются к очкам науки. 
+  - Киностудия (Америка): Теперь требует оперу для постройки, вместо музея. 
+  - Ипподром (Византия): Стоимость уменьшена до **50** производства (ранее 67). 
+  - Прусская Кригс-академия (Германия): Дает **+3** к науке (ранее +2). 
+
+- ИСПРАВЛЕНИЯ ОШИБОК 
+  - Исправлена ошибка, из-за которой конные застрельщики не получали штрафа к боевой мощи при атаке морских юнитов. 
+  - Исправлена ошибка, из-за которой верование "Памятник богам" не давало дополнительное настроение при постройке Стоунхенджа.
+`,
+            "12.2a": `
+- ИСПРАВЛЕНИЯ ОШИБОК
+  - Исправлена ошибка, которая позволяла покупать библиотеки за веру при наличии религии в городе.
+
+- РЕЛИГИЯ: РЕФОРМАЦИИ 
+  - Иезуитское образование: Можно строить библиотеки, университеты, школы, **обсерватории** и лаборатории с помощью веры. Эти здания дают +1 к науке.
+`,
         },
     },
     en: {
@@ -4558,6 +4626,74 @@ NEW MAP OPTIONS
 - Fixed a bug where the fortification combat bonus for a ranged Unit attacked by a City was not displayed.
 - Fixed a bug where the rough terrain combat bonus/penalty for a Unit attacked by a City was not displayed.
 - Fixed a bug where bombers dealt incorrect damage when intercepted by fighters.
+`,
+            "12.2": `
+- LIBERTY 
+    - Meritocracy: +1 Happiness for each City you own connected to the Capital and -5% (previously -10%) Unhappiness from Citizens in non-occupied Cities.
+
+- HONOR 
+  - Warrior Code: no longer grants a free Great General. 
+  - Military Tradition: no longer grants a free Technology for conquering Cities. 
+  - Finisher: Adopting all policies in the Honor tree will grant Gold for each enemy unit killed.  When a non-occupied city of civilization with population of 5+ is conquered, gain a free Technology already discovered by its owner. Gaining a city through a trade deal does not count, and it can only happen once per enemy city. It also allows the purchase of Great Generals with Faith starting in the Industrial Era.
+
+- PATRONAGE 
+  - Scholasticism: +20% (previously +10%) Culture in the Capital for every active Diplomat. Build Constabularies and Police Stations 50% faster. They provide +3 Science each.
+
+- AESTHETICS 
+  - Opener: Adopting Aesthetics allows you to earn Great Writers, Artists, and Musicians 25% faster, and also increases the construction speed of their respective guilds by 50%. Unlocks building the Uffizi.
+  - Artistic Genius: A Great Artist appears. Cities gain +15% (previously +10%) Science during Golden Ages. 
+
+- COMMERCE 
+  - Protectionism now requires Mercenary Army. 
+  - Mercantilism now requires Protectionism. 
+  - Wagon Trains now requires Mercenary Army.  
+
+- ORDER
+  - Party Leadership (Tenet Level 2 -> Tenet Level 1): +1 (previously +2) food, production, science, culture and **gold** for each city.
+  - Workers' Faculties (Tenet Level 1 -> Tenet Level 2): +5 Science from Factories and Charcoal Plants. Build them 30% faster.
+
+- FREEDOM
+  - New Deal (Tenet Level 3): +1 Production **and Science** from Specialists in every city. 
+
+- PANTHEON BELIEFS
+  - Seafood Rituals: +1 Faith **and +1 Gold** for each Crab, Pearls, and Whales resource and +2 Faith for each Fish
+  - Spirit Animals: +1 Faith for each Cattle, Sheep **and Deer** resource.
+  - Sacred Path: +1 Culture from Jungle tiles and Lakes. **+1 Food from Lakes**
+  - Craftsmen Rites: +1 Food and +1 in cities with population of 4+ (previously 3+) 
+  - Messenger of the Gods: +2 Science and +1 Faith in cities with a City Connection. ~~Palace provides +2 Science and +1 Faith~~
+
+- FOLLOWER BELIEFS
+  - Religious Art: National Wonders provide +3 (previously +2) Culture and +3 (previously +2) Tourism
+
+- ENHANCER BELIEFS 
+  - Religious Texts: Religion spreads to cities 30% (previously 20%) further away (and 50% faster with Printing Press) 
+
+- REFORMATION BELIEFS
+  - Jesuit Education: May build **Libraries**, Universities, Public Schools, and Research Labs with Faith. Also these buildings provide +1 (previously +2) Science. 
+
+- CIVILIZATIONS 
+  - Sweden: Gain 90 Influence with a Great Person gift to a City-State. Great Scientists, Great Engineers, and Great Merchants each have independent Great People counters, ~~but their generation is decreased by 25%.~~
+  - The Netherlands: Retains 100% (previously 50%) of the Happiness benefits from a Luxury Resource if your last copy of it is traded away.
+  - Turtle Ship (Korea): Combat Strength decreased to 34 (from 36). 
+  - Helvetian Silversmith (The Celts): now provides +2 Gold and requires no resources to build.
+  - Glassblowing Workshop (Venice): Production Cost decreased to 167 (previously 201).
+  - Torre de Belem (Portugal): no longer requires Walls to be built. 
+  - Тextile Factory (England): +6 Production (previously +4). 
+  - Madrasa (Arabia): 50% (previously 25%) Faith produced by this city converts to Science.
+  - Film Studio (America): now requires Opera House instead of Museum. 
+  - Hippodrome (Byzantium): Production Cost decreased to 50 (previously 67).
+  - Prussian Staff College (Germany): +3 Science (previously +2). 
+
+- BUG FIXES
+  - Fixed a bug where Ranged Mounted Units did not receive a Combat Power penalty when attacking Naval Units. 
+  - Fixed a bug where the "Monument to the Gods" Pantheon Belief did not grant additional Happiness when building Stonehenge.
+`,
+            "12.2a": `
+- BUG FIXES
+  - Fixed a bug where Players could purchase (unlimited) Libraries with Faith if a Religion was present in the City.
+
+- REFORMATION BELIEFS
+  - Jesuit Education: May build Libraries, Universities, Public Schools, **Observatories** and Research Labs with Faith. These buildings provide +1 Science. 
 `,
         },
     },
