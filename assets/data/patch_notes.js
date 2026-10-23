@@ -2197,10 +2197,6 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой политика Элитные войска не давала повышение Марш новым юнитам.
 - Исправлена ошибка, из-за которой в некоторых случаях запуск ядерной ракеты мог привести к вылету игры.
 - Исправлена ошибка, из-за которой во время перемещения шпиона в город-государство на кнопке переворота писались очки переворота.
-`,
-            "12.0b": `
-ИСПРАВЛЕНИЯ ОШИБОК
-
 - Повышение базуки "Бонус против бронетанк. войск (33)" теперь работает только в атаке.
 - Исправлена ошибка, из-за которой в некоторых случаях игрок продолжал видеть клетки города-государства, когда не должен был.
 - Исправлена ошибка, из-за которой у великого пророка отсутствовало повышение "Нет штрафов ОП за местность".
@@ -2209,10 +2205,6 @@ Better Pangaea V5.3a:
 - Исправлена ошибка, из-за которой юниты, построенные в городе с икандой, появлялись с неполным запасом ОП.
 - Начиная золотой век при игре за Персию в начале или середине хода юниты сразу же получат +1 ОП (кроме тех, которые не имеют ОП). После окончания золотого века юниты больше не будут иметь "лишних" ОП.
 - Изменение количества ОП у юнитов в середине хода (кроме тех, которые не имеют ОП) теперь обновляется сразу после получения соответствующих повышений.
-`,
-            "12.0c": `
-ИСПРАВЛЕНИЯ ОШИБОК
-
 - Исправлена ошибка, из-за которой при дальнобойной атаке не давался бонус за количество захваченных столиц.
 - Исправлена ошибка, из-за которой политика Веротерпимость давала золото за города на пресной клетке так, как будто основанная религия была с пантеоном Священные воды.
 `,
@@ -2272,6 +2264,13 @@ Better Pangaea V5.3a:
   - Исправлена ошибка, из-за которой великая стена работала на морские юниты.
   - Исправлена ошибка, из-за которой в некоторых случаях количество редких ресурсов захваченных (купленных) городов-государств удваивалось.
   - Исправлена ошибка, из-за которой в некоторых случаях при отрицательном влиянии на город-государство (от 0 до -1) ему нельзя было пообещать защиту.
+  - Исправлена ошибка, из-за которой захваченные города не меняли изначального владельца в случае, если предыдущий изначальный владелец полностью выбит из игры.
+  - Исправлена ошибка, из-за которой бонус к боевой мощи от "Справедливой войны" не работал на дальнобойные юниты при атаке городов.
+  - Исправлена ошибка, из-за которой бонус к боевой мощи юнитов в атаке при атаке городов не отображался на панели сражения.
+  - Исправлена ошибка, из-за которой бонус к боевой мощи от повышения "Тренировка на высоте" (Килиманджаро) не работал на дальнобойные юниты.
+  - Исправлена ошибка, из-за которой при атаке городом дальнобойного юнита на панели сражения писался бонус к боевой мощи от укрепления.
+  - Исправлена ошибка, из-за которой при атаке городом юнита бонус/штраф к боевой мощи от пересеченной местности не работал.
+  - Исправлена ошибка, из-за которой бомбардировщики наносили неправильный урон, если их перехватывали истребители.
 
 
 BETTER PANGAEA 5.4
@@ -2284,25 +2283,14 @@ BETTER PANGAEA 5.4
   - Добавлена опция Хребты: Случайно. При выборе этой опции наличие хребтов будет выбрано случайно.
   - Старт на суше: Мне повезет!/Без морских держав. При выборе опции "Без морских держав" нации с привязкой к воде будут начинать игру на побережье.
   - Старт на побережье: Мне повезет!/Только морские державы. При выборе опции "Только морские державы" нации без привязки к воде не могут начать игру на побережье.
-`,
-            "12.1b": `
-- Новый график: Очки веры, потраченные на покупку зданий.
-- Исправлены неточности графика эффективного производства в ход.
-- Экран победы: улучшен повтор карты, панель графиков.
-- Послеигровая статистика содержит более подробные данные о карте.
-`,
-            "12.1c": `
-- Уведомление о принятой идеологии теперь показывает тип принятой идеологии и цивилизацию, которая её приняла.
-- График очков веры, потраченной на покупку мирных юнитов, теперь учитывает пророков.
-`,
-            "12.1d": `
-- Исправлена ошибка, из-за которой захваченные города не меняли изначального владельца в случае, если предыдущий изначальный владелец полностью выбит из игры.
-- Исправлена ошибка, из-за которой бонус к боевой мощи от "Справедливой войны" не работал на дальнобойные юниты при атаке городов.
-- Исправлена ошибка, из-за которой бонус к боевой мощи юнитов в атаке при атаке городов не отображался на панели сражения.
-- Исправлена ошибка, из-за которой бонус к боевой мощи от повышения "Тренировка на высоте" (Килиманджаро) не работал на дальнобойные юниты.
-- Исправлена ошибка, из-за которой при атаке городом дальнобойного юнита на панели сражения писался бонус к боевой мощи от укрепления.
-- Исправлена ошибка, из-за которой при атаке городом юнита бонус/штраф к боевой мощи от пересеченной местности не работал.
-- Исправлена ошибка, из-за которой бомбардировщики наносили неправильный урон, если их перехватывали истребители.
+
+ПРОЧЕЕ
+  - Новый график: Очки веры, потраченные на покупку зданий.
+  - Исправлены неточности графика эффективного производства в ход.
+  - Экран победы: улучшен повтор карты, панель графиков.
+  - Послеигровая статистика содержит более подробные данные о карте.
+  - Уведомление о принятой идеологии теперь показывает тип принятой идеологии и цивилизацию, которая её приняла.
+  - График очков веры, потраченной на покупку мирных юнитов, теперь учитывает пророков.
 `,
             "12.2": `
 - ВОЛЯ 
@@ -4626,7 +4614,7 @@ UNITS
 - Great Galleass (Venice): Movement Points increased to 4. 
 - Impi (The Zulus): has built-in "Accuracy I" Promotion.
 `,
-            "12.0a": `
+            "12.0a-c": `
 BUG FIXES
 
 - Fixed a bug where the Shoshone started with a Warrior instead of a Pathfinder.
@@ -4636,10 +4624,6 @@ BUG FIXES
 - Fixed a bug where "Elite Forces" Social Policy would not grant the "March" Promotion to new Units.
 - Fixed a bug where in some cases launching Nuclear Missile could crash the game.
 - Fixed a bug where City-State coup points could be displayed incorrectly.
-`,
-            "12.0b": `
-BUG FIXES
-
 - "Bonus vs Armor (33)" Bazooka Promotion now only works when attacking.
 - Fixed a bug where Players could see City-State Tiles in some cases when they shouldn't have.
 - Fixed a bug where Great Prophet lacked the "Ignores Terrain Cost" Promotion.
@@ -4648,10 +4632,6 @@ BUG FIXES
 - Fixed a bug where Units built in a City with Ikanda would spawn with missing HP.
 - When the Golden Age begins while playing as Persia at the start or middle of a Turn, units will immediately receive +1 MP, except those without MP. Once the Golden Age ends, units will no longer have extra MP.
 - Changes to the MP of units in the middle of a Turn (except for those without MP) are now updated immediately.
-`,
-            "12.0c": `
-BUG FIXES
-
 - Fixed a bug where there was no combat bonus for the number of captured capitals during a ranged attack.
 - Fixed a bug where the "Religious Tolerance" Social Policy granted Gold to Cities on fresh water as if the founded Religion had the "Sacred Waters" Pantheon.
 `,
@@ -4711,6 +4691,13 @@ BUG FIXES
   - Fixed a bug where the Great Wall affected Naval Units.
   - Fixed a bug where the amount of rare resources from captured/bought out City-States could double in some cases.
   - Fixed a bug where in some cases it wouldn't be possible to pledge to protect a City-State while at negative influence (from 0 to -1).
+  - Fixed a bug where conquered Cities did not change their original owners if the previous owner was completely eliminated from the Game.
+  - Fixed a bug where the combat strength bonus from the "Just War" Enhancer Belief did not work on ranged Units when attacking Cities.
+  - Fixed a bug where the combat strength attack bonus was not displayed when attacking Cities.
+  - Fixed a bug where the combat strength bonus from the "Altitude Training" (Mt. Kilimanjaro) Promotion did not work on ranged Units.
+  - Fixed a bug where the fortification combat bonus for a ranged Unit attacked by a City was not displayed.
+  - Fixed a bug where the rough terrain combat bonus/penalty for a Unit attacked by a City was not displayed.
+  - Fixed a bug where bombers dealt incorrect damage when intercepted by fighters.
 
 
 BETTER PANGAEA 5.4
@@ -4722,25 +4709,14 @@ NEW MAP OPTIONS
   - added Ridges option: Random. When this option is selected, the appearance of ridges will be chosen randomly.
   - Inland Spawns: Random/Inland Civs Only. With the "Inland Civs Only" option civilizations with a coastal bias will only spawn on the coast.
   - Coastal Spawns: Random/Coastal Civs Only. With the "Coastal Civs Only" option civilizations without a coastal bias cannot spawn on the coast.
-`,
-            "12.1b": `
-- New graph: Faith [ICON_PEACE] spent on Buildings purchases.
-- Fixed inaccuracies in the Effective Production Per Turn graph.
-- Victory Screen: improved map replay, graph panel.
-- Post-game statistics contain more detailed data about the Map.
-`,
-            "12.1c": `
-- The Ideology adopted notification now shows the type of Ideology and the Civilization that adopted it.
-- The graph showing Faith spent on Non-Combat Units purchases now includes Great Prophets.
-`,
-            "12.1d": `
-- Fixed a bug where conquered Cities did not change their original owners if the previous owner was completely eliminated from the Game.
-- Fixed a bug where the combat strength bonus from the "Just War" Enhancer Belief did not work on ranged Units when attacking Cities.
-- Fixed a bug where the combat strength attack bonus was not displayed when attacking Cities.
-- Fixed a bug where the combat strength bonus from the "Altitude Training" (Mt. Kilimanjaro) Promotion did not work on ranged Units.
-- Fixed a bug where the fortification combat bonus for a ranged Unit attacked by a City was not displayed.
-- Fixed a bug where the rough terrain combat bonus/penalty for a Unit attacked by a City was not displayed.
-- Fixed a bug where bombers dealt incorrect damage when intercepted by fighters.
+
+OTHER
+  - New graph: Faith [ICON_PEACE] spent on Buildings purchases.
+  - Fixed inaccuracies in the Effective Production Per Turn graph.
+  - Victory Screen: improved map replay, graph panel.
+  - Post-game statistics contain more detailed data about the Map.
+  - The Ideology adopted notification now shows the type of Ideology and the Civilization that adopted it.
+  - The graph showing Faith spent on Non-Combat Units purchases now includes Great Prophets.
 `,
             "12.2": `
 - LIBERTY 
@@ -4813,7 +4789,7 @@ NEW MAP OPTIONS
             "12.3": `
 - GENERAL CHANGES
   - Building a Harbor is no longer required to construct a Seaport.
-  - A Harbor provides an additional +2 to a city’s culture for each external sea-based trade route.
+  - A Harbor provides an additional +2 to a city's culture for each external sea-based trade route.
   - Great Temple: Additionally reduces the upkeep cost of all temples in the empire by 1.
   - When a city is captured, it becomes a puppet by default if it cannot be liberated (the window asking whether to create a satellite or annex the city will no longer appear).
   - When encountering a City-State, the amount of Gold received is displayed on the Map.
@@ -4867,7 +4843,7 @@ NEW MAP OPTIONS
   - Spirit Animals: +1 Faith for each Cattle, Bison, Sheep and Deer resource
 
 - RELIGION: FOUNDER BELIEFS
-World Church: +1 Culture for every 6 followers of this religio
+  - World Church: +1 Culture for every 6 followers of this religion
 
 - RELIGION: FOLLOWER BELIEFS
   - Cathedrals (130 Faith): Use Faith to purchase Cathedrals (+1 Faith, +1 Culture. Additional +1 Happiness for every 6th Citizen in a City)
@@ -4910,8 +4886,8 @@ World Church: +1 Culture for every 6 followers of this religio
   - Maya Great People selection menu: unavailable Great People are now grayed out.
   - Graphs panel: added the ability to display a specific player’s graph by right-clicking on the corresponding row in the legend.
   - Graphs panel: added a turn range slider.
-  - Added a Civopedia button to the Game Lobby (Staging Room).
-  - Updated some descriptions in the Civopedia.
+  - Added a Civilopedia button to the Game Lobby (Staging Room).
+  - Updated some descriptions in the Civilopedia.
   - Added the ability to change hotkeys for unit actions and promotions by pressing Ctrl + right-click on an action button directly in the game.
   - Added a notification when a coup is ready in a City-State.
   - When removing a road from a tile with an Improvement, clearing a Forest or Jungle (if not required for a tile Improvement), or constructing any Great Person Improvement, a confirmation popup is no longer displayed.
