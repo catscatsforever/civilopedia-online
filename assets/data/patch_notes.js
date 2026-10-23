@@ -2372,6 +2372,121 @@ BETTER PANGAEA 5.4
 - РЕЛИГИЯ: РЕФОРМАЦИИ 
   - Иезуитское образование: Можно строить библиотеки, университеты, школы, **обсерватории** и лаборатории с помощью веры. Эти здания дают +1 к науке.
 `,
+            "12.3": `
+- ОБЩИЕ ИЗМЕНЕНИЯ
+  - Для постройки морского порта больше не требуется постройка гавани.
+  - Гавань дополнительно дает +2 к культуре в городе за каждый внешний морской торговый путь.
+  - Великий храм: Дополнительно снижает содержание всех храмов в империи на 1.
+  - При захвате города он по умолчанию становится сателлитом, если не может быть освобожден (больше не будет появляться окно с выбором создания сателлита или аннексией города).
+  - При встрече с городом-государством на карте отображается сумма полученного золота.
+  - Количество голосов, необходимое для дипломатической победы, уменьшено на 2.
+  - Юниты с повышением "Вертикальный полет" (вертолет) не получают урон, если заканчивает ход на горе.
+  - Дальнобойные юниты (не осадные) получают 33% штраф к боевой мощи при атаке морских юнитов.
+  - При атаке города в ближнем бою морской военный юнит тратит на 1 ОП больше (2 ОП в сумме).
+
+- ТРАДИЦИЯ
+  - Легализм: В первых пяти городах державы бесплатно появится культурное здание.
+  - Закрытие: Увеличивает на 15% производство пищи и дает бесплатный акведук в первых пяти городах.
+
+- ВОЛЯ
+  - Республика: Увеличивает на +1 производство в каждом городе и на +10% производство при строительстве зданий.
+
+- ЧЕСТЬ
+  - Для принятия касты воинов больше не нужно принятие дисциплины.
+  - Каста воинов: Каждый город с гарнизоном увеличивает настроение и культуру в городе на 1.
+  - Воинские традиции: Подразделения получают в бою на 50% больше опыта и восстанавливают дополнительно 10 ОЗ при повышении.
+
+- НАБОЖНОСТЬ
+  - Небесный мандат: Сокращает на 20% затраты на покупку юнитов и построек за счет веры. Храмы дают +1 к настроению.
+
+- КОММЕРЦИЯ
+  - Для принятия меркантилизма больше не нужно принимать институт протекционизм, но нужно принять институт наемная армия.
+  - Для принятия предпринимательства необходимо принять институт наемная армия.
+
+- МОРЕПЛАВАНИЕ 
+  - Принятие мореплавания увеличивает на +1 ОП кораблей и на +1 радиус обзора боевых кораблей, а также дает +50% к производству маяков, гаваней и морских портов.
+
+- ПОРЯДОК
+  - Небоскребы: Снижает на 25% стоимость покупки и содержания объектов во всех городах.
+  - Бесплатная медицина (Тир 1): +1 к настроению в городе от каждого национального чуда. Национальные чудеса дают +2 к культуре.
+  - Партийное руководство (Тир 1): +1 к пище, производству, науке, золоту, культуре и настроению каждого города.
+  - Пятилетний план (Тир 3): +1 к производству и +1 к науке за каждый рудник или каменоломню.
+  - Культурная революция (Тир 2): +5 к туризму от культурных построек.
+  - Диктатура пролетариата (Тир 2): +10% к туризму в городах за каждые 5 настроения в империи (до 50%).
+
+- СВОБОДА
+  - Бесплатная медицина (Тир 1): +1 к настроению в городе от каждого национального чуда. Национальные чудеса дают +2 к пище.
+  - Арсенал демократии (Тир 2): +50% к производству при создании Авиации, Управляемых и Ядерных ракет. Трипланы, истребители и реактивные истребители получают повышение "Перехват".
+
+- АВТОКРАТИЯ 
+  - Бесплатная медицина (Тир 1): +1 к настроению в городе от каждого национального чуда. Национальные чудеса дают +4 к золоту.
+  - Футуризм (Тир 1): +250 к туризму от всех известных держав при рождении великого полководца, флотоводца, писателя, художника или музыканта. Великие писатели, художники и музыканты появляются на 33% быстрее.
+  - Третья альтернатива (Тир 2): Количество стратегических ресурсов, производимых государством, увеличивается на 100%. +5 к пище, производству, культуре и науке в каждой изначальной столице. 
+
+- РЕЛИГИЯ: ПАНТЕОНЫ
+  - Легенды пустыни: +1 к вере на клетках пойм. Оазисы дают +2 к вере и +2 к производству.
+  - Бог моря: +1 за каждую рыбацкую лодку.
+  - Тотемные животные: +1 к вере от каждого источника скота, бизонов, овец и оленей.
+
+- РЕЛИГИЯ: ОСНОВАТЕЛЬ
+  - Всемирная церковь: Дает +1 к культуре за каждые 6 последователей этой религии.
+
+- РЕЛИГИЯ: ПОЧИТАТЕЛЬ
+  - Собор (130 веры): +1 к вере, +1 к культуре. Дополнительно +1 к настроению за каждые 6 жителей в городе.
+  - Пагода (130 веры): +1 к вере, +1 к настроению. Дополнительно +1 к культуре за каждые 5 жителей в городе.
+  - Мечеть (100 веры): +1 к культуре, +1 к настроению. Дополнительно +1 к вере за каждые 4 жителя в городе.
+
+- НАЦИИ
+  - Лучники на верблюдах (Аравия): Получают 33% штраф к боевой мощи, атакуя на максимально возможную дальность.
+  - Кешиктены (Монголия): Получают 33% штраф к боевой мощи, атакуя на максимально возможную дальность.
+  - Боевые слоны (Индия): Получают 33% штраф к боевой мощи, атакуя на максимально возможную дальность.
+  - Осадная башня (Ассирия): Боевая мощь 11.
+  - Горнолыжный курорт (Австрия): Стоимость 167 производства.
+  - Ставкирка (Дания): Содержание 1 золота.
+  - Египет: Добавлена новая уникальная особенность (как у Греции ранее). Власть фараона (Pharaoh's Power): +1 к вере за каждого третьего жителя в столице.
+  - Мушкетер (Франция): Получает +20% к боевой мощи, если имеет меньше 50 ОЗ.
+  - Германия: Получает извещение всякий раз, когда варвары ставят новый лагерь на открытой территории. При уничтожении лагеря варваров вы получаете 60 золота и побежденный отряд. Содержание сухопутных юнитов стоит на 25% дешевле.
+  - Прусская-Криггс академия (Германия): Стоимость 167 производства.
+  - Копьеметатель (Майя): Бонус против поврежденного врага 20% (но сохраняется при апгрейде).
+  - Бессмертные (Персия): Боевая мощь 10.
+  - Сады Сеннахериба (Ассирия): Стоимость 93 производства.
+  - Барбакан (Польша): Стоимость 100 производства.
+  - Па (Полинезия): Стоимость 43 производства.
+  - Португалия: В дополнение к обычным особенностям получает +1 к настроению за каждую копию редкого ресурса, который уже есть в торговой сети.
+  - Торре-де-белем (Португалия): Стоимость 100 производства.
+  - Нау (Португалия): Боевая мощь 23, максимальное количество золота от торговой сделки 250.
+  - Рим: В дополнение к обычным особенностям дороги на дружественной территории строятся за ход.
+  - Легион (Рим): Боевая мощь 16.
+  - Острог (Россия): Стоимость 43 производства.
+  - Иканда (Зулусы): Стоимость 43 производства.
+  - Плавучий рынок (Сиам): Дополнительно дает +1 к пище.
+  - Сонгай: В дополнение к обычным особенностям при первом захвате любого города столица получает +1 к населению. (При включенной настройке ИИ не дается за захват городов компьютерных игроков. Всегда дается за города-государства.)
+
+- ИНТЕРФЕЙС
+  - Добавлена русская локализация текста, относящегося к улучшенному игровому интерфейсу (EUI).
+  - Исправлена ошибка, из-за которой случайные повышения воинов-крисов отображались в тумане войны.
+  - Исправлена ошибка, из-за которой при покупке клеток городом туман войны убирался с задержкой.
+  - Экран города: чудеса света со слотами специалистов перемещены к другим зданиям для специалистов (Фарфоровая пагода).
+  - Панель выбора повышений у юнита теперь не пропадает при случайном наведении курсора на клетку с вражеским юнитом. 
+  - Опция "Улучшенные иконки юнитов": добавлен индикатор доступного повышения квалификации, а также бездействующих караванов.
+  - Меню выбора ВЛ после бактуна майя: недоступные великие люди затемняются сильнее.
+  - Панель графиков: добавлена возможность показать график отдельного игрока нажатием ПКМ по соотв. строке в легенде.
+  - Панель графиков: добавлен слайдер для указания диапазона отображаемых на графике ходов.
+  - Добавлена кнопка цивилопедии в Игровое лобби (Staging Room).
+  - Дополнены некоторые описания в цивилопедии.
+  - Добавлена возможность поменять горячие клавиши действий и повышений юнитов нажатием Ctrl + ПКМ по кнопке действия прямо в игре.
+  - Добавлено уведомление при готовности переворота в городе-государстве.
+  - При удалении дороги с клетки с улучшением, вырубке леса или джунглей (если не требуется для улучшения клетки), а также строительстве любого улучшения великих людей больше не показывается окно с подтверждением.
+  - В подсказке индикатора здоровья города теперь видно точные ОЗ (обычный интерфейс).
+  - В мультиплеере на панели уведомлении теперь показывается уведомление о гибели юнита от истощения.
+  - Добавлена возможность ставить пинги (подсвечивать клетки) на разведанном игроком участке карты, по умолчанию клавиша \`/~ (Ё). Примечание: вы можете заблокировать пинги определенного игрока нажатием ПКМ по соотв. строке в списке игроков.
+  - После кика игрока его слот закрывается, предотвращая повторное подключение.
+
+- ИСПРАВЛЕНИЕ ОШИБОК
+  - Исправлена ошибка, из-за которой варварский лучник не имел штрафа при атаке морских подразделений.
+  - Исправлена ошибка, из-за которой у самурая иногда некорректно отображался бонус уникальной особенности на панели сражения.
+  - Исправлена ошибка, из-за которой юниты не лечились в дружественных границах игрока с великой стеной.
+`,
         },
     },
     en: {
@@ -4389,7 +4504,7 @@ PROMOTIONS
 
 TECHNOLOGIES 
 
-- Dynamite" no longer requires "Fertilizer".
+- "Dynamite" no longer requires "Fertilizer".
 - Iron Resource is revealed by "Chopping".
 
 
@@ -4694,6 +4809,121 @@ NEW MAP OPTIONS
 
 - REFORMATION BELIEFS
   - Jesuit Education: May build Libraries, Universities, Public Schools, **Observatories** and Research Labs with Faith. These buildings provide +1 Science. 
+`,
+            "12.3": `
+- GENERAL CHANGES
+  - Building a Harbor is no longer required to construct a Seaport.
+  - A Harbor provides an additional +2 to a city’s culture for each external sea-based trade route.
+  - Great Temple: Additionally reduces the upkeep cost of all temples in the empire by 1.
+  - When a city is captured, it becomes a puppet by default if it cannot be liberated (the window asking whether to create a satellite or annex the city will no longer appear).
+  - When encountering a City-State, the amount of Gold received is displayed on the Map.
+  - The number of votes required for a Diplomatic victory has been reduced by 2.
+  - Units with the "Hovering Unit" Promotion (Helicopter Gunship) take no damage if they end their turn on a Mountain.
+  - Ranged Units (non-Siege) suffer a 33% penalty to Combat Strength when attacking Naval Units.
+  - When attacking a City in melee Combat, a Naval combat Unit spends 1 MP more (2 MP total).
+
+- TRADITION
+  - Legalism: Provides a free culture building in your first 5 cities.
+  - Finisher: +20% Growth and a free Aqueduct in your first 5 cities.
+
+- LIBERTY
+  - Republic: +1 Production in every City and +10% Production in cities when constructing Buildings.
+
+- HONOR
+  - To adopt Military Caste, one no longer needs to adopt Discipline.
+  - Military Caste: Each City with a garrison increases Local City Happiness and Culture by 1. 
+  - Military Tradition: Military Units gain 50% more Experience from combat and heal 10 HP more when promoting.
+
+- PIETY
+  - Mandate of Heaven: 20% discount on all purchases of units and buildings with [ICON_PEACE] Faith. Temples provide +1 [ICON_HAPPINESS_1] Happiness.
+
+- COMMERCE
+  - To adopt Mercantilism, you no longer need to adopt Protectionism, but you must adopt Mercenary Army.
+  - To adopt Entrepreneurship, you must adopt Mercenary Army.
+
+- EXPLORATION
+  - Adopting Exploration gives +1 [ICON_MOVES] Movement for Naval units and +1 Sight for Naval combat units and provides +50% [ICON_PRODUCTION] Production towards Lighthouses, Harbors and Seaports constructing.
+
+- ORDER
+  - Skyscrapers: Gold cost of purchasing and maintenance buildings reduced by 25%.
+  - Universal Healthcare (Tenet Level 1): +1 Local Happiness and +2 Culture from every National Wonder.
+  - Party Leadership (Tenet Level 1): +1 Food, Production, Science, Gold, Culture and Happiness per city.
+  - Five-Year Plan (Tenet Level 3): +1 Production and +1 Science for every Mine and Quarry.
+  - Cultural Revolution (Tenet Level 2): +5 Tourism from Culture buildings.
+  - Dictatorship of the Proletariat (Tenet Level 2): +10% Tourism in Cities for every 5 excess Happiness in the Empire (max 50%).
+
+- FREEDOM
+  - Universal Healthcare (Tenet Level 1): +1 Local Happiness and +2 Food from every National Wonder.
+  - Arsenal of Democracy (Tenet Level 2): +50% Production when building Air units and Guided and Nuclear Missiles. Triplans, Fighters and Jet Fighters get "Interception I" Promotion.
+
+- AUTOCRACY
+  - Universal Healthcare (Tenet Level 1): +1 Local Happiness and +4 Gold from every National Wonder.
+  - Futurism (Tenet Level 1): +250 Tourism with all known civs when a Great General, Admiral, Writer, Artist or Musician is born. Earn Great Writers, Artists, and Musicians 33% faster.
+  - Third Alternative (Tenet Level 2): Quantity of Strategic Resources produced is increased by 100%. +5 Food, Production, Science and Culture in every original Capital you control.
+
+- RELIGION: PANTHEON BELIEFS
+  - Desert Folklore: +1 Faith from Flood Plains tiles. +2 Faith and +2 Production from Oases
+  - God of the Sea: +1 Production from Fishing Boats
+  - Spirit Animals: +1 Faith for each Cattle, Bison, Sheep and Deer resource
+
+- RELIGION: FOUNDER BELIEFS
+World Church: +1 Culture for every 6 followers of this religio
+
+- RELIGION: FOLLOWER BELIEFS
+  - Cathedrals (130 Faith): Use Faith to purchase Cathedrals (+1 Faith, +1 Culture. Additional +1 Happiness for every 6th Citizen in a City)
+  - Pagodas (130 Faith): Use Faith to purchase Pagodas (+1 Faith, +1 Happiness. Additional +1 Culture for every 5th Citizen in a City)
+  - Mosques (100 Faith): Use Faith to purchase Mosques (+1 Culture, +1 Happiness. Additional +1 Faith for every 4th Citizen in a City)
+
+- CIVILIZATIONS
+  - Camel Archer (Arabia): Penalty when attacking on a maximum possible range (33%).
+  - Keshik (Mongolia): Penalty when attacking on a maximum possible range (33%).
+  - War Elephant (India): Penalty when attacking on a maximum possible range (33%).
+  - Siege Tower (Assyria): Combat Strength 11.
+  - Ski Resort (Austria): Costs 167 Production.
+  - Stave Church (Denmark): Costs 1 Gold to maintain.
+  - Egypt: A second unique trait has been added (similar to Greece). Pharaoh's Power: +20% Production towards Wonder construction. +1 Faith for every 3rd Citizen in the Capital.
+  - Musketeer (France): gets +20% Combat Strength when its HP is below 50.
+  - Germany: Empire will get notifications when new Barbarian Encampments spawn in revealed territory. Upon defeating a Barbarian unit inside an encampment, you earn 60 Gold and they join your side. Pay 25% less for land unit maintenance.
+  - Prussian Staff College (Germany): Costs 167 Production.
+  - Atlatlist (The Maya): Combat Bonus against Damaged Enemy Units 20% (kept upon upgrading).
+  - Immortal (Persia): Combat Strength 10.
+  - Sennacherib Garden (Assyria): Costs 93 Production.
+  - Barbakan (Poland): Costs 100 Production.
+  - Pa (Polynesia): Costs 43 Production.
+  - Portugal: +1 Gold from Luxury resource tiles. Each extra copy of a luxury resource provides +1 Happiness.
+  - Torre de Belem (Portugal): Costs 100 Production.
+  - Nau (Portugal): Combat Strength 23, max Gold from selling Exotic Cargo goods is 250.
+  - Rome: +15% Production towards buildings construction in cities with a City Connection. Roads constructed within friendly territory are completed instantly.
+  - Legion (Rome): Combat Strength 16.
+  - Krepost (Russia): Costs 43 Production.
+  - Ikanda (The Zulus): Costs 43 Production.
+  - Floating Market (Siam): Provides an additional +1 Food.
+  - Songhai: Receive triple Gold from Barbarian encampments and pillaging Cities. Receive +1 Citizen in the Capital when pillaging a City for the first time. Land units gain the War Canoe and Amphibious promotions, strengthening them while embarked.
+
+- INTERFACE
+  - Added Russian localization for texts related to the Enhanced Game Interface (EUI).
+  - Fixed a bug where random upgrades of Kris Swordsmen appeared in the Fog of War.
+  - Fixed a bug where the Fog of War was revealed with a delay on a City tile purchase.
+  - City Screen: Wonders with specialist slots have been moved to the specialist buildings category (Porcelain Tower).
+  - The Promotion Selection panel will no longer disappear when you accidentally hover over an enemy Unit.
+  - "Enhanced Unit Icons" Option: an indicator for available Promotion and idle Caravans has been added.
+  - Maya Great People selection menu: unavailable Great People are now grayed out.
+  - Graphs panel: added the ability to display a specific player’s graph by right-clicking on the corresponding row in the legend.
+  - Graphs panel: added a turn range slider.
+  - Added a Civopedia button to the Game Lobby (Staging Room).
+  - Updated some descriptions in the Civopedia.
+  - Added the ability to change hotkeys for unit actions and promotions by pressing Ctrl + right-click on an action button directly in the game.
+  - Added a notification when a coup is ready in a City-State.
+  - When removing a road from a tile with an Improvement, clearing a Forest or Jungle (if not required for a tile Improvement), or constructing any Great Person Improvement, a confirmation popup is no longer displayed.
+  - The tooltip for the City damage bar now displays the exact City HP (Standard Interface).
+  - In multiplayer, a notification appears when a Unit dies from attrition.
+  - Added the ability to ping (highlight tiles) on areas of the map explored by the player; the default hotkey is \`/~. Note: You can block pings from a specific player by right-clicking on the corresponding name in the player list.
+  - After a player is kicked, their slot is closed, preventing them from reconnecting.
+
+- BUG FIXES
+  - Fixed a bug where the Barbarian Archer had no penalty when attacking naval units.
+  - Fixed a bug where the Samurai’s unique trait bonus sometimes displayed incorrectly on the combat panel.
+  - Fixed a bug where units could not heal within the friendly player’s territory with the Great Wall.
 `,
         },
     },
